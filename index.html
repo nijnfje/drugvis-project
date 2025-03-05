@@ -16,37 +16,100 @@
 </head>
 
 <body>
-    <!-- Section 1: Title -->
-    <section>
-        Section 1: Title card
-        <div>
-            <div class="row">
-                <img id="title-scroll" src="img/title-scroll.png">
-            </div>
+    <div class="scroll-snap-wrapper">
+        <!-- Section 1: Title -->
+        <section>
+            Section 1: Title card
             <div>
-                <img id="title-rat" src="img/title-rat.png">
+                <div class="row">
+                    <img id="title-scroll" src="img/title-scroll.png">
+                    <!-- TODO: Add "flipInX" animation or Rotating entrances or Zooming entrances-->
+                </div>
+                <div>
+                    <img id="title-rat" src="img/title-rat.png">
+                    <!-- TODO: Add "slideInUp" animation -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Mental Illness in Canada (CAMH) -->
+        <section>
+            Section 2
+            <div>
+                1 in 5 Canadians will experience a mental illness.
+            </div>
+            <ul>
+                <li> rat 1 </li>
+                <li> rat 2 </li>
+                <li> rat 3 </li>
+                <li> rat 4 </li>
+                <li> rat 5 </li>
+            </ul>
+        </section>
+
+        <!-- Section 3: Common view - chemical imbalances -->
+        <section>
+            Section 3
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="section-3">
+                        Maybe you've heard of mental conditions described as "chemical imbalances".
+                        This can be true!
+                        Humans want just the right amount of chemicals to function properly.
+                        <div>
+                            <button> Too much </button> and <button> Too little</button>
+                            <!--TODO: Add FadeIn effects to each button. -->
+                        </div>
+                        Can lead to undesired effects.
+                    </div>
+                </div>
+                <div class="col-md-6 salt-rat-parent">
+                    <img id="salt-rat" src="img/rat-salt.png">
+                </div>
             </div>
 
-        </div>
-    </section>
-    <!-- Section 2: Mental Illness in Canada (CAMH) -->
-    <section> Section 2 </section>
-    <!-- Section 3: Common view - chemical imbalances -->
-    <section> Section 3 </section>
-    <!-- Section 4: Assembly line -->
-    <section> Section 4 </section>
-    <!-- Section 5: vis #7 Network graph -->
-    <section> Section 5 </section>
-    <!-- Section 6: vis #1 Heatmap  -->
-    <section> Section 6 </section>
-    <!-- Section 7: vis #4 drugs and diseases -->
-    <section> Section 7 </section>
-    <!-- Section 8: vis #3 drugs and receptors -->
-    <section> Section 8 </section>
-    <!-- Section 9: Be nice -->
-    <section> Section 9 </section>
-    <!-- Section 10: Resources -->
-    <section> Section 10 </section>
+        </section>
+
+        <!-- Section 4: Assembly line -->
+        <section>
+            Section 4
+            <div class="section-4">
+                About the interconectedness of the brain.
+                (Assembly line of rats.)
+                <div class="rat-assembly-line-parent">
+                    <div id="rat-assembly-line">
+                        <img src="img/rat-assembly-line.png">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Section 5: vis #7 Network graph -->
+        <section>
+            Section 5
+            <div class="row">
+                <div class="col-md-6">
+                    (Visualization to be done by Tianyu)
+                </div>
+                <div class="col-md-6">
+                    <img id="salt-shaker-img" src="img/salt-shaker.png">
+                </div>
+            </div>
+
+        </section>
+        <!-- Section 6: vis #1 Heatmap  -->
+        <section> Section 6 </section>
+        <!-- Section 7: vis #4 drugs and diseases -->
+        <section> Section 7 </section>
+        <!-- Section 8: vis #3 drugs and receptors -->
+        <section> Section 8 </section>
+        <!-- Section 9: Be nice -->
+        <section> Section 9 </section>
+        <!-- Section 10: Resources -->
+        <section> Section 10 </section>
+    </div>
+
 
     <!-- Bootstrap JS --> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
