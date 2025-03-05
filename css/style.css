@@ -24,16 +24,16 @@ section {
     display: none;
 }
 
-/*************
-    SECTION 1
- *************/
+/**************************
+    SECTION 1: Title card
+ **************************/
 
 #title-scroll{
     height: 75vh;
     width: 100vw;
 }
 
-#title-rat {
+#title-rat-img {
     position: absolute;
     right: 0;
     bottom: 0;
@@ -41,13 +41,13 @@ section {
     max-height: 100%;
 }
 
-/*************
-    SECTION 2
- *************/
+/***************************************
+    SECTION 2: Mental illness in Canada
+ ***************************************/
 
-/*************
-    SECTION 3
- *************/
+/***************************************
+    SECTION 3: Salt rat
+ ***************************************/
 .salt-rat-parent {
     position: relative;
     height: 100vh; /* Needs height for children */
@@ -69,9 +69,9 @@ section {
 }
 
 
-/*************
-    SECTION 4
- *************/
+/**************************
+    SECTION 4: Interconnectedness of brain (Assembly line)
+ **************************/
 
 .section-4 {
     text-align: center;
@@ -107,9 +107,36 @@ section {
     max-height: 100%; /* Prevents overflow */
 }
 
-/*************
-    SECTION 5
- *************/
+/***************************************
+    SECTION 5: Disease related by medications (Vis #7)
+ ***************************************/
 #salt-shaker-img{
     width: 100%;
 }
+
+
+/***************************************
+    SECTION 6: Drug actions Heatmap (Vis #1)
+ ***************************************/
+
+
+
+/***************************************
+    SECTION 7: Drugs available per disease (Vis #4)
+ ***************************************/
+
+
+
+/***************************************
+    SECTION 8: Drugs and receptors (Vis #3)
+ ***************************************/
+
+
+/***************************************
+    SECTION 9: Be nice
+ ***************************************/
+
+
+/***************************************
+    SECTION 10: Seek help
+ ***************************************/
