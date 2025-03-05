@@ -1,0 +1,22 @@
+/***************************************
+    General styles for the visualizations
+    We want:
+    - Visualizations to be centered
+    - Explanations to be centered
+ ***************************************/
+
+.vis-area-parent{
+    position: relative;
+    height: 100vh;
+}
+
+.vis-area {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.vis-explanation {
+
+}
