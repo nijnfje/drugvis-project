@@ -17,6 +17,14 @@
     transform: translate(-50%, -50%);
 }
 
-.vis-explanation {
+.vis-explanation-parent {
+    position: relative;
+    height: 50vh;
+}
 
+.vis-explanation{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
