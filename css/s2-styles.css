@@ -30,8 +30,8 @@
         margin: 1px;
 
         /* animation */
-        /*transform-origin: center; !* doesnt work because "ul" is the center, not "orbit-center-content" *!*/
-        /*animation: orbit 25s linear infinite;*/
+        transform-origin: center; /* doesnt work because "ul" is the center, not "orbit-center-content" */
+        animation: orbit 25s linear infinite;
     }
 
     & li {
@@ -56,6 +56,8 @@
 
 
     }
+
+    /*TODO: How to make the rats actually orbit in a circle? */
 
     & li:nth-child(1) {
         opacity: 1;
