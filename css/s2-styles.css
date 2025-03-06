@@ -32,6 +32,10 @@
         /* animation */
         transform-origin: center; /* doesnt work because "ul" is the center, not "orbit-center-content" */
         animation: orbit 25s linear infinite;
+        &:hover {
+            animation-play-state: paused;
+        }
+
     }
 
     & li {
@@ -53,8 +57,6 @@
             left: 50%;
             transform: translate(-50%, -50%);
         }
-
-
     }
 
     /*TODO: How to make the rats actually orbit in a circle? */
