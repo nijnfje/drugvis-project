@@ -10,6 +10,7 @@
 }
 
 section {
+    position: relative;
     height: 100vh;
     width: 100vw;
     scroll-snap-align: start;
@@ -136,7 +137,51 @@ section {
     SECTION 9: Be nice
  ***************************************/
 
+.s9-explanation-parent{
+    position: relative;
+    height: 50vh;
+}
+
+.s9-explanation{
+    position: absolute;
+    top: 50%;
+}
+
+
+.rat-rain-img-parent{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    max-height: 100%;
+}
+
+#rat-rain-img{
+    height: 99vh;
+}
 
 /***************************************
     SECTION 10: Seek help
  ***************************************/
+
+.s10-explanation-parent{
+    position: relative;
+    height: 25vh;
+}
+
+.s10-explanation{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 3%;
+}
+
+.rat-therapy-img-parent{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    max-height: 100%;
+}
+
+#rat-therapy-img{
+    height: 75vh;
+}
