@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    background: #fafafa;
+    color: #333;
+    padding: 1rem;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 1rem;
+    background: #6f42c1;
+    padding: 1rem 0.5rem;
+    border-radius: 5px;
+}
+
+.header h1 {
+    color: #fff;
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.filter-panel {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: #fff;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.filter-panel button {
+    background: #6f42c1;
+    color: #fff;
+    border: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.filter-panel button:hover {
+    background: #59339c;
+}
+
+.action-checkboxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.action-checkboxes label {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+#heatmap-container {
+    margin: 0 auto;
+    text-align: center;
+}
+
+svg {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.axis text {
+    font-size: 10px;
+    fill: #555;
+}
+
+.axis path,
+.axis line {
+    stroke: #aaa;
+}
+
+.heat-rect {
+    cursor: pointer;
+    transition: fill 0.3s;
+}
+
+.heat-rect:hover {
+    stroke: #000;
+    stroke-width: 0.5;
+}
+
+.heat-rect.highlighted {
+    stroke: #333;
+    stroke-width: 1.5;
+}
+
+.tooltip {
+    position: absolute;
+    pointer-events: none;
+    background: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    padding: 6px 8px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}

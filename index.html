@@ -21,7 +21,7 @@
     <div class="scroll-snap-wrapper">
         <!-- Section 1: Title -->
         <section>
-            Section 1: Title card
+<!--            Section 1: Title card-->
             <div>
                 <div class="row">
                     <img id="title-scroll" src="img/title-scroll.png">
@@ -79,37 +79,43 @@
 
         <!-- Section 3: Common view - chemical imbalances -->
         <section>
-            Section 3
+<!--            Section 3-->
             <div class="row">
                 <div class="col-md-6">
                     <div class="section-3">
-                        Maybe you've heard of mental conditions described as "chemical imbalances".
-                        This can be true!
-                        Humans want the "just-right" amount of chemicals to function properly.
+                        Maybe you've heard of mental conditions described as "chemical imbalances". <br>
+                        This can be true! <br>
+                        Brains want the "just-right" amount of chemicals to function properly.
                         <div>
-                            <button> Too much </button> and <button> Too little</button>
+                            <button> Too much </button> or <button> Not enough</button>
                             <!--TODO: Add FadeIn effects to each button. -->
                         </div>
                         Can lead to undesired effects.
+                        <button> Too hot </button>
                     </div>
+
                 </div>
                 <div class="col-md-6 salt-rat-parent">
                     <img id="salt-rat" src="img/rat-salt.png">
                 </div>
             </div>
         </section>
-        
+
 
         <!-- Section 4: Assembly line -->
         <section>
-            Section 4
+<!--            Section 4-->
             <div class="section-4">
-                About the interconnectedness of the brain.
-                (Assembly line of rats.) <br>
-
-                Researchers work hard every day to understand how the brain works. <br>
-                Although we don't have all the answers, we know that the brain and its networks <br>
-                are intricately connected. They all need to be in sync to work properly!
+                <div class="s4-explanation-container">
+                    <div class="s4-explanation-text">
+                        About the interconnectedness of the brain.
+                        (Assembly line of rats.) <br>
+                        Researchers work hard every day to understand how the brain works. <br>
+                        Although we don't have all the answers, we know that the brain and its networks <br>
+                        are intricately connected. They all need to be in sync to work properly!
+                    </div>
+<!--                    <img src=""> TODO: scalloped square-->
+                </div>
 
                 <div class="rat-assembly-line-parent">
                     <div id="rat-assembly-line">
@@ -171,8 +177,9 @@
                 </div>
                 <div class="col-md-6">
                     <div class="vis-area-parent">
-                        <div class="vis-area">
+                        <div class="vis-area heatmap">
                             (Heatmap Visualization to be done by Tianyu Fan)
+                            <iframe src="vis-heatmap/heatmap.html" width="100%" height="500px" style="border: none;"></iframe>
                         </div>
                     </div>
                 </div>
@@ -275,6 +282,8 @@
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <!-- Own JS --> 
     <script src="js/main.js"></script>
+    <script src="vis-heatmap/heatmap.js"></script>
+
 
 </body>
 
