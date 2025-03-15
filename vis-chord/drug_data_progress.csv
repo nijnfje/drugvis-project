@@ -1,0 +1,2288 @@
+,drug_name,list_of_conditions,Inn_Name,Brand_Names,Type_Of_Action
+0,octreotide,acromegaly,Octreotide,Sandostatin,Binder
+2,methotrexate,cancer,Methotrexate,Rasuvo,Modulator
+2,methotrexate,cancer,Methotrexate,Trexall,Modulator
+2,methotrexate,cancer,Methotrexate,Xatmep,Modulator
+2,methotrexate,cancer,Methotrexate,Metoject,Modulator
+2,methotrexate,cancer,Methotrexate,Otrexup,Modulator
+2,methotrexate,cancer,Methotrexate,Reditrex,Modulator
+2,methotrexate,cancer,Methotrexate,Nordimet,Modulator
+6,florbetapir,alzheimer's disease,Florbetapir,AMYVID,Modulator
+9,pramiracetam,attention deficit hyperactivity disorder,Pramiracetam,PRAMISTAR,Modulator
+12,neramexane,alzheimer's disease,Neramexane,,Antagonist
+13,tarenflurbil,alzheimer's disease,Tarenflurbil,Flurizan,Inhibitor
+13,tarenflurbil,cancer,Tarenflurbil,Flurizan,Inhibitor
+17,tideglusib,alzheimer's disease,Tideglusib,Zentylor nypta,Inhibitor
+19,riluzole,multiple sclerosis,Riluzole,Tiglutik kit,Blocker
+19,riluzole,multiple sclerosis,Riluzole,Riluzole,Blocker
+19,riluzole,multiple sclerosis,Riluzole,Exservan,Blocker
+19,riluzole,multiple sclerosis,Riluzole,Teglutik,Blocker
+19,riluzole,multiple sclerosis,Riluzole,Rilutek,Blocker
+22,desflurane,anesthetic,Desflurane,Suprane,Antagonist
+23,tetracaine,anesthetic,Tetracaine,Dicaine,Inhibitor
+23,tetracaine,analgesic,Tetracaine,Dicaine,Inhibitor
+23,tetracaine,anesthetic,Tetracaine,Medihaler-tetracaine,Inhibitor
+23,tetracaine,analgesic,Tetracaine,Medihaler-tetracaine,Inhibitor
+23,tetracaine,anesthetic,Tetracaine,Metraspray,Inhibitor
+23,tetracaine,analgesic,Tetracaine,Metraspray,Inhibitor
+23,tetracaine,anesthetic,Tetracaine,Pontocaine,Inhibitor
+23,tetracaine,analgesic,Tetracaine,Pontocaine,Inhibitor
+23,tetracaine,anesthetic,Tetracaine,Ametop,Inhibitor
+23,tetracaine,analgesic,Tetracaine,Ametop,Inhibitor
+24,remifentanil,anesthetic,Remifentanil,,Agonist
+27,trifluoperazine,depression,Trifluoperazine,Stelazine,Inhibitor
+27,trifluoperazine,anxiety,Trifluoperazine,Stelazine,Inhibitor
+27,trifluoperazine,depression,Trifluoperazine,Amylozine,Inhibitor
+27,trifluoperazine,anxiety,Trifluoperazine,Amylozine,Inhibitor
+27,trifluoperazine,depression,Trifluoperazine,Stelazine fte,Inhibitor
+27,trifluoperazine,anxiety,Trifluoperazine,Stelazine fte,Inhibitor
+29,alprazolam,anxiety,Alprazolam,XANAX,Agonist
+29,alprazolam,panic disorders,Alprazolam,XANAX,Agonist
+29,alprazolam,anxiety,Alprazolam,NIRAVAM,Agonist
+29,alprazolam,panic disorders,Alprazolam,NIRAVAM,Agonist
+30,bromazepam,anxiety,Bromazepam,BROMOPYRAZINE,Binder
+30,bromazepam,panic disorders,Bromazepam,BROMOPYRAZINE,Binder
+30,bromazepam,insomnia,Bromazepam,BROMOPYRAZINE,Binder
+30,bromazepam,alcohol addiction,Bromazepam,BROMOPYRAZINE,Binder
+30,bromazepam,anxiety,Bromazepam,,Binder
+30,bromazepam,panic disorders,Bromazepam,,Binder
+30,bromazepam,insomnia,Bromazepam,,Binder
+30,bromazepam,alcohol addiction,Bromazepam,,Binder
+31,buspirone,depression,Buspirone,BUSPAR,Agonist
+31,buspirone,anxiety,Buspirone,BUSPAR,Agonist
+32,butalbital,analgesic,Butalbital,VTOL*ZEBUTAL*VANATOL S*TRIANAL*ORBIVAN*FIORICET WITH CODEINE*FIORICET*FIORINAL WITH CODEINE*BUTAPAP*FIORINAL*ASCOMP*TRIANAL C*TENCON*BUPAP*ESGIC,Antagonist
+32,butalbital,analgesic,Butalbital,ALLZITAL*VANATOL,Antagonist
+33,chlordiazepoxide,anxiety,Chlordiazepoxide,LIBRAX,Modulator
+33,chlordiazepoxide,alcohol addiction,Chlordiazepoxide,LIBRAX,Modulator
+33,chlordiazepoxide,anxiety,Chlordiazepoxide,CHLORAX,Modulator
+33,chlordiazepoxide,alcohol addiction,Chlordiazepoxide,CHLORAX,Modulator
+34,chlormezanone,anxiety,"Chlormethazanone
+Chlormezanona
+Chlormezanone
+Chlormézanone
+Chlormezanonum
+Clormezanona",,Agonist
+35,clonazepam,panic disorders,Clonazepam,KLONOPIN,Agonist
+35,clonazepam,seizures,Clonazepam,KLONOPIN,Agonist
+35,clonazepam,panic disorders,Clonazepam,CLONAPAM* RIVOTRIL,Agonist
+35,clonazepam,seizures,Clonazepam,CLONAPAM* RIVOTRIL,Agonist
+36,clorazepic acid,anxiety,Clorazepic acid,CLORAZEPATE DIPOTASSIUM,Modulator
+36,clorazepic acid,seizures,Clorazepic acid,CLORAZEPATE DIPOTASSIUM,Modulator
+36,clorazepic acid,alcohol addiction,Clorazepic acid,CLORAZEPATE DIPOTASSIUM,Modulator
+37,clotiazepam,anxiety,"Clotiazepam
+Clotiazepamum",RIZEN,Agonist
+37,clotiazepam,anxiety,"Clotiazepam
+Clotiazepamum",CLOZAN,Agonist
+37,clotiazepam,anxiety,"Clotiazepam
+Clotiazepamum",TRECALMO,Agonist
+37,clotiazepam,anxiety,"Clotiazepam
+Clotiazepamum",DISTENSAN,Agonist
+37,clotiazepam,anxiety,"Clotiazepam
+Clotiazepamum",RIZE,Agonist
+37,clotiazepam,anxiety,"Clotiazepam
+Clotiazepamum",VERATRAN,Agonist
+38,diazepam,anxiety,Diazepam,Diastat,Agonist
+38,diazepam,alcohol addiction,Diazepam,Diastat,Agonist
+38,diazepam,anxiety,Diazepam,Valium,Agonist
+38,diazepam,alcohol addiction,Diazepam,Valium,Agonist
+38,diazepam,anxiety,Diazepam,Valtoco 5 Mg Dose Kit,Agonist
+38,diazepam,alcohol addiction,Diazepam,Valtoco 5 Mg Dose Kit,Agonist
+40,lorazepam,depression,Lorazepam,Loreev,Modulator
+40,lorazepam,anxiety,Lorazepam,Loreev,Modulator
+40,lorazepam,epilepsy,Lorazepam,Loreev,Modulator
+40,lorazepam,insomnia,Lorazepam,Loreev,Modulator
+40,lorazepam,anesthetic,Lorazepam,Loreev,Modulator
+40,lorazepam,depression,Lorazepam,Ativan,Modulator
+40,lorazepam,anxiety,Lorazepam,Ativan,Modulator
+40,lorazepam,epilepsy,Lorazepam,Ativan,Modulator
+40,lorazepam,insomnia,Lorazepam,Ativan,Modulator
+40,lorazepam,anesthetic,Lorazepam,Ativan,Modulator
+41,meprobamate,anxiety,Meprobamate,Equagesic,Inhibitor
+42,meprobamate,anxiety,Meprobamate,Equagesic,Stimulator
+43,meprobamate,anxiety,Meprobamate,Equagesic,Antagonist
+44,mianserin,depression,Mianserin,NORVAL,Antagonist
+44,mianserin,anxiety,Mianserin,NORVAL,Antagonist
+44,mianserin,depression,Mianserin,BOLVIDON* TETRAMIDE*TOLVON*BENCARD*ORGANON,Antagonist
+44,mianserin,anxiety,Mianserin,BOLVIDON* TETRAMIDE*TOLVON*BENCARD*ORGANON,Antagonist
+45,midazolam,epilepsy,Midazolam,Busulfex,Modulator
+45,midazolam,epilepsy,Midazolam,Seizalam,Modulator
+45,midazolam,epilepsy,Midazolam,Nayzilam,Modulator
+45,midazolam,epilepsy,Midazolam,Buccolam,Modulator
+46,nefazodone,depression,Nefazodone,NEFADAR*DUTONIN,Antagonist
+46,nefazodone,depression,Nefazodone,SERZONE* NEFAZODONE HYDROCHLORIDE,Antagonist
+47,nitrazepam,insomnia,Nitrazepam,,Antagonist
+48,oxazepam,anxiety,Oxazepam,,Agonist
+48,oxazepam,alcohol addiction,Oxazepam,,Agonist
+49,oxprenolol,anxiety,Oxprenolol,EQUILIBRIN*AMBIVALON,Antagonist
+49,oxprenolol,hypertension,Oxprenolol,EQUILIBRIN*AMBIVALON,Antagonist
+49,oxprenolol,anxiety,Oxprenolol,AMIOXID,Antagonist
+49,oxprenolol,hypertension,Oxprenolol,AMIOXID,Antagonist
+50,phenelzine,depression,Phenelzine,PHENELZINE SULFATE*NARDIL,Inhibitor
+50,phenelzine,anxiety,Phenelzine,PHENELZINE SULFATE*NARDIL,Inhibitor
+52,pregabalin,seizures,Pregabalin,LYRICA,Modulator
+52,pregabalin,diabetes,Pregabalin,LYRICA,Modulator
+53,quetiapine,depression,Quetiapine,SEROQUEL,Agonist
+53,quetiapine,schizophrenia,Quetiapine,SEROQUEL,Agonist
+53,quetiapine,bipolar disorder,Quetiapine,SEROQUEL,Agonist
+54,reboxetine,depression,Reboxetine,NOREBOX*VESTRA*PROLIFT*SOLVEX*DAVEDAX,Inhibitor
+54,reboxetine,depression,Reboxetine,EDRONAX,Inhibitor
+55,saredutant,depression,Saredutant,,Antagonist
+55,saredutant,anxiety,Saredutant,,Antagonist
+56,thioridazine,anxiety,Thioridazine,MELLERIL,Antagonist
+56,thioridazine,schizophrenia,Thioridazine,MELLERIL,Antagonist
+56,thioridazine,anxiety,Thioridazine,MELLARIL,Antagonist
+56,thioridazine,schizophrenia,Thioridazine,MELLARIL,Antagonist
+57,tiagabine,seizures,Tiagabine,TIAGABINE HYDROCHLORIDE,Inhibitor
+57,tiagabine,seizures,Tiagabine,GABITRIL,Inhibitor
+59,venlafaxine,depression,Venlafaxine,VENLAFAXINE HYDROCHLORIDE* EFFEXOR XR,Inhibitor
+59,venlafaxine,anxiety,Venlafaxine,VENLAFAXINE HYDROCHLORIDE* EFFEXOR XR,Inhibitor
+59,venlafaxine,depression,Venlafaxine,EFFEXOR,Inhibitor
+59,venlafaxine,anxiety,Venlafaxine,EFFEXOR,Inhibitor
+63,amphetamine,attention deficit hyperactivity disorder,Amphetamine,Adderall,Modulator
+63,amphetamine,attention deficit hyperactivity disorder,Amphetamine,Mydayis,Modulator
+63,amphetamine,attention deficit hyperactivity disorder,Amphetamine,Adzenys,Modulator
+63,amphetamine,attention deficit hyperactivity disorder,Amphetamine,Dyanavel,Modulator
+63,amphetamine,attention deficit hyperactivity disorder,Amphetamine,Evekeo,Modulator
+64,atomoxetine,attention deficit hyperactivity disorder,Atomoxetine,Strattera,Inhibitor
+65,clonidine,hypertension,Clonidine,Kapvay,Inhibitor
+65,clonidine,hypertension,Clonidine,Catapres-TTS,Inhibitor
+65,clonidine,hypertension,Clonidine,Duraclon,Inhibitor
+65,clonidine,hypertension,Clonidine,Catapres,Inhibitor
+65,clonidine,hypertension,Clonidine,Catapres-tts-1,Inhibitor
+66,clonidine,hypertension,Clonidine,Kapvay,Agonist
+66,clonidine,hypertension,Clonidine,Catapres-TTS,Agonist
+66,clonidine,hypertension,Clonidine,Duraclon,Agonist
+66,clonidine,hypertension,Clonidine,Catapres,Agonist
+66,clonidine,hypertension,Clonidine,Catapres-tts-1,Agonist
+70,dexmethylphenidate,attention deficit hyperactivity disorder,Dexmethylphenidate,Azstarys,Inhibitor
+70,dexmethylphenidate,attention deficit hyperactivity disorder,Dexmethylphenidate,Focalin,Inhibitor
+72,guanfacine,attention deficit hyperactivity disorder,Guanfacine,Intuniv,Agonist
+72,guanfacine,attention deficit hyperactivity disorder,Guanfacine,Tenex,Agonist
+76,lisdexamfetamine,attention deficit hyperactivity disorder,Lisdexamfetamine,ELVANSE*LISDEXAMFETAMINE DIMESYLATE,Modulator
+76,lisdexamfetamine,attention deficit hyperactivity disorder,Lisdexamfetamine,VYVANSE,Modulator
+77,methamphetamine,attention deficit hyperactivity disorder,Metamfetamine,Desoxyn,Antagonist
+78,methamphetamine,attention deficit hyperactivity disorder,Metamfetamine,Desoxyn,Agonist
+79,methylphenidate,attention deficit hyperactivity disorder,Methylphenidate,METADATE,Blocker
+79,methylphenidate,attention deficit hyperactivity disorder,Methylphenidate,CONCERTA,Blocker
+79,methylphenidate,attention deficit hyperactivity disorder,Methylphenidate,FOQUEST,Blocker
+79,methylphenidate,attention deficit hyperactivity disorder,Methylphenidate,APTENSIO,Blocker
+79,methylphenidate,attention deficit hyperactivity disorder,Methylphenidate,QUILLICHEW,Blocker
+79,methylphenidate,attention deficit hyperactivity disorder,Methylphenidate,RITALIN,Blocker
+79,methylphenidate,attention deficit hyperactivity disorder,Methylphenidate,METHYLIN,Blocker
+79,methylphenidate,attention deficit hyperactivity disorder,Methylphenidate,QUILLIVANT,Blocker
+79,methylphenidate,attention deficit hyperactivity disorder,Methylphenidate,COTEMPLA,Blocker
+79,methylphenidate,attention deficit hyperactivity disorder,Methylphenidate,ADHANSIA,Blocker
+79,methylphenidate,attention deficit hyperactivity disorder,Methylphenidate,RELEXXII,Blocker
+79,methylphenidate,attention deficit hyperactivity disorder,Methylphenidate,DAYTRANA,Blocker
+79,methylphenidate,attention deficit hyperactivity disorder,Methylphenidate,BIPHENTIN,Blocker
+79,methylphenidate,attention deficit hyperactivity disorder,Methylphenidate,JORNAY,Blocker
+83,doxycycline,migraine,Doxycycline,Doxy,Modulator
+83,doxycycline,migraine,Doxycycline,Monodox,Modulator
+83,doxycycline,migraine,Doxycycline,Morgidox,Modulator
+83,doxycycline,migraine,Doxycycline,Acticlate,Modulator
+83,doxycycline,migraine,Doxycycline,Atridox,Modulator
+83,doxycycline,migraine,Doxycycline,Apprilon,Modulator
+83,doxycycline,migraine,Doxycycline,Okebo,Modulator
+83,doxycycline,migraine,Doxycycline,Periostat,Modulator
+83,doxycycline,migraine,Doxycycline,Vibramycin,Modulator
+83,doxycycline,migraine,Doxycycline,Oracea,Modulator
+83,doxycycline,migraine,Doxycycline,Doxycin,Modulator
+83,doxycycline,migraine,Doxycycline,Lymepak,Modulator
+83,doxycycline,migraine,Doxycycline,Targadox,Modulator
+83,doxycycline,migraine,Doxycycline,Adoxa,Modulator
+83,doxycycline,migraine,Doxycycline,Mondoxyne,Modulator
+83,doxycycline,migraine,Doxycycline,Doryx,Modulator
+85,doxazosin,hypertension,Doxazosin,Cardura,Antagonist
+86,flumazenil,anesthetic,Flumazenil,ANEXATE,Modulator
+89,flumazenil,anesthetic,Flumazenil,ANEXATE,Antagonist
+91,amibegron,depression,Amibegron,,Agonist
+92,aripiprazole,schizophrenia,Aripiprazole,ARIPIPRAZOLE,Agonist
+92,aripiprazole,autism spectrum disorder,Aripiprazole,ARIPIPRAZOLE,Agonist
+92,aripiprazole,schizophrenia,Aripiprazole,ABILIFY,Agonist
+92,aripiprazole,autism spectrum disorder,Aripiprazole,ABILIFY,Agonist
+93,cx157,depression,,,Inhibitor
+93,cx157,anxiety,,,Inhibitor
+94,lamotrigine,depression,Lamotrigine,LAMICTAL,Blocker
+94,lamotrigine,epilepsy,Lamotrigine,LAMICTAL,Blocker
+94,lamotrigine,seizures,Lamotrigine,LAMICTAL,Blocker
+94,lamotrigine,bipolar disorder,Lamotrigine,LAMICTAL,Blocker
+95,lithium,bipolar disorder,Lithium,LITHOBID,Inhibitor
+95,lithium,bipolar disorder,Lithium,ESKALITH-CR,Inhibitor
+95,lithium,bipolar disorder,Lithium,LITHONATE,Inhibitor
+95,lithium,bipolar disorder,Lithium,ESKALITH,Inhibitor
+95,lithium,bipolar disorder,Lithium,LITHOTABS,Inhibitor
+97,lithium carbonate,bipolar disorder,Lithium carbonate,LITHANE*LITHOBID,Inhibitor
+97,lithium carbonate,bipolar disorder,Lithium carbonate,CARBOLITH* LITHMAX,Inhibitor
+98,lithium citrate,depression,Lithium citrate,,Inhibitor
+98,lithium citrate,bipolar disorder,Lithium citrate,,Inhibitor
+99,mn-305,depression,,,Agonist
+99,mn-305,anxiety,,,Agonist
+99,mn-305,insomnia,,,Agonist
+100,ns-2359,depression,,,Inhibitor
+100,ns-2359,attention deficit hyperactivity disorder,,,Inhibitor
+103,olanzapine,depression,Olanzapine,ZALASTA*SYMBYAX,Agonist
+103,olanzapine,schizophrenia,Olanzapine,ZALASTA*SYMBYAX,Agonist
+103,olanzapine,bipolar disorder,Olanzapine,ZALASTA*SYMBYAX,Agonist
+103,olanzapine,depression,Olanzapine,OLAZAX*ZYPADHERA*ZYPREXA,Agonist
+103,olanzapine,schizophrenia,Olanzapine,OLAZAX*ZYPADHERA*ZYPREXA,Agonist
+103,olanzapine,bipolar disorder,Olanzapine,OLAZAX*ZYPADHERA*ZYPREXA,Agonist
+104,opc-14523,depression,,,Modulator
+104,opc-14523,bulimia,,,Modulator
+104,opc-14523,obsessive compulsive disorder,,,Modulator
+107,docetaxel,cancer,Docetaxel,Taxotere,Inhibitor
+108,tamoxifen,cancer,Tamoxifen,,Antagonist
+109,bevacizumab,cancer,Bevacizumab,Avastin,Antagonist
+110,bevacizumab,cancer,Bevacizumab,Avastin,Inhibitor
+114,dexrazoxane,cancer,Dexrazoxane,Totect,Modulator
+114,dexrazoxane,cancer,Dexrazoxane,Savene,Modulator
+114,dexrazoxane,cancer,Dexrazoxane,Zinecard,Modulator
+115,dexrazoxane,cancer,Dexrazoxane,Totect,Inhibitor
+115,dexrazoxane,cancer,Dexrazoxane,Savene,Inhibitor
+115,dexrazoxane,cancer,Dexrazoxane,Zinecard,Inhibitor
+117,hydroxyzine,anxiety,Hydroxyzine,Atarax,Antagonist
+117,hydroxyzine,anxiety,Hydroxyzine,Vistaril,Antagonist
+124,botulinum toxin type a,stroke,Botulinum toxin type A,Xeomin,Inhibitor
+124,botulinum toxin type a,migraine,Botulinum toxin type A,Xeomin,Inhibitor
+124,botulinum toxin type a,diabetes,Botulinum toxin type A,Xeomin,Inhibitor
+124,botulinum toxin type a,stroke,Botulinum toxin type A,Botox Cosmetic,Inhibitor
+124,botulinum toxin type a,migraine,Botulinum toxin type A,Botox Cosmetic,Inhibitor
+124,botulinum toxin type a,diabetes,Botulinum toxin type A,Botox Cosmetic,Inhibitor
+124,botulinum toxin type a,stroke,Botulinum toxin type A,Botox,Inhibitor
+124,botulinum toxin type a,migraine,Botulinum toxin type A,Botox,Inhibitor
+124,botulinum toxin type a,diabetes,Botulinum toxin type A,Botox,Inhibitor
+124,botulinum toxin type a,stroke,Botulinum toxin type A,Daxxify,Inhibitor
+124,botulinum toxin type a,migraine,Botulinum toxin type A,Daxxify,Inhibitor
+124,botulinum toxin type a,diabetes,Botulinum toxin type A,Daxxify,Inhibitor
+124,botulinum toxin type a,stroke,Botulinum toxin type A,Dysport,Inhibitor
+124,botulinum toxin type a,migraine,Botulinum toxin type A,Dysport,Inhibitor
+124,botulinum toxin type a,diabetes,Botulinum toxin type A,Dysport,Inhibitor
+124,botulinum toxin type a,stroke,Botulinum toxin type A,Jeuveau,Inhibitor
+124,botulinum toxin type a,migraine,Botulinum toxin type A,Jeuveau,Inhibitor
+124,botulinum toxin type a,diabetes,Botulinum toxin type A,Jeuveau,Inhibitor
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Triquilar,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Triquilar,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Dasetta 7/7/7 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Dasetta 7/7/7 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Femynor 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Femynor 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Femhrt 0.5/2.5 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Femhrt 0.5/2.5 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Cyestra-35,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Cyestra-35,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Emoquette,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Emoquette,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Microgestin 1/20 21 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Microgestin 1/20 21 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Cyred 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Cyred 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Mibelas 24 Fe Chewable 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Mibelas 24 Fe Chewable 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Kaitlib Fe 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Kaitlib Fe 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Tyblume 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Tyblume 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Pirmella 1/35 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Pirmella 1/35 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Marlissa 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Marlissa 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Tri-LO-marzia 28-day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Tri-LO-marzia 28-day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Cléo -35,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Cléo -35,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Junel 1/20 21 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Junel 1/20 21 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Nexesta Fe 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Nexesta Fe 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Trinessa Lo 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Trinessa Lo 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Vestura,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Vestura,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Indayo,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Indayo,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Alesse,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Alesse,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Enpresse 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Enpresse 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Aurovela,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Aurovela,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Merzee 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Merzee 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Tri Femynor 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Tri Femynor 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Tri-legest 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Tri-legest 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Junel 1.5/30 21 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Junel 1.5/30 21 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Delyla 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Delyla 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Quartette 91 Day Pack,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Quartette 91 Day Pack,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Blisovi 21 Fe 1.5/30 28 Day Pack,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Blisovi 21 Fe 1.5/30 28 Day Pack,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Myzilra 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Myzilra 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Tri-previfem 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Tri-previfem 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Tri-linyah,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Tri-linyah,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,LoJaimiess,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,LoJaimiess,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Amethyst,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Amethyst,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Hailey 1.5/30 21 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Hailey 1.5/30 21 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Gianvi 28-day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Gianvi 28-day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Nylia 1/35 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Nylia 1/35 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Tri-nymyo 28 Day Pack,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Tri-nymyo 28 Day Pack,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Trinessa 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Trinessa 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Bekyree 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Bekyree 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Previfem 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Previfem 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Altavera 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Altavera 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Larin 24 Fe 1/20,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Larin 24 Fe 1/20,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Vyfemla 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Vyfemla 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Dasetta 1/35 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Dasetta 1/35 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Seasonale,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Seasonale,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Wymzya Fe 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Wymzya Fe 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Balcoltra 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Balcoltra 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Lolo,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Lolo,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Estarylla 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Estarylla 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Juleber 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Juleber 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Zovia 1/50e 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Zovia 1/50e 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Ashlyna 91 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Ashlyna 91 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Camrese 91 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Camrese 91 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Jasmiel 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Jasmiel 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Nymyo 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Nymyo 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Iclevia 91 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Iclevia 91 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Gemmily 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Gemmily 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Cyclafem 1/35 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Cyclafem 1/35 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Mircette 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Mircette 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Lo Loestrin Fe 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Lo Loestrin Fe 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Afirmelle 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Afirmelle 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Layolis Fe 28,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Layolis Fe 28,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Nortrel 1/35 21 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Nortrel 1/35 21 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Dolishale 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Dolishale 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Zenchent,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Zenchent,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Microgestin Fe 1/20 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Microgestin Fe 1/20 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Velivet 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Velivet 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Volnea 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Volnea 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Trivora 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Trivora 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Azurette 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Azurette 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Finzala 24 Fe Chewable 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Finzala 24 Fe Chewable 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Larin 1.5/30,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Larin 1.5/30,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Elinest 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Elinest 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Mono-linyah 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Mono-linyah 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Cyclafem 7/7/7 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Cyclafem 7/7/7 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Tarina Fe 1/20 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Tarina Fe 1/20 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Introvale 91 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Introvale 91 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Wera 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Wera 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Isibloom 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Isibloom 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Low-ogestrel 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Low-ogestrel 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Tri-vylibra Lo 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Tri-vylibra Lo 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Femcon Fe 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Femcon Fe 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Aubra 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Aubra 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Evra,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Evra,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Levonest 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Levonest 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Rivelsa 91 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Rivelsa 91 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Tri-LO- Estarylla 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Tri-LO- Estarylla 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Leena 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Leena 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Select,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Select,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Zumandimine 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Zumandimine 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Generess Fe 28,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Generess Fe 28,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Larin 1/20,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Larin 1/20,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Daysee 91 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Daysee 91 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Jaimiess 91 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Jaimiess 91 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Tri-sprintec 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Tri-sprintec 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Ayuna 28 Day Pack,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Ayuna 28 Day Pack,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Simpesse,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Simpesse,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Charlotte 24 Fe Chewable 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Charlotte 24 Fe Chewable 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Alyacen 1/35,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Alyacen 1/35,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Cryselle 28,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Cryselle 28,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Kariva 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Kariva 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Fayosim 91 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Fayosim 91 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Kelnor 1/35 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Kelnor 1/35 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Tri-LO-mili,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Tri-LO-mili,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Tri-Lo-Sprintec,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Tri-Lo-Sprintec,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Simliya,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Simliya,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Nortrel 7/7/7 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Nortrel 7/7/7 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Yaz Plus,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Yaz Plus,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Microgestin 24 Fe 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Microgestin 24 Fe 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Zafemy,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Zafemy,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Eluryng,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Eluryng,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Twirla 3 Count Weekly Patch,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Twirla 3 Count Weekly Patch,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Xulane,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Xulane,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Junel Fe 24 1/20 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Junel Fe 24 1/20 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Yaz 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Yaz 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Larissia 28 Day Pack,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Larissia 28 Day Pack,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Hailey 24 Fe 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Hailey 24 Fe 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Brevicon,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Brevicon,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Synphasic,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Synphasic,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Cesia 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Cesia 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Vienva 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Vienva 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Balziva 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Balziva 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Yasmin 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Yasmin 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Reclipsen,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Reclipsen,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Alyacen 7/7/7,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Alyacen 7/7/7,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Philith 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Philith 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Mili 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Mili 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Tri-mili 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Tri-mili 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Kurvelo,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Kurvelo,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Marvelon,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Marvelon,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Kalliga,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Kalliga,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Lo-zumandimine 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Lo-zumandimine 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Pimtrea Pack,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Pimtrea Pack,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Min-ovral,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Min-ovral,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Hailey Fe 1/20 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Hailey Fe 1/20 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Nortrel 1/35 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Nortrel 1/35 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Portia 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Portia 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Taysofy 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Taysofy 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Orsythia 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Orsythia 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Loestrin 1.5/30 21 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Loestrin 1.5/30 21 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Loryna,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Loryna,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Lomedia 24 Fe,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Lomedia 24 Fe,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Yasmin,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Yasmin,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Pirmella 7/7/7 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Pirmella 7/7/7 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Blisovi 24 Fe 1/20 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Blisovi 24 Fe 1/20 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Lo Simpesse,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Lo Simpesse,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Tydemy 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Tydemy 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Ortho Tri-cyclen 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Ortho Tri-cyclen 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Microgestin Fe 1.5/30 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Microgestin Fe 1.5/30 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Aranelle 28,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Aranelle 28,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Kelnor 1/50 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Kelnor 1/50 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Tarina 24 Fe 1/20 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Tarina 24 Fe 1/20 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Freya,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Freya,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Junel Fe 1.5/30 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Junel Fe 1.5/30 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Larin Fe 1.5/30,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Larin Fe 1.5/30,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Loseasonique,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Loseasonique,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Vylibra 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Vylibra 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Nylia 7/7/7 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Nylia 7/7/7 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Necon 0.5/35 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Necon 0.5/35 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Nikki 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Nikki 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Sronyx 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Sronyx 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Linessa,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Linessa,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Loestrin Fe 1/20 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Loestrin Fe 1/20 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Aviane 28,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Aviane 28,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Hailey Fe 1.5/30 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Hailey Fe 1.5/30 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Junel Fe 1/20 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Junel Fe 1/20 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Microgestin 1.5/30 21 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Microgestin 1.5/30 21 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Loestrin 24 Fe 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Loestrin 24 Fe 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Rhuzdah 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Rhuzdah 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Apri 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Apri 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Syeda 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Syeda 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Taytulla 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Taytulla 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Minastrin 24 Fe Chewable 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Minastrin 24 Fe Chewable 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Beyaz 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Beyaz 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Larin Fe 1/20,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Larin Fe 1/20,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Necon 1/35 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Necon 1/35 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Cyonanz 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Cyonanz 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Jolessa 91 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Jolessa 91 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Amethia 91 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Amethia 91 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Blisovi 21 Fe 1/20 28 Day Pack,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Blisovi 21 Fe 1/20 28 Day Pack,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Briellyn 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Briellyn 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Caziant 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Caziant 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Lutera 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Lutera 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Necon 7/7/7 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Necon 7/7/7 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Tri-estarylla 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Tri-estarylla 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Fyavolv,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Fyavolv,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Enskyce 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Enskyce 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Ortho Tri-cyclen Lo 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Ortho Tri-cyclen Lo 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Safyral 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Safyral 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Zovia 1/35e 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Zovia 1/35e 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Diane,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Diane,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Tilia Fe,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Tilia Fe,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Nuvaring,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Nuvaring,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Setlakin 91 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Setlakin 91 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Ocella 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Ocella 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Lo/ovral 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Lo/ovral 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Aurovela Fe,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Aurovela Fe,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Levora 0.15/30 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Levora 0.15/30 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Seasonique,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Seasonique,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Tri-vylibra 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Tri-vylibra 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Jinteli,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Jinteli,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Melodetta 24 Fe Chewable 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Melodetta 24 Fe Chewable 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Camreselo 91 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Camreselo 91 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Lillow 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Lillow 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Mononessa 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Mononessa 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Sprintec 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Sprintec 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Viorele 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Viorele 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Chateal 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Chateal 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Annovera,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Annovera,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Ortho-novum 7/7/7 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Ortho-novum 7/7/7 28 Day,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Zarah,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Zarah,Modulator
+125,ethinylestradiol,menopausal conditions,Ethinylestradiol,Falmina 28 Day,Modulator
+125,ethinylestradiol,contraceptive,Ethinylestradiol,Falmina 28 Day,Modulator
+129,mifepristone,diabetes,Mifepristone,Korlym,Modulator
+130,aptazapine,depression,Aptazapine,,Antagonist
+131,cimicoxib,depression,Cimicoxib,CIMALGEX,Modulator
+135,agomelatine,depression,Agomelatine,THYMANAX,Agonist
+135,agomelatine,depression,Agomelatine,VALDOXAN,Agonist
+136,amineptine,depression,Amineptine,MANEON,Inhibitor
+136,amineptine,depression,Amineptine,SURVECTOR (SERVIER),Inhibitor
+136,amineptine,depression,Amineptine,DIRECTIM* VIASPERA*PROVECTOR*NEOLIOR,Inhibitor
+137,amitriptyline,depression,Amitriptyline,AMITID,Inhibitor
+137,amitriptyline,depression,Amitriptyline,ELAVIL* LIMBITROL*AMITRIPTYLINE HYDROCHLORIDE*ENDEP*TRIAVIL,Inhibitor
+139,amoxapine,depression,Amoxapine,ASENDIN*AMOXAPINE*AMOXAN,Inhibitor
+139,amoxapine,anxiety,Amoxapine,ASENDIN*AMOXAPINE*AMOXAN,Inhibitor
+139,amoxapine,psychotic disorders,Amoxapine,ASENDIN*AMOXAPINE*AMOXAN,Inhibitor
+140,benactyzine,depression,Benactyzine,MORCAIN,Antagonist
+140,benactyzine,anxiety,Benactyzine,MORCAIN,Antagonist
+140,benactyzine,depression,Benactyzine,CEDAD*PARASAN*NUTINAL*PHOBEX*LUCIDIL*CEVANOL*SUAVITIL* PHEBEX*DEPROL,Antagonist
+140,benactyzine,anxiety,Benactyzine,CEDAD*PARASAN*NUTINAL*PHOBEX*LUCIDIL*CEVANOL*SUAVITIL* PHEBEX*DEPROL,Antagonist
+143,brexanolone,depression,Brexanolone,ZULRESSO,Modulator
+144,brexanolone,depression,Brexanolone,ZULRESSO,Inhibitor
+149,brexpiprazole,depression,Brexpiprazole,REXULTI,Modulator
+149,brexpiprazole,schizophrenia,Brexpiprazole,REXULTI,Modulator
+151,bupropion,depression,Bupropion,CONTRAVE*ZYBAN*APLENZIN*FORFIVO*MYSIMBA*BUDEPRION*WELLBUTRIN,Inhibitor
+153,citalopram,depression,Citalopram,CTP,Modulator
+153,citalopram,depression,Citalopram,CELEXA,Modulator
+154,clomipramine,obsessive compulsive disorder,Clomipramine,ANAFRANIL*ANAPRAMINE*HYDIPHEN,Inhibitor
+155,cutamesine,depression,Cutamesine,,Agonist
+155,cutamesine,stroke,Cutamesine,,Agonist
+156,desipramine,depression,Desipramine,NORPRAMIN*DESIPRAMINE HYDROCHLORIDE,Inhibitor
+157,desvenlafaxine,depression,Desvenlafaxine,DESVENLAFAXINE* DESVENEURAX*KHEDEZLA,Modulator
+157,desvenlafaxine,depression,Desvenlafaxine,PRISTIQ,Modulator
+158,dextromethorphan,depression,Dextromethorphan,DM,Modulator
+158,dextromethorphan,depression,Dextromethorphan,Children's Nyquil Cold and Cough,Modulator
+158,dextromethorphan,depression,Dextromethorphan,Triaminic Day Time Cold & Cough,Modulator
+158,dextromethorphan,depression,Dextromethorphan,Coricidin Hbp Cough and Cold,Modulator
+158,dextromethorphan,depression,Dextromethorphan,Robitussin Cough & Congestion,Modulator
+158,dextromethorphan,depression,Dextromethorphan,Scot-tussin Diabetic CF,Modulator
+158,dextromethorphan,depression,Dextromethorphan,Auvelity,Modulator
+158,dextromethorphan,depression,Dextromethorphan,Benylin DM,Modulator
+158,dextromethorphan,depression,Dextromethorphan,Bromfed DM,Modulator
+158,dextromethorphan,depression,Dextromethorphan,Chloraseptic Sore Throat + Cough,Modulator
+158,dextromethorphan,depression,Dextromethorphan,Robitussin Nighttime Cough DM,Modulator
+158,dextromethorphan,depression,Dextromethorphan,Robitussin 12 Hour Cough Relief,Modulator
+158,dextromethorphan,depression,Dextromethorphan,Mucinex Cough,Modulator
+158,dextromethorphan,depression,Dextromethorphan,Broncotron,Modulator
+158,dextromethorphan,depression,Dextromethorphan,Pediacare Children's Cough and Congestion,Modulator
+158,dextromethorphan,depression,Dextromethorphan,Scot-tussin DM,Modulator
+158,dextromethorphan,depression,Dextromethorphan,Mucinex Children's Cough,Modulator
+158,dextromethorphan,depression,Dextromethorphan,Creomulsion,Modulator
+158,dextromethorphan,depression,Dextromethorphan,Delsym Cough Relief Plus Soothing Action,Modulator
+158,dextromethorphan,depression,Dextromethorphan,Delsym,Modulator
+158,dextromethorphan,depression,Dextromethorphan,Robitussin Pediatric Cough & Cold LA,Modulator
+158,dextromethorphan,depression,Dextromethorphan,Delsym Cough Plus Soothing Action,Modulator
+158,dextromethorphan,depression,Dextromethorphan,Dayquil Cough,Modulator
+158,dextromethorphan,depression,Dextromethorphan,Dimetapp Long Acting Cough Plus Cold,Modulator
+158,dextromethorphan,depression,Dextromethorphan,Tusnel Diabetic,Modulator
+158,dextromethorphan,depression,Dextromethorphan,Mucinex DM,Modulator
+158,dextromethorphan,depression,Dextromethorphan,Diabetic Tussin DM,Modulator
+158,dextromethorphan,depression,Dextromethorphan,Cepacol Sore Throat Plus Cough,Modulator
+158,dextromethorphan,depression,Dextromethorphan,Robafen DM,Modulator
+158,dextromethorphan,depression,Dextromethorphan,Promethazine DM,Modulator
+158,dextromethorphan,depression,Dextromethorphan,Scot-tussin Sugar Free DM,Modulator
+158,dextromethorphan,depression,Dextromethorphan,Coricidin Hbp Chest Congestion,Modulator
+158,dextromethorphan,depression,Dextromethorphan,Safetussin PM,Modulator
+158,dextromethorphan,depression,Dextromethorphan,Despec Reformulated Jun 2008,Modulator
+158,dextromethorphan,depression,Dextromethorphan,Delsym Cough Plus Chest Congestion DM,Modulator
+158,dextromethorphan,depression,Dextromethorphan,Diphen,Modulator
+158,dextromethorphan,depression,Dextromethorphan,Sudafed PE Children's Cold & Cough,Modulator
+158,dextromethorphan,depression,Dextromethorphan,G-zyncof,Modulator
+158,dextromethorphan,depression,Dextromethorphan,Nyquil Cough,Modulator
+158,dextromethorphan,depression,Dextromethorphan,Robafen Cough,Modulator
+158,dextromethorphan,depression,Dextromethorphan,Cheracol D,Modulator
+158,dextromethorphan,depression,Dextromethorphan,Safetussin DM,Modulator
+158,dextromethorphan,depression,Dextromethorphan,Robitussin Maximum Strength Cough Plus Chest Congestion DM,Modulator
+158,dextromethorphan,depression,Dextromethorphan,Robitussin Pediatric Cough Suppressant,Modulator
+158,dextromethorphan,depression,Dextromethorphan,Nuedexta,Modulator
+160,doxepin,depression,Doxepin,SILENOR*ZONALON,Inhibitor
+160,doxepin,anxiety,Doxepin,SILENOR*ZONALON,Inhibitor
+160,doxepin,psychotic disorders,Doxepin,SILENOR*ZONALON,Inhibitor
+160,doxepin,alcohol addiction,Doxepin,SILENOR*ZONALON,Inhibitor
+160,doxepin,depression,Doxepin,PRUDOXIN* SINEQUAN,Inhibitor
+160,doxepin,anxiety,Doxepin,PRUDOXIN* SINEQUAN,Inhibitor
+160,doxepin,psychotic disorders,Doxepin,PRUDOXIN* SINEQUAN,Inhibitor
+160,doxepin,alcohol addiction,Doxepin,PRUDOXIN* SINEQUAN,Inhibitor
+161,duloxetine,depression,Duloxetine,DRIZALMA*IRENKA*DULOXETINE HYDROCHLORIDE*NODETRIP*YENTREVE,Inhibitor
+161,duloxetine,anxiety,Duloxetine,DRIZALMA*IRENKA*DULOXETINE HYDROCHLORIDE*NODETRIP*YENTREVE,Inhibitor
+161,duloxetine,diabetes,Duloxetine,DRIZALMA*IRENKA*DULOXETINE HYDROCHLORIDE*NODETRIP*YENTREVE,Inhibitor
+161,duloxetine,depression,Duloxetine,CYMBALTA*ARICLAIM*DRIZALMA SPRINKLE,Inhibitor
+161,duloxetine,anxiety,Duloxetine,CYMBALTA*ARICLAIM*DRIZALMA SPRINKLE,Inhibitor
+161,duloxetine,diabetes,Duloxetine,CYMBALTA*ARICLAIM*DRIZALMA SPRINKLE,Inhibitor
+163,escitalopram,depression,Escitalopram,ESCITALOPRAM*LEXAPRO,Inhibitor
+163,escitalopram,anxiety,Escitalopram,ESCITALOPRAM*LEXAPRO,Inhibitor
+163,escitalopram,depression,Escitalopram,CIPRALEX,Inhibitor
+163,escitalopram,anxiety,Escitalopram,CIPRALEX,Inhibitor
+164,esketamine,depression,Esketamine,SPRAVATO,Antagonist
+166,fluoxetine,depression,Fluoxetine,SARAFEM,Modulator
+166,fluoxetine,panic disorders,Fluoxetine,SARAFEM,Modulator
+166,fluoxetine,bipolar disorder,Fluoxetine,SARAFEM,Modulator
+166,fluoxetine,bulimia,Fluoxetine,SARAFEM,Modulator
+166,fluoxetine,depression,Fluoxetine,ACT FLUOXETINE* PROZAC*SYMBYAX,Modulator
+166,fluoxetine,panic disorders,Fluoxetine,ACT FLUOXETINE* PROZAC*SYMBYAX,Modulator
+166,fluoxetine,bipolar disorder,Fluoxetine,ACT FLUOXETINE* PROZAC*SYMBYAX,Modulator
+166,fluoxetine,bulimia,Fluoxetine,ACT FLUOXETINE* PROZAC*SYMBYAX,Modulator
+167,fluvoxamine,depression,Fluvoxamine,FLUVOXAMINE MALEATE*LUVOX,Inhibitor
+167,fluvoxamine,obsessive compulsive disorder,Fluvoxamine,FLUVOXAMINE MALEATE*LUVOX,Inhibitor
+168,gamma hydroxybutyric acid,depression,gamma-Hydroxybutyric acid,XYWAV,Modulator
+168,gamma hydroxybutyric acid,insomnia,gamma-Hydroxybutyric acid,XYWAV,Modulator
+168,gamma hydroxybutyric acid,narcolepsy,gamma-Hydroxybutyric acid,XYWAV,Modulator
+168,gamma hydroxybutyric acid,alcohol addiction,gamma-Hydroxybutyric acid,XYWAV,Modulator
+168,gamma hydroxybutyric acid,anesthetic,gamma-Hydroxybutyric acid,XYWAV,Modulator
+169,imipramine,depression,Imipramine,IMIPRAMINE PAMOATE*SURMONTIL* PRESAMINE*TOFRANIL-PM*TRIMIPRAMINE MALEATE*IMIPRAMINE HYDROCHLORIDE,Inhibitor
+169,imipramine,depression,Imipramine,TOFRANIL,Inhibitor
+170,iproniazid,depression,Iproniazid,MARSILID,Inhibitor
+172,isocarboxazid,depression,Isocarboxazid,MARPLAN,Inhibitor
+175,levomilnacipran,depression,Levomilnacipran,FETZIMA,Modulator
+179,maprotiline,depression,Maprotiline,LUDIOMIL*MAPROTILINE HYDROCHLORIDE,Inhibitor
+179,maprotiline,anxiety,Maprotiline,LUDIOMIL*MAPROTILINE HYDROCHLORIDE,Inhibitor
+180,minaprine,depression,Minaprine,CANTOR,Antagonist
+180,minaprine,depression,Minaprine,BRANTUR*ISOPULSAN,Antagonist
+181,mirtazapine,depression,Mirtazapine,REMERON*MIRATAZ,Antagonist
+182,moclobemide,depression,Moclobemide,MANERIX,Inhibitor
+182,moclobemide,bipolar disorder,Moclobemide,MANERIX,Inhibitor
+184,nd1251,depression,,,Agonist
+185,nd1251,depression,,,Inhibitor
+186,nortriptyline,depression,Nortriptyline,PAMELOR,Modulator
+186,nortriptyline,depression,Nortriptyline,AVENTYL,Modulator
+187,org-34517,depression,,,Antagonist
+188,osanetant,depression,Osanetant,,Antagonist
+188,osanetant,schizophrenia,Osanetant,,Antagonist
+189,oxitriptan,depression,Oxitriptan,TRIPTUM*TRIPT-OH*LEVOTONINE*LEVOTHYM*OXYFAN,
+189,oxitriptan,depression,Oxitriptan,CINCOFARM*TELESOL,
+190,paroxetine,depression,Paroxetine,PAXIL,Modulator
+190,paroxetine,anxiety,Paroxetine,PAXIL,Modulator
+190,paroxetine,panic disorders,Paroxetine,PAXIL,Modulator
+190,paroxetine,menopausal conditions,Paroxetine,PAXIL,Modulator
+190,paroxetine,obsessive compulsive disorder,Paroxetine,PAXIL,Modulator
+190,paroxetine,depression,Paroxetine,BRISDELLE*PEXEVA,Modulator
+190,paroxetine,anxiety,Paroxetine,BRISDELLE*PEXEVA,Modulator
+190,paroxetine,panic disorders,Paroxetine,BRISDELLE*PEXEVA,Modulator
+190,paroxetine,menopausal conditions,Paroxetine,BRISDELLE*PEXEVA,Modulator
+190,paroxetine,obsessive compulsive disorder,Paroxetine,BRISDELLE*PEXEVA,Modulator
+191,progabide,depression,Progabide,GABREN*GABRENE,Agonist
+191,progabide,anxiety,Progabide,GABREN*GABRENE,Agonist
+191,progabide,epilepsy,Progabide,GABREN*GABRENE,Agonist
+191,progabide,schizophrenia,Progabide,GABREN*GABRENE,Agonist
+191,progabide,parkinson's disease,Progabide,GABREN*GABRENE,Agonist
+192,protriptyline,depression,Protriptyline,PROTRIPTYLINE HYDROCHLORIDE* MK-240*VIVACTIL*CONCORDIN,Inhibitor
+192,protriptyline,depression,Protriptyline,AMIMETHYLINE,Inhibitor
+193,r1204,depression,,,Modulator
+194,selegiline,parkinson's disease,Selegiline,ZELAPAR,Inhibitor
+194,selegiline,parkinson's disease,Selegiline,EMSAM* SELEGILINE HYDROCHLORIDE,Inhibitor
+196,selegiline,parkinson's disease,Selegiline,ZELAPAR,Antagonist
+196,selegiline,parkinson's disease,Selegiline,EMSAM* SELEGILINE HYDROCHLORIDE,Antagonist
+197,setiptiline,depression,Setiptiline,TECIPUL,Antagonist
+199,toloxatone,depression,Toloxatone,HUMORYL,Inhibitor
+201,tranylcypromine,depression,Tranylcypromine,PARNATE*TRANYLCYPROMINE SULFATE,Inhibitor
+204,trazodone,depression,Trazodone,DESYREL*RESLIN,Modulator
+204,trazodone,depression,Trazodone,OLEPTRO*TRIALODINE,Modulator
+206,trimipramine,depression,Trimipramine,SAPILENT*SURMONTIL,Inhibitor
+206,trimipramine,depression,Trimipramine,RHOTRIMINE*TRIMIPRAMINE MALEATE,Inhibitor
+207,vilazodone,depression,Vilazodone,VIIBRYD,Modulator
+209,vortioxetine,depression,Vortioxetine,TRINTELLIX,Inhibitor
+209,vortioxetine,depression,Vortioxetine,BRINTELLIX,Inhibitor
+211,insulin human,diabetes,Insulin human,Novolin N,Binder
+211,insulin human,diabetes,Insulin human,Insuman,Binder
+211,insulin human,diabetes,Insulin human,Afrezza,Binder
+211,insulin human,diabetes,Insulin human,Insulatard,Binder
+211,insulin human,diabetes,Insulin human,Humulin R,Binder
+211,insulin human,diabetes,Insulin human,Actraphane,Binder
+211,insulin human,diabetes,Insulin human,Humulin,Binder
+211,insulin human,diabetes,Insulin human,Humulin N,Binder
+211,insulin human,diabetes,Insulin human,Novolin R,Binder
+211,insulin human,diabetes,Insulin human,Exubera,Binder
+211,insulin human,diabetes,Insulin human,Actrapid,Binder
+211,insulin human,diabetes,Insulin human,Myxredlin,Binder
+211,insulin human,diabetes,Insulin human,Entuzity,Binder
+211,insulin human,diabetes,Insulin human,Novolin,Binder
+213,acamprosate,alcohol addiction,Acamprosate,CAMPRAL*ACAMPROSATE CALCIUM,Positive Modulator
+214,acamprosate,alcohol addiction,Acamprosate,CAMPRAL*ACAMPROSATE CALCIUM,Agonist
+216,naltrexone,alcohol addiction,Naltrexone,CONTRAVE*NALTREXONE HYDROCHLORIDE*NALDIX*REVIA*MYSIMBA*EMBEDA*VIVITROL,Antagonist
+217,caffeine,depression,Caffeine,BC ORIGINAL FORMULA,Antagonist
+217,caffeine,depression,Caffeine,DIUREX,Antagonist
+217,caffeine,depression,Caffeine,VANATOL S,Antagonist
+217,caffeine,depression,Caffeine,VTOL,Antagonist
+217,caffeine,depression,Caffeine,VANQUISH,Antagonist
+217,caffeine,depression,Caffeine,ESGIC,Antagonist
+217,caffeine,depression,Caffeine,EXAPRIN,Antagonist
+217,caffeine,depression,Caffeine,MIDOL COMPLETE,Antagonist
+217,caffeine,depression,Caffeine,PEYONA,Antagonist
+217,caffeine,depression,Caffeine,FIORINAL,Antagonist
+217,caffeine,depression,Caffeine,ARTHRITEN INFLAMMATORY PAIN,Antagonist
+217,caffeine,depression,Caffeine,ANACIN,Antagonist
+217,caffeine,depression,Caffeine,ZEBUTAL,Antagonist
+217,caffeine,depression,Caffeine,DVORAH,Antagonist
+217,caffeine,depression,Caffeine,MIGERGOT,Antagonist
+217,caffeine,depression,Caffeine,TRIANAL,Antagonist
+217,caffeine,depression,Caffeine,BC ARTHRITIS,Antagonist
+217,caffeine,depression,Caffeine,ORBIVAN,Antagonist
+217,caffeine,depression,Caffeine,FIORICET,Antagonist
+217,caffeine,depression,Caffeine,TRIANAL C,Antagonist
+217,caffeine,depression,Caffeine,EXCEDRIN,Antagonist
+217,caffeine,depression,Caffeine,ORPHENGESIC,Antagonist
+217,caffeine,depression,Caffeine,TREZIX,Antagonist
+217,caffeine,depression,Caffeine,MIDOL CRAMPS & BODYACHES,Antagonist
+217,caffeine,depression,Caffeine,CAFCIT,Antagonist
+217,caffeine,depression,Caffeine,ASCOMP,Antagonist
+217,caffeine,depression,Caffeine,NORGESIC FORTE,Antagonist
+217,caffeine,depression,Caffeine,GOODY'S HEADACHE RELIEF SHOT,Antagonist
+217,caffeine,depression,Caffeine,CAFERGOT,Antagonist
+217,caffeine,depression,Caffeine,GOODY'S PM,Antagonist
+217,caffeine,depression,Caffeine,VANATOL,Antagonist
+217,caffeine,depression,Caffeine,EXCEDRIN TENSION HEADACHE,Antagonist
+217,caffeine,depression,Caffeine,VIVARIN,Antagonist
+217,caffeine,depression,Caffeine,TRIATEC-8,Antagonist
+217,caffeine,depression,Caffeine,FIORICET WITH CODEINE,Antagonist
+217,caffeine,depression,Caffeine,GOODY'S EXTRA STRENGTH,Antagonist
+217,caffeine,depression,Caffeine,PAMPRIN MAX FORMULA,Antagonist
+217,caffeine,depression,Caffeine,STANBACK HEADACHE POWDER REFORMULATED JAN 2011,Antagonist
+217,caffeine,depression,Caffeine,TRIATEC,Antagonist
+219,carbamazepine,seizures,Carbamazepine,Tegretol,Modulator
+219,carbamazepine,analgesic,Carbamazepine,Tegretol,Modulator
+219,carbamazepine,seizures,Carbamazepine,Carnexiv,Modulator
+219,carbamazepine,analgesic,Carbamazepine,Carnexiv,Modulator
+219,carbamazepine,seizures,Carbamazepine,Equetro,Modulator
+219,carbamazepine,analgesic,Carbamazepine,Equetro,Modulator
+219,carbamazepine,seizures,Carbamazepine,Carbatrol,Modulator
+219,carbamazepine,analgesic,Carbamazepine,Carbatrol,Modulator
+219,carbamazepine,seizures,Carbamazepine,Epitol,Modulator
+219,carbamazepine,analgesic,Carbamazepine,Epitol,Modulator
+221,lidocaine,anesthetic,Lidocaine,Band-aid Hurt-free,Blocker
+221,lidocaine,anesthetic,Lidocaine,Lido-prilo Caine Pack,Blocker
+221,lidocaine,anesthetic,Lidocaine,Readysharp-p80,Blocker
+221,lidocaine,anesthetic,Lidocaine,Instillagel,Blocker
+221,lidocaine,anesthetic,Lidocaine,Alivio,Blocker
+221,lidocaine,anesthetic,Lidocaine,Octocaine With Epinephrine,Blocker
+221,lidocaine,anesthetic,Lidocaine,Triple Antibiotic,Blocker
+221,lidocaine,anesthetic,Lidocaine,Viadur,Blocker
+221,lidocaine,anesthetic,Lidocaine,Xylocaine With Epinephrine,Blocker
+221,lidocaine,anesthetic,Lidocaine,Xylocard,Blocker
+221,lidocaine,anesthetic,Lidocaine,Cathejell,Blocker
+221,lidocaine,anesthetic,Lidocaine,Relador,Blocker
+221,lidocaine,anesthetic,Lidocaine,Fortacin,Blocker
+221,lidocaine,anesthetic,Lidocaine,Max-freeze,Blocker
+221,lidocaine,anesthetic,Lidocaine,Venipuncture Px1,Blocker
+221,lidocaine,anesthetic,Lidocaine,Curacaine,Blocker
+221,lidocaine,anesthetic,Lidocaine,Lignospan,Blocker
+221,lidocaine,anesthetic,Lidocaine,Octocaine,Blocker
+221,lidocaine,anesthetic,Lidocaine,Oraqix,Blocker
+221,lidocaine,anesthetic,Lidocaine,Dermacinrx Prikaan,Blocker
+221,lidocaine,anesthetic,Lidocaine,Readysharp-p40,Blocker
+221,lidocaine,anesthetic,Lidocaine,Xylocaine,Blocker
+221,lidocaine,anesthetic,Lidocaine,P-care,Blocker
+221,lidocaine,anesthetic,Lidocaine,Anodyne Lpt,Blocker
+221,lidocaine,anesthetic,Lidocaine,Procomycin,Blocker
+221,lidocaine,anesthetic,Lidocaine,Lidopril,Blocker
+221,lidocaine,anesthetic,Lidocaine,Xylonor,Blocker
+221,lidocaine,anesthetic,Lidocaine,Emla,Blocker
+221,lidocaine,anesthetic,Lidocaine,Marcaine,Blocker
+221,lidocaine,anesthetic,Lidocaine,Synera,Blocker
+221,lidocaine,anesthetic,Lidocaine,Lidotral,Blocker
+221,lidocaine,anesthetic,Lidocaine,Dermacinrx Lido V Pak,Blocker
+221,lidocaine,anesthetic,Lidocaine,P-care X,Blocker
+221,lidocaine,anesthetic,Lidocaine,Lidodan,Blocker
+221,lidocaine,anesthetic,Lidocaine,Lidopro,Blocker
+221,lidocaine,anesthetic,Lidocaine,Medi-derm With Lidocaine,Blocker
+221,lidocaine,anesthetic,Lidocaine,Neo-bex,Blocker
+221,lidocaine,anesthetic,Lidocaine,Depo-medrol With Lidocaine,Blocker
+221,lidocaine,anesthetic,Lidocaine,Ztlido,Blocker
+221,lidocaine,anesthetic,Lidocaine,Diphen,Blocker
+221,lidocaine,anesthetic,Lidocaine,Lidothol,Blocker
+221,lidocaine,anesthetic,Lidocaine,Astero,Blocker
+221,lidocaine,anesthetic,Lidocaine,Pliaglis,Blocker
+221,lidocaine,anesthetic,Lidocaine,Anestacon,Blocker
+221,lidocaine,anesthetic,Lidocaine,Lido Bdk,Blocker
+221,lidocaine,anesthetic,Lidocaine,Zingo,Blocker
+221,lidocaine,anesthetic,Lidocaine,Akten,Blocker
+221,lidocaine,anesthetic,Lidocaine,Prizotral,Blocker
+221,lidocaine,anesthetic,Lidocaine,Lidopac,Blocker
+221,lidocaine,anesthetic,Lidocaine,Kenalog,Blocker
+221,lidocaine,anesthetic,Lidocaine,Agoneaze,Blocker
+221,lidocaine,anesthetic,Lidocaine,Glydo,Blocker
+221,lidocaine,anesthetic,Lidocaine,Lidoderm,Blocker
+221,lidocaine,anesthetic,Lidocaine,Readysharp-A,Blocker
+221,lidocaine,anesthetic,Lidocaine,Readysharp Anesthetics Plus Ketorolac,Blocker
+221,lidocaine,anesthetic,Lidocaine,Dermacinrx Phn Pak,Blocker
+221,lidocaine,anesthetic,Lidocaine,Prilolid,Blocker
+222,sertraline,depression,Sertraline,SERTRALINE HYDROCHLORIDE,Inhibitor
+222,sertraline,anxiety,Sertraline,SERTRALINE HYDROCHLORIDE,Inhibitor
+222,sertraline,panic disorders,Sertraline,SERTRALINE HYDROCHLORIDE,Inhibitor
+222,sertraline,obsessive compulsive disorder,Sertraline,SERTRALINE HYDROCHLORIDE,Inhibitor
+222,sertraline,depression,Sertraline,ZOLOFT,Inhibitor
+222,sertraline,anxiety,Sertraline,ZOLOFT,Inhibitor
+222,sertraline,panic disorders,Sertraline,ZOLOFT,Inhibitor
+222,sertraline,obsessive compulsive disorder,Sertraline,ZOLOFT,Inhibitor
+223,donepezil,alzheimer's disease,Donepezil,Aricept,Modulator
+223,donepezil,alzheimer's disease,Donepezil,Namzaric,Modulator
+223,donepezil,alzheimer's disease,Donepezil,Adlarity,Modulator
+224,galantamine,alzheimer's disease,Galantamine,RAZADYNE,Inhibitor
+225,huperzine a,alzheimer's disease,Huperzine A,,Inhibitor
+226,huperzine a,alzheimer's disease,Huperzine A,,Antagonist
+227,memantine,alzheimer's disease,Memantine,NAMENDA 49 TITRATION PACK,Modulator
+227,memantine,alzheimer's disease,Memantine,MARIXINO,Modulator
+227,memantine,alzheimer's disease,Memantine,AXURA,Modulator
+227,memantine,alzheimer's disease,Memantine,NAMZARIC,Modulator
+227,memantine,alzheimer's disease,Memantine,NAMENDA,Modulator
+227,memantine,alzheimer's disease,Memantine,EBIXA,Modulator
+228,rivastigmine,alzheimer's disease,Rivastigmine,EXELON,Modulator
+228,rivastigmine,alzheimer's disease,Rivastigmine,NIMVASTID,Modulator
+228,rivastigmine,alzheimer's disease,Rivastigmine,PROMETAX,Modulator
+229,tacrine,alzheimer's disease,Tacrine,TACRINE,Inhibitor
+230,tiapride,alcohol addiction,Tiapride,,Inhibitor
+231,tiapride,alcohol addiction,Tiapride,,Antagonist
+234,desmopressin,diabetes,Desmopressin,Ddavp,Agonist
+234,desmopressin,diabetes,Desmopressin,Nocdurna,Agonist
+234,desmopressin,diabetes,Desmopressin,Octostim,Agonist
+235,desmopressin,diabetes,Desmopressin,Ddavp,Modulator
+235,desmopressin,diabetes,Desmopressin,Nocdurna,Modulator
+235,desmopressin,diabetes,Desmopressin,Octostim,Modulator
+239,medroxyprogesterone acetate,menopausal conditions,Medroxyprogesterone acetate,Provera,Agonist
+239,medroxyprogesterone acetate,menopausal conditions,Medroxyprogesterone acetate,Depo-provera,Agonist
+239,medroxyprogesterone acetate,menopausal conditions,Medroxyprogesterone acetate,Prempro 0.625/2.5 28 Day,Agonist
+239,medroxyprogesterone acetate,menopausal conditions,Medroxyprogesterone acetate,Premphase 28 Day,Agonist
+239,medroxyprogesterone acetate,menopausal conditions,Medroxyprogesterone acetate,Depo-subq Provera,Agonist
+240,progesterone,menopausal conditions,Progesterone,Gesterol,Agonist
+240,progesterone,cancer,Progesterone,Gesterol,Agonist
+240,progesterone,contraceptive,Progesterone,Gesterol,Agonist
+240,progesterone,menopausal conditions,Progesterone,Milprosa,Agonist
+240,progesterone,cancer,Progesterone,Milprosa,Agonist
+240,progesterone,contraceptive,Progesterone,Milprosa,Agonist
+240,progesterone,menopausal conditions,Progesterone,Regumate,Agonist
+240,progesterone,cancer,Progesterone,Regumate,Agonist
+240,progesterone,contraceptive,Progesterone,Regumate,Agonist
+240,progesterone,menopausal conditions,Progesterone,Crinone,Agonist
+240,progesterone,cancer,Progesterone,Crinone,Agonist
+240,progesterone,contraceptive,Progesterone,Crinone,Agonist
+240,progesterone,menopausal conditions,Progesterone,Progesterone,Agonist
+240,progesterone,cancer,Progesterone,Progesterone,Agonist
+240,progesterone,contraceptive,Progesterone,Progesterone,Agonist
+240,progesterone,menopausal conditions,Progesterone,Progestin,Agonist
+240,progesterone,cancer,Progesterone,Progestin,Agonist
+240,progesterone,contraceptive,Progesterone,Progestin,Agonist
+240,progesterone,menopausal conditions,Progesterone,Syngestrone,Agonist
+240,progesterone,cancer,Progesterone,Syngestrone,Agonist
+240,progesterone,contraceptive,Progesterone,Syngestrone,Agonist
+240,progesterone,menopausal conditions,Progesterone,Prochieve,Agonist
+240,progesterone,cancer,Progesterone,Prochieve,Agonist
+240,progesterone,contraceptive,Progesterone,Prochieve,Agonist
+240,progesterone,menopausal conditions,Progesterone,Progesta-care,Agonist
+240,progesterone,cancer,Progesterone,Progesta-care,Agonist
+240,progesterone,contraceptive,Progesterone,Progesta-care,Agonist
+240,progesterone,menopausal conditions,Progesterone,Serenity for women,Agonist
+240,progesterone,cancer,Progesterone,Serenity for women,Agonist
+240,progesterone,contraceptive,Progesterone,Serenity for women,Agonist
+240,progesterone,menopausal conditions,Progesterone,Utrogestan,Agonist
+240,progesterone,cancer,Progesterone,Utrogestan,Agonist
+240,progesterone,contraceptive,Progesterone,Utrogestan,Agonist
+240,progesterone,menopausal conditions,Progesterone,Lutigest,Agonist
+240,progesterone,cancer,Progesterone,Lutigest,Agonist
+240,progesterone,contraceptive,Progesterone,Lutigest,Agonist
+240,progesterone,menopausal conditions,Progesterone,Progestasert,Agonist
+240,progesterone,cancer,Progesterone,Progestasert,Agonist
+240,progesterone,contraceptive,Progesterone,Progestasert,Agonist
+240,progesterone,menopausal conditions,Progesterone,Cyclogest,Agonist
+240,progesterone,cancer,Progesterone,Cyclogest,Agonist
+240,progesterone,contraceptive,Progesterone,Cyclogest,Agonist
+240,progesterone,menopausal conditions,Progesterone,Prometrium,Agonist
+240,progesterone,cancer,Progesterone,Prometrium,Agonist
+240,progesterone,contraceptive,Progesterone,Prometrium,Agonist
+240,progesterone,menopausal conditions,Progesterone,Endometrin,Agonist
+240,progesterone,cancer,Progesterone,Endometrin,Agonist
+240,progesterone,contraceptive,Progesterone,Endometrin,Agonist
+241,norethindrone,menopausal conditions,Norethisterone,Aygestin,Agonist
+241,norethindrone,contraceptive,Norethisterone,Aygestin,Agonist
+243,oxcarbazepine,seizures,Oxcarbazepine,Oxcarbazepine,Blocker
+244,perampanel,epilepsy,Perampanel,Fycompa,Inhibitor
+244,perampanel,seizures,Perampanel,Fycompa,Inhibitor
+245,perampanel,epilepsy,Perampanel,Fycompa,Modulator
+245,perampanel,seizures,Perampanel,Fycompa,Modulator
+249,phenytoin,epilepsy,Phenytoin,Hydantol,Blocker
+249,phenytoin,seizures,Phenytoin,Hydantol,Blocker
+249,phenytoin,epilepsy,Phenytoin,Dilantin,Blocker
+249,phenytoin,seizures,Phenytoin,Dilantin,Blocker
+249,phenytoin,epilepsy,Phenytoin,Phenytoin,Blocker
+249,phenytoin,seizures,Phenytoin,Phenytoin,Blocker
+249,phenytoin,epilepsy,Phenytoin,Phentytoin,Blocker
+249,phenytoin,seizures,Phenytoin,Phentytoin,Blocker
+249,phenytoin,epilepsy,Phenytoin,Dilantin-125,Blocker
+249,phenytoin,seizures,Phenytoin,Dilantin-125,Blocker
+249,phenytoin,epilepsy,Phenytoin,Dilantin-30,Blocker
+249,phenytoin,seizures,Phenytoin,Dilantin-30,Blocker
+249,phenytoin,epilepsy,Phenytoin,Diphenylhydantoin,Blocker
+249,phenytoin,seizures,Phenytoin,Diphenylhydantoin,Blocker
+249,phenytoin,epilepsy,Phenytoin,Dilabid,Blocker
+249,phenytoin,seizures,Phenytoin,Dilabid,Blocker
+250,talampanel,epilepsy,Talampanel,,Antagonist
+251,zonisamide,epilepsy,Zonisamide,Zonegran*Zonegran,Blocker
+251,zonisamide,seizures,Zonisamide,Zonegran*Zonegran,Blocker
+251,zonisamide,epilepsy,Zonisamide,Zonisamide,Blocker
+251,zonisamide,seizures,Zonisamide,Zonisamide,Blocker
+252,acetazolamide,epilepsy,Acetazolamide,ACETAZOLAMIDE,Modulator
+253,cannabidiol,seizures,Cannabidiol,Epidiolex,Binder
+253,cannabidiol,multiple sclerosis,Cannabidiol,Epidiolex,Binder
+253,cannabidiol,seizures,Cannabidiol,Sativex,Binder
+253,cannabidiol,multiple sclerosis,Cannabidiol,Sativex,Binder
+254,clobazam,seizures,Clobazam,Onfi,Modulator
+254,clobazam,seizures,Clobazam,Sympazan,Modulator
+255,clobazam,seizures,Clobazam,Onfi,Antagonist
+255,clobazam,seizures,Clobazam,Sympazan,Antagonist
+256,ethosuximide,epilepsy,Ethosuximide,Zarontin,Blocker
+257,ezogabine,seizures,Ezogabine,TROBALT,Activator
+257,ezogabine,seizures,Ezogabine,POTIGA*POTIGA,Activator
+258,ezogabine,seizures,Ezogabine,TROBALT,Modulator
+258,ezogabine,seizures,Ezogabine,POTIGA*POTIGA,Modulator
+259,felbamate,epilepsy,Felbamate,Felbatol,Antagonist
+259,felbamate,seizures,Felbamate,Felbatol,Antagonist
+260,lacosamide,seizures,Lacosamide,Vimpat,Modulator
+261,lacosamide,seizures,Lacosamide,Vimpat,Inhibitor
+263,levetiracetam,epilepsy,Levetiracetam,Roweepra,Antagonist
+263,levetiracetam,seizures,Levetiracetam,Roweepra,Antagonist
+263,levetiracetam,epilepsy,Levetiracetam,Elepsia,Antagonist
+263,levetiracetam,seizures,Levetiracetam,Elepsia,Antagonist
+263,levetiracetam,epilepsy,Levetiracetam,Spritam,Antagonist
+263,levetiracetam,seizures,Levetiracetam,Spritam,Antagonist
+263,levetiracetam,epilepsy,Levetiracetam,Keppra,Antagonist
+263,levetiracetam,seizures,Levetiracetam,Keppra,Antagonist
+263,levetiracetam,epilepsy,Levetiracetam,Matever,Antagonist
+263,levetiracetam,seizures,Levetiracetam,Matever,Antagonist
+264,levetiracetam,epilepsy,Levetiracetam,Roweepra,Modulator
+264,levetiracetam,seizures,Levetiracetam,Roweepra,Modulator
+264,levetiracetam,epilepsy,Levetiracetam,Elepsia,Modulator
+264,levetiracetam,seizures,Levetiracetam,Elepsia,Modulator
+264,levetiracetam,epilepsy,Levetiracetam,Spritam,Modulator
+264,levetiracetam,seizures,Levetiracetam,Spritam,Modulator
+264,levetiracetam,epilepsy,Levetiracetam,Keppra,Modulator
+264,levetiracetam,seizures,Levetiracetam,Keppra,Modulator
+264,levetiracetam,epilepsy,Levetiracetam,Matever,Modulator
+264,levetiracetam,seizures,Levetiracetam,Matever,Modulator
+265,phentermine,diabetes,Phentermine,Ionamin,Inhibitor
+265,phentermine,hypertension,Phentermine,Ionamin,Inhibitor
+265,phentermine,diabetes,Phentermine,Duromine,Inhibitor
+265,phentermine,hypertension,Phentermine,Duromine,Inhibitor
+265,phentermine,diabetes,Phentermine,Phentermine resin 30,Inhibitor
+265,phentermine,hypertension,Phentermine,Phentermine resin 30,Inhibitor
+265,phentermine,diabetes,Phentermine,Phentermine resin complex,Inhibitor
+265,phentermine,hypertension,Phentermine,Phentermine resin complex,Inhibitor
+266,dronabinol,cancer,Dronabinol,Syndros,Agonist
+266,dronabinol,cancer,Dronabinol,Sativex,Agonist
+266,dronabinol,cancer,Dronabinol,Marinol,Agonist
+267,milnacipran,depression,Milnacipran,,Inhibitor
+268,vigabatrin,seizures,Vigabatrin,Sabril,Inhibitor
+273,brimonidine,hypertension,Brimonidine,,Modulator
+274,brimonidine,hypertension,Brimonidine,,Agonist
+275,allopurinol,cancer,Allopurinol,Zyloprim,Inhibitor
+275,allopurinol,cancer,Allopurinol,Aloprim,Inhibitor
+276,colchicine,stroke,Colchicine,Gloperba,Binder
+276,colchicine,stroke,Colchicine,Mitigare,Binder
+276,colchicine,stroke,Colchicine,Colcrys,Binder
+277,mecasermin,thyroid disorders,Mecasermin,Increlex,Inhibitor
+278,almotriptan,migraine,Almotriptan,Axert,Agonist
+279,carvedilol,hypertension,Carvedilol,Coreg,Antagonist
+281,tetrabenazine,tourette's syndrome,Tetrabenazine,Nitoman,Blocker
+281,tetrabenazine,huntington's disease,Tetrabenazine,Nitoman,Blocker
+281,tetrabenazine,tardive dyskinesia,Tetrabenazine,Nitoman,Blocker
+281,tetrabenazine,tourette's syndrome,Tetrabenazine,Revocon,Blocker
+281,tetrabenazine,huntington's disease,Tetrabenazine,Revocon,Blocker
+281,tetrabenazine,tardive dyskinesia,Tetrabenazine,Revocon,Blocker
+281,tetrabenazine,tourette's syndrome,Tetrabenazine,Xenazine 25,Blocker
+281,tetrabenazine,huntington's disease,Tetrabenazine,Xenazine 25,Blocker
+281,tetrabenazine,tardive dyskinesia,Tetrabenazine,Xenazine 25,Blocker
+281,tetrabenazine,tourette's syndrome,Tetrabenazine,Tetrabenazine,Blocker
+281,tetrabenazine,huntington's disease,Tetrabenazine,Tetrabenazine,Blocker
+281,tetrabenazine,tardive dyskinesia,Tetrabenazine,Tetrabenazine,Blocker
+281,tetrabenazine,tourette's syndrome,Tetrabenazine,Tetmodis,Blocker
+281,tetrabenazine,huntington's disease,Tetrabenazine,Tetmodis,Blocker
+281,tetrabenazine,tardive dyskinesia,Tetrabenazine,Tetmodis,Blocker
+281,tetrabenazine,tourette's syndrome,Tetrabenazine,Xenazine,Blocker
+281,tetrabenazine,huntington's disease,Tetrabenazine,Xenazine,Blocker
+281,tetrabenazine,tardive dyskinesia,Tetrabenazine,Xenazine,Blocker
+282,lovastatin,multiple sclerosis,Lovastatin,Altoprev,Inhibitor
+282,lovastatin,stroke,Lovastatin,Altoprev,Inhibitor
+282,lovastatin,diabetes,Lovastatin,Altoprev,Inhibitor
+282,lovastatin,multiple sclerosis,Lovastatin,Advicor,Inhibitor
+282,lovastatin,stroke,Lovastatin,Advicor,Inhibitor
+282,lovastatin,diabetes,Lovastatin,Advicor,Inhibitor
+283,pravastatin,multiple sclerosis,Pravastatin,,Inhibitor
+283,pravastatin,stroke,Pravastatin,,Inhibitor
+284,rosuvastatin,multiple sclerosis,Rosuvastatin,,Inhibitor
+284,rosuvastatin,stroke,Rosuvastatin,,Inhibitor
+284,rosuvastatin,diabetes,Rosuvastatin,,Inhibitor
+285,simvastatin,multiple sclerosis,Simvastatin,Zocor heart-pro,Inhibitor
+285,simvastatin,stroke,Simvastatin,Zocor heart-pro,Inhibitor
+285,simvastatin,diabetes,Simvastatin,Zocor heart-pro,Inhibitor
+285,simvastatin,multiple sclerosis,Simvastatin,Ranzolont,Inhibitor
+285,simvastatin,stroke,Simvastatin,Ranzolont,Inhibitor
+285,simvastatin,diabetes,Simvastatin,Ranzolont,Inhibitor
+285,simvastatin,multiple sclerosis,Simvastatin,Zocor,Inhibitor
+285,simvastatin,stroke,Simvastatin,Zocor,Inhibitor
+285,simvastatin,diabetes,Simvastatin,Zocor,Inhibitor
+285,simvastatin,multiple sclerosis,Simvastatin,Simvastatin,Inhibitor
+285,simvastatin,stroke,Simvastatin,Simvastatin,Inhibitor
+285,simvastatin,diabetes,Simvastatin,Simvastatin,Inhibitor
+285,simvastatin,multiple sclerosis,Simvastatin,Lacersa,Inhibitor
+285,simvastatin,stroke,Simvastatin,Lacersa,Inhibitor
+285,simvastatin,diabetes,Simvastatin,Lacersa,Inhibitor
+285,simvastatin,multiple sclerosis,Simvastatin,Flolipid,Inhibitor
+285,simvastatin,stroke,Simvastatin,Flolipid,Inhibitor
+285,simvastatin,diabetes,Simvastatin,Flolipid,Inhibitor
+285,simvastatin,multiple sclerosis,Simvastatin,Simvador,Inhibitor
+285,simvastatin,stroke,Simvastatin,Simvador,Inhibitor
+285,simvastatin,diabetes,Simvastatin,Simvador,Inhibitor
+286,amiloride,hypertension,Amiloride,Midamor,Blocker
+288,losartan,stroke,Losartan,Cozaar,Antagonist
+288,losartan,diabetes,Losartan,Cozaar,Antagonist
+288,losartan,hypertension,Losartan,Cozaar,Antagonist
+288,losartan,stroke,Losartan,Hyzaar,Antagonist
+288,losartan,diabetes,Losartan,Hyzaar,Antagonist
+288,losartan,hypertension,Losartan,Hyzaar,Antagonist
+289,nilvadipine,hypertension,Nilvadipine,,Inhibitor
+291,propranolol,multiple sclerosis,Propranolol,Lopranol la,Antagonist
+291,propranolol,migraine,Propranolol,Lopranol la,Antagonist
+291,propranolol,hypertension,Propranolol,Lopranol la,Antagonist
+291,propranolol,multiple sclerosis,Propranolol,Bedranol,Antagonist
+291,propranolol,migraine,Propranolol,Bedranol,Antagonist
+291,propranolol,hypertension,Propranolol,Bedranol,Antagonist
+291,propranolol,multiple sclerosis,Propranolol,Inderal,Antagonist
+291,propranolol,migraine,Propranolol,Inderal,Antagonist
+291,propranolol,hypertension,Propranolol,Inderal,Antagonist
+291,propranolol,multiple sclerosis,Propranolol,Bedranol s.r.,Antagonist
+291,propranolol,migraine,Propranolol,Bedranol s.r.,Antagonist
+291,propranolol,hypertension,Propranolol,Bedranol s.r.,Antagonist
+291,propranolol,multiple sclerosis,Propranolol,Propanix la,Antagonist
+291,propranolol,migraine,Propranolol,Propanix la,Antagonist
+291,propranolol,hypertension,Propranolol,Propanix la,Antagonist
+291,propranolol,multiple sclerosis,Propranolol,Berkolol,Antagonist
+291,propranolol,migraine,Propranolol,Berkolol,Antagonist
+291,propranolol,hypertension,Propranolol,Berkolol,Antagonist
+291,propranolol,multiple sclerosis,Propranolol,Probeta la,Antagonist
+291,propranolol,migraine,Propranolol,Probeta la,Antagonist
+291,propranolol,hypertension,Propranolol,Probeta la,Antagonist
+291,propranolol,multiple sclerosis,Propranolol,Propranolol hydrochloride,Antagonist
+291,propranolol,migraine,Propranolol,Propranolol hydrochloride,Antagonist
+291,propranolol,hypertension,Propranolol,Propranolol hydrochloride,Antagonist
+291,propranolol,multiple sclerosis,Propranolol,Propanix-80,Antagonist
+291,propranolol,migraine,Propranolol,Propanix-80,Antagonist
+291,propranolol,hypertension,Propranolol,Propanix-80,Antagonist
+291,propranolol,multiple sclerosis,Propranolol,Hemangeol,Antagonist
+291,propranolol,migraine,Propranolol,Hemangeol,Antagonist
+291,propranolol,hypertension,Propranolol,Hemangeol,Antagonist
+291,propranolol,multiple sclerosis,Propranolol,Angilol,Antagonist
+291,propranolol,migraine,Propranolol,Angilol,Antagonist
+291,propranolol,hypertension,Propranolol,Angilol,Antagonist
+291,propranolol,multiple sclerosis,Propranolol,Tesnol,Antagonist
+291,propranolol,migraine,Propranolol,Tesnol,Antagonist
+291,propranolol,hypertension,Propranolol,Tesnol,Antagonist
+291,propranolol,multiple sclerosis,Propranolol,Slo-pro,Antagonist
+291,propranolol,migraine,Propranolol,Slo-pro,Antagonist
+291,propranolol,hypertension,Propranolol,Slo-pro,Antagonist
+291,propranolol,multiple sclerosis,Propranolol,Innopran xl,Antagonist
+291,propranolol,migraine,Propranolol,Innopran xl,Antagonist
+291,propranolol,hypertension,Propranolol,Innopran xl,Antagonist
+291,propranolol,multiple sclerosis,Propranolol,Propatard la,Antagonist
+291,propranolol,migraine,Propranolol,Propatard la,Antagonist
+291,propranolol,hypertension,Propranolol,Propatard la,Antagonist
+291,propranolol,multiple sclerosis,Propranolol,Dupromex,Antagonist
+291,propranolol,migraine,Propranolol,Dupromex,Antagonist
+291,propranolol,hypertension,Propranolol,Dupromex,Antagonist
+291,propranolol,multiple sclerosis,Propranolol,Half-inderal la,Antagonist
+291,propranolol,migraine,Propranolol,Half-inderal la,Antagonist
+291,propranolol,hypertension,Propranolol,Half-inderal la,Antagonist
+291,propranolol,multiple sclerosis,Propranolol,Lederpronol,Antagonist
+291,propranolol,migraine,Propranolol,Lederpronol,Antagonist
+291,propranolol,hypertension,Propranolol,Lederpronol,Antagonist
+291,propranolol,multiple sclerosis,Propranolol,Propanix-10,Antagonist
+291,propranolol,migraine,Propranolol,Propanix-10,Antagonist
+291,propranolol,hypertension,Propranolol,Propanix-10,Antagonist
+291,propranolol,multiple sclerosis,Propranolol,Cardinol,Antagonist
+291,propranolol,migraine,Propranolol,Cardinol,Antagonist
+291,propranolol,hypertension,Propranolol,Cardinol,Antagonist
+291,propranolol,multiple sclerosis,Propranolol,Propranolol hydrochloride intensol,Antagonist
+291,propranolol,migraine,Propranolol,Propranolol hydrochloride intensol,Antagonist
+291,propranolol,hypertension,Propranolol,Propranolol hydrochloride intensol,Antagonist
+291,propranolol,multiple sclerosis,Propranolol,Propanix-40,Antagonist
+291,propranolol,migraine,Propranolol,Propanix-40,Antagonist
+291,propranolol,hypertension,Propranolol,Propanix-40,Antagonist
+291,propranolol,multiple sclerosis,Propranolol,Apsolol,Antagonist
+291,propranolol,migraine,Propranolol,Apsolol,Antagonist
+291,propranolol,hypertension,Propranolol,Apsolol,Antagonist
+291,propranolol,multiple sclerosis,Propranolol,Half propatard la,Antagonist
+291,propranolol,migraine,Propranolol,Half propatard la,Antagonist
+291,propranolol,hypertension,Propranolol,Half propatard la,Antagonist
+291,propranolol,multiple sclerosis,Propranolol,Propanix-160 sr,Antagonist
+291,propranolol,migraine,Propranolol,Propanix-160 sr,Antagonist
+291,propranolol,hypertension,Propranolol,Propanix-160 sr,Antagonist
+291,propranolol,multiple sclerosis,Propranolol,Half beta-prograne mr,Antagonist
+291,propranolol,migraine,Propranolol,Half beta-prograne mr,Antagonist
+291,propranolol,hypertension,Propranolol,Half beta-prograne mr,Antagonist
+291,propranolol,multiple sclerosis,Propranolol,Sagittol,Antagonist
+291,propranolol,migraine,Propranolol,Sagittol,Antagonist
+291,propranolol,hypertension,Propranolol,Sagittol,Antagonist
+291,propranolol,multiple sclerosis,Propranolol,Slo-blok,Antagonist
+291,propranolol,migraine,Propranolol,Slo-blok,Antagonist
+291,propranolol,hypertension,Propranolol,Slo-blok,Antagonist
+291,propranolol,multiple sclerosis,Propranolol,Propanix-160,Antagonist
+291,propranolol,migraine,Propranolol,Propanix-160,Antagonist
+291,propranolol,hypertension,Propranolol,Propanix-160,Antagonist
+291,propranolol,multiple sclerosis,Propranolol,Rapranol sr,Antagonist
+291,propranolol,migraine,Propranolol,Rapranol sr,Antagonist
+291,propranolol,hypertension,Propranolol,Rapranol sr,Antagonist
+291,propranolol,multiple sclerosis,Propranolol,Innopran,Antagonist
+291,propranolol,migraine,Propranolol,Innopran,Antagonist
+291,propranolol,hypertension,Propranolol,Innopran,Antagonist
+291,propranolol,multiple sclerosis,Propranolol,Inderal la,Antagonist
+291,propranolol,migraine,Propranolol,Inderal la,Antagonist
+291,propranolol,hypertension,Propranolol,Inderal la,Antagonist
+291,propranolol,multiple sclerosis,Propranolol,Betadur cr,Antagonist
+291,propranolol,migraine,Propranolol,Betadur cr,Antagonist
+291,propranolol,hypertension,Propranolol,Betadur cr,Antagonist
+291,propranolol,multiple sclerosis,Propranolol,Beta-prograne mr,Antagonist
+291,propranolol,migraine,Propranolol,Beta-prograne mr,Antagonist
+291,propranolol,hypertension,Propranolol,Beta-prograne mr,Antagonist
+291,propranolol,multiple sclerosis,Propranolol,Half-betadur cr,Antagonist
+291,propranolol,migraine,Propranolol,Half-betadur cr,Antagonist
+291,propranolol,hypertension,Propranolol,Half-betadur cr,Antagonist
+291,propranolol,multiple sclerosis,Propranolol,Sloprolol,Antagonist
+291,propranolol,migraine,Propranolol,Sloprolol,Antagonist
+291,propranolol,hypertension,Propranolol,Sloprolol,Antagonist
+291,propranolol,multiple sclerosis,Propranolol,Avlocardyl,Antagonist
+291,propranolol,migraine,Propranolol,Avlocardyl,Antagonist
+291,propranolol,hypertension,Propranolol,Avlocardyl,Antagonist
+291,propranolol,multiple sclerosis,Propranolol,Half propanix la,Antagonist
+291,propranolol,migraine,Propranolol,Half propanix la,Antagonist
+291,propranolol,hypertension,Propranolol,Half propanix la,Antagonist
+291,propranolol,multiple sclerosis,Propranolol,Syprol,Antagonist
+291,propranolol,migraine,Propranolol,Syprol,Antagonist
+291,propranolol,hypertension,Propranolol,Syprol,Antagonist
+291,propranolol,multiple sclerosis,Propranolol,Half-beprane cr,Antagonist
+291,propranolol,migraine,Propranolol,Half-beprane cr,Antagonist
+291,propranolol,hypertension,Propranolol,Half-beprane cr,Antagonist
+292,telmisartan,diabetes,Telmisartan,Tolura,Blocker
+292,telmisartan,hypertension,Telmisartan,Tolura,Blocker
+292,telmisartan,diabetes,Telmisartan,Telmisartan,Blocker
+292,telmisartan,hypertension,Telmisartan,Telmisartan,Blocker
+292,telmisartan,diabetes,Telmisartan,Micardis,Blocker
+292,telmisartan,hypertension,Telmisartan,Micardis,Blocker
+297,ergocalciferol,thyroid disorders,Ergocalciferol,Drisdol,Antagonist
+297,ergocalciferol,thyroid disorders,Ergocalciferol,Mvi Pediatric,Antagonist
+299,ephedrine,anesthetic,Ephedrine,Emerphed,Agonist
+299,ephedrine,anesthetic,Ephedrine,Rezipres,Agonist
+299,ephedrine,anesthetic,Ephedrine,Corphedra,Agonist
+299,ephedrine,anesthetic,Ephedrine,Primatene,Agonist
+299,ephedrine,anesthetic,Ephedrine,Bronkaid,Agonist
+299,ephedrine,anesthetic,Ephedrine,Akovaz,Agonist
+300,liothyronine,cancer,Liothyronine,Cytomel,Antagonist
+300,liothyronine,thyroid disorders,Liothyronine,Cytomel,Antagonist
+300,liothyronine,cancer,Liothyronine,Np Thyroid,Antagonist
+300,liothyronine,thyroid disorders,Liothyronine,Np Thyroid,Antagonist
+305,gaboxadol,insomnia,Gaboxadol,,Modulator
+306,ramelteon,insomnia,Ramelteon,Rozerem,Modulator
+306,ramelteon,insomnia,Ramelteon,Ramelteon,Modulator
+308,suvorexant,insomnia,Suvorexant,Belsomra,Modulator
+309,temazepam,insomnia,Temazepam,Temaz,Modulator
+309,temazepam,insomnia,Temazepam,Normison,Modulator
+309,temazepam,insomnia,Temazepam,Restoril,Modulator
+309,temazepam,insomnia,Temazepam,Temazepam,Modulator
+309,temazepam,insomnia,Temazepam,Kentepam,Modulator
+310,triazolam,insomnia,Triazolam,Kention,Modulator
+310,triazolam,insomnia,Triazolam,Halcion,Modulator
+310,triazolam,insomnia,Triazolam,Triazolam,Modulator
+311,zaleplon,insomnia,Zaleplon,Sonata,Modulator
+311,zaleplon,insomnia,Zaleplon,Zaleplon,Modulator
+312,zolpidem,insomnia,Zolpidem,Tovalt odt,Modulator
+312,zolpidem,insomnia,Zolpidem,Intermezzo,Modulator
+312,zolpidem,insomnia,Zolpidem,Zolpimist,Modulator
+312,zolpidem,insomnia,Zolpidem,Ambien,Modulator
+312,zolpidem,insomnia,Zolpidem,Edluar,Modulator
+312,zolpidem,insomnia,Zolpidem,Ambien cr,Modulator
+312,zolpidem,insomnia,Zolpidem,Stilnoct,Modulator
+312,zolpidem,insomnia,Zolpidem,Zolpidem tartrate,Modulator
+314,zopiclone,insomnia,Zopiclone,Zimovane,Binder
+314,zopiclone,insomnia,Zopiclone,Zileze 3.75,Binder
+314,zopiclone,insomnia,Zopiclone,Zileze 7.5,Binder
+314,zopiclone,insomnia,Zopiclone,Zimovane ls,Binder
+318,oxytocin,diabetes,Oxytocin,Orasthin,Agonist
+321,oxytocin,diabetes,Oxytocin,Orasthin,Modulator
+323,rufinamide,seizures,Rufinamide,Rufinamide*Inovelon,Blocker
+323,rufinamide,seizures,Rufinamide,Banzel,Blocker
+323,rufinamide,seizures,Rufinamide,Inovelon,Blocker
+324,conjugated estrogens,menopausal conditions,Conjugated estrogens,Congest,Modulator
+324,conjugated estrogens,cancer,Conjugated estrogens,Congest,Modulator
+324,conjugated estrogens,menopausal conditions,Conjugated estrogens,Prempro 0.625/2.5 28 Day,Modulator
+324,conjugated estrogens,cancer,Conjugated estrogens,Prempro 0.625/2.5 28 Day,Modulator
+324,conjugated estrogens,menopausal conditions,Conjugated estrogens,Premarin,Modulator
+324,conjugated estrogens,cancer,Conjugated estrogens,Premarin,Modulator
+324,conjugated estrogens,menopausal conditions,Conjugated estrogens,Duavee,Modulator
+324,conjugated estrogens,cancer,Conjugated estrogens,Duavee,Modulator
+324,conjugated estrogens,menopausal conditions,Conjugated estrogens,Premphase 28 Day,Modulator
+324,conjugated estrogens,cancer,Conjugated estrogens,Premphase 28 Day,Modulator
+324,conjugated estrogens,menopausal conditions,Conjugated estrogens,Duavive,Modulator
+324,conjugated estrogens,cancer,Conjugated estrogens,Duavive,Modulator
+325,estradiol,menopausal conditions,Estradiol,Vivelle,Agonist
+325,estradiol,cancer,Estradiol,Vivelle,Agonist
+325,estradiol,contraceptive,Estradiol,Vivelle,Agonist
+325,estradiol,menopausal conditions,Estradiol,Lyllana,Agonist
+325,estradiol,cancer,Estradiol,Lyllana,Agonist
+325,estradiol,contraceptive,Estradiol,Lyllana,Agonist
+325,estradiol,menopausal conditions,Estradiol,Oriahnn 28 Day Kit,Agonist
+325,estradiol,cancer,Estradiol,Oriahnn 28 Day Kit,Agonist
+325,estradiol,contraceptive,Estradiol,Oriahnn 28 Day Kit,Agonist
+325,estradiol,menopausal conditions,Estradiol,Menostar,Agonist
+325,estradiol,cancer,Estradiol,Menostar,Agonist
+325,estradiol,contraceptive,Estradiol,Menostar,Agonist
+325,estradiol,menopausal conditions,Estradiol,Dotti,Agonist
+325,estradiol,cancer,Estradiol,Dotti,Agonist
+325,estradiol,contraceptive,Estradiol,Dotti,Agonist
+325,estradiol,menopausal conditions,Estradiol,Divigel,Agonist
+325,estradiol,cancer,Estradiol,Divigel,Agonist
+325,estradiol,contraceptive,Estradiol,Divigel,Agonist
+325,estradiol,menopausal conditions,Estradiol,Myfembree,Agonist
+325,estradiol,cancer,Estradiol,Myfembree,Agonist
+325,estradiol,contraceptive,Estradiol,Myfembree,Agonist
+325,estradiol,menopausal conditions,Estradiol,Minivelle,Agonist
+325,estradiol,cancer,Estradiol,Minivelle,Agonist
+325,estradiol,contraceptive,Estradiol,Minivelle,Agonist
+325,estradiol,menopausal conditions,Estradiol,Estrace,Agonist
+325,estradiol,cancer,Estradiol,Estrace,Agonist
+325,estradiol,contraceptive,Estradiol,Estrace,Agonist
+325,estradiol,menopausal conditions,Estradiol,Lopreeza 1/0.5 28 Day,Agonist
+325,estradiol,cancer,Estradiol,Lopreeza 1/0.5 28 Day,Agonist
+325,estradiol,contraceptive,Estradiol,Lopreeza 1/0.5 28 Day,Agonist
+325,estradiol,menopausal conditions,Estradiol,Vagifem,Agonist
+325,estradiol,cancer,Estradiol,Vagifem,Agonist
+325,estradiol,contraceptive,Estradiol,Vagifem,Agonist
+325,estradiol,menopausal conditions,Estradiol,Prefest 30 Day,Agonist
+325,estradiol,cancer,Estradiol,Prefest 30 Day,Agonist
+325,estradiol,contraceptive,Estradiol,Prefest 30 Day,Agonist
+325,estradiol,menopausal conditions,Estradiol,Angeliq 0.25/0.5 28 Day,Agonist
+325,estradiol,cancer,Estradiol,Angeliq 0.25/0.5 28 Day,Agonist
+325,estradiol,contraceptive,Estradiol,Angeliq 0.25/0.5 28 Day,Agonist
+325,estradiol,menopausal conditions,Estradiol,Bijuva,Agonist
+325,estradiol,cancer,Estradiol,Bijuva,Agonist
+325,estradiol,contraceptive,Estradiol,Bijuva,Agonist
+325,estradiol,menopausal conditions,Estradiol,Estalis,Agonist
+325,estradiol,cancer,Estradiol,Estalis,Agonist
+325,estradiol,contraceptive,Estradiol,Estalis,Agonist
+325,estradiol,menopausal conditions,Estradiol,Yuvafem,Agonist
+325,estradiol,cancer,Estradiol,Yuvafem,Agonist
+325,estradiol,contraceptive,Estradiol,Yuvafem,Agonist
+325,estradiol,menopausal conditions,Estradiol,Activelle,Agonist
+325,estradiol,cancer,Estradiol,Activelle,Agonist
+325,estradiol,contraceptive,Estradiol,Activelle,Agonist
+325,estradiol,menopausal conditions,Estradiol,Activella 1/0.5 28 Day,Agonist
+325,estradiol,cancer,Estradiol,Activella 1/0.5 28 Day,Agonist
+325,estradiol,contraceptive,Estradiol,Activella 1/0.5 28 Day,Agonist
+325,estradiol,menopausal conditions,Estradiol,Mimvey,Agonist
+325,estradiol,cancer,Estradiol,Mimvey,Agonist
+325,estradiol,contraceptive,Estradiol,Mimvey,Agonist
+325,estradiol,menopausal conditions,Estradiol,Combipatch,Agonist
+325,estradiol,cancer,Estradiol,Combipatch,Agonist
+325,estradiol,contraceptive,Estradiol,Combipatch,Agonist
+325,estradiol,menopausal conditions,Estradiol,Climara Pro,Agonist
+325,estradiol,cancer,Estradiol,Climara Pro,Agonist
+325,estradiol,contraceptive,Estradiol,Climara Pro,Agonist
+325,estradiol,menopausal conditions,Estradiol,Estring,Agonist
+325,estradiol,cancer,Estradiol,Estring,Agonist
+325,estradiol,contraceptive,Estradiol,Estring,Agonist
+325,estradiol,menopausal conditions,Estradiol,Climara,Agonist
+325,estradiol,cancer,Estradiol,Climara,Agonist
+325,estradiol,contraceptive,Estradiol,Climara,Agonist
+325,estradiol,menopausal conditions,Estradiol,Elestrin,Agonist
+325,estradiol,cancer,Estradiol,Elestrin,Agonist
+325,estradiol,contraceptive,Estradiol,Elestrin,Agonist
+325,estradiol,menopausal conditions,Estradiol,Oesclim,Agonist
+325,estradiol,cancer,Estradiol,Oesclim,Agonist
+325,estradiol,contraceptive,Estradiol,Oesclim,Agonist
+325,estradiol,menopausal conditions,Estradiol,Amabelz 0.5/0.1 28 Day,Agonist
+325,estradiol,cancer,Estradiol,Amabelz 0.5/0.1 28 Day,Agonist
+325,estradiol,contraceptive,Estradiol,Amabelz 0.5/0.1 28 Day,Agonist
+325,estradiol,menopausal conditions,Estradiol,Estrogel,Agonist
+325,estradiol,cancer,Estradiol,Estrogel,Agonist
+325,estradiol,contraceptive,Estradiol,Estrogel,Agonist
+325,estradiol,menopausal conditions,Estradiol,Evamist,Agonist
+325,estradiol,cancer,Estradiol,Evamist,Agonist
+325,estradiol,contraceptive,Estradiol,Evamist,Agonist
+325,estradiol,menopausal conditions,Estradiol,Estradot,Agonist
+325,estradiol,cancer,Estradiol,Estradot,Agonist
+325,estradiol,contraceptive,Estradiol,Estradot,Agonist
+325,estradiol,menopausal conditions,Estradiol,Imvexxy 4 Mcg Starter Pack,Agonist
+325,estradiol,cancer,Estradiol,Imvexxy 4 Mcg Starter Pack,Agonist
+325,estradiol,contraceptive,Estradiol,Imvexxy 4 Mcg Starter Pack,Agonist
+326,estrone,menopausal conditions,Estrone,Estrogenic substance,Agonist
+327,irinotecan,cancer,Irinotecan,Campto,Modulator
+329,bevacizumab,cancer,Bevacizumab,Avastin,
+330,scopolamine,anesthetic,,METHSCOPOLAMINE BROMIDE*SCOPOLAMINE*BUTILESCOPOLAMINA GENERIS,Antagonist
+330,scopolamine,analgesic,,METHSCOPOLAMINE BROMIDE*SCOPOLAMINE*BUTILESCOPOLAMINA GENERIS,Antagonist
+330,scopolamine,anesthetic,,PHENOHYTRO*BYSIMIN,Antagonist
+330,scopolamine,analgesic,,PHENOHYTRO*BYSIMIN,Antagonist
+330,scopolamine,anesthetic,,TRANSDERM SCOP,Antagonist
+330,scopolamine,analgesic,,TRANSDERM SCOP,Antagonist
+330,scopolamine,anesthetic,,DONNATAL*PAMINE,Antagonist
+330,scopolamine,analgesic,,DONNATAL*PAMINE,Antagonist
+331,dantrolene,multiple sclerosis,Dantrolene,Ryanodex,Antagonist
+331,dantrolene,stroke,Dantrolene,Ryanodex,Antagonist
+331,dantrolene,multiple sclerosis,Dantrolene,Dantrium,Antagonist
+331,dantrolene,stroke,Dantrolene,Dantrium,Antagonist
+331,dantrolene,multiple sclerosis,Dantrolene,Revonto,Antagonist
+331,dantrolene,stroke,Dantrolene,Revonto,Antagonist
+332,dantrolene,multiple sclerosis,Dantrolene,Ryanodex,Modulator
+332,dantrolene,stroke,Dantrolene,Ryanodex,Modulator
+332,dantrolene,multiple sclerosis,Dantrolene,Dantrium,Modulator
+332,dantrolene,stroke,Dantrolene,Dantrium,Modulator
+332,dantrolene,multiple sclerosis,Dantrolene,Revonto,Modulator
+332,dantrolene,stroke,Dantrolene,Revonto,Modulator
+333,amantadine,parkinson's disease,Amantadine,Osmolex,Inhibitor
+333,amantadine,parkinson's disease,Amantadine,Gocovri,Inhibitor
+334,botulinum toxin type b,migraine,Botulinum toxin type B,MYOBLOC,Binder
+334,botulinum toxin type b,migraine,Botulinum toxin type B,NEUROBLOC,Binder
+335,deutetrabenazine,huntington's disease,Deutetrabenazine,Austedo,Modulator
+335,deutetrabenazine,tardive dyskinesia,Deutetrabenazine,Austedo,Modulator
+336,eculizumab,neuromyelitis optica spectrum disorder,Eculizumab,SOLIRIS,Inhibitor
+337,etelcalcetide,thyroid disorders,Etelcalcetide,PARSABIV,Agonist
+338,metixene,parkinson's disease,Metixene,METIXENE,Antagonist
+339,propofol,anesthetic,Propofol,DIPRIVAN,Inhibitor
+340,daratumumab,cancer,Daratumumab,Darzalex,
+340,daratumumab,cancer,Daratumumab,Darzalex Faspro,
+341,lenalidomide,cancer,Lenalidomide,Revlimid,Inhibitor
+342,arbaclofen,multiple sclerosis,Arbaclofen,,Agonist
+342,arbaclofen,autism spectrum disorder,Arbaclofen,,Agonist
+345,ibudilast,multiple sclerosis,Ibudilast,,Inhibitor
+347,natalizumab,multiple sclerosis,Natalizumab,Tysabri,Inhibitor
+348,natalizumab,multiple sclerosis,Natalizumab,Tysabri,Agonist
+350,siponimod,multiple sclerosis,Siponimod,Mayzent,Modulator
+352,alemtuzumab,multiple sclerosis,Alemtuzumab,Lemtrada,
+352,alemtuzumab,multiple sclerosis,Alemtuzumab,MabCampath,
+352,alemtuzumab,multiple sclerosis,Alemtuzumab,Campath,
+353,baclofen,multiple sclerosis,Baclofen,Kemstro,Agonist
+353,baclofen,multiple sclerosis,Baclofen,Lyvispah,Agonist
+353,baclofen,multiple sclerosis,Baclofen,Ozobax,Agonist
+353,baclofen,multiple sclerosis,Baclofen,Fleqsuvy,Agonist
+353,baclofen,multiple sclerosis,Baclofen,Gablofen,Agonist
+353,baclofen,multiple sclerosis,Baclofen,Lioresal,Agonist
+355,baclofen,multiple sclerosis,Baclofen,Kemstro,Modulator
+355,baclofen,multiple sclerosis,Baclofen,Lyvispah,Modulator
+355,baclofen,multiple sclerosis,Baclofen,Ozobax,Modulator
+355,baclofen,multiple sclerosis,Baclofen,Fleqsuvy,Modulator
+355,baclofen,multiple sclerosis,Baclofen,Gablofen,Modulator
+355,baclofen,multiple sclerosis,Baclofen,Lioresal,Modulator
+356,cladribine,multiple sclerosis,Cladribine,LITAK,Inhibitor
+356,cladribine,multiple sclerosis,Cladribine,MAVENCLAD,Inhibitor
+357,corticotropin,multiple sclerosis,Corticotropin,Acthar,Modulator
+357,corticotropin,multiple sclerosis,Corticotropin,Cortrophin,Modulator
+358,daclizumab,multiple sclerosis,Daclizumab,ZINBRYTA,Modulator
+359,dalfampridine,multiple sclerosis,Dalfampridine,AMPYRA,Antagonist
+359,dalfampridine,multiple sclerosis,Dalfampridine,FAMPYRA,Antagonist
+360,dalfampridine,multiple sclerosis,Dalfampridine,AMPYRA,Modulator
+360,dalfampridine,multiple sclerosis,Dalfampridine,FAMPYRA,Modulator
+361,dimethyl fumarate,multiple sclerosis,Dimethyl fumarate,TECFIDERA,Inhibitor
+362,glatiramer,multiple sclerosis,Glatiramer,COPAXONE,Binder
+362,glatiramer,multiple sclerosis,Glatiramer,GLATOPA,Binder
+362,glatiramer,multiple sclerosis,Glatiramer,GLATECT,Binder
+363,interferon beta-1a,multiple sclerosis,Interferon beta-1a,Avonex,Modulator
+363,interferon beta-1a,multiple sclerosis,Interferon beta-1a,Rebif,Modulator
+364,interferon beta-1b,multiple sclerosis,Interferon beta-1b,Betaseron,Binder
+364,interferon beta-1b,multiple sclerosis,Interferon beta-1b,Extavia,Binder
+364,interferon beta-1b,multiple sclerosis,Interferon beta-1b,Betaferon,Binder
+365,mitoxantrone,multiple sclerosis,Mitoxantrone,MITOXANTRONE HYDROCHLORIDE,Inhibitor
+365,mitoxantrone,cancer,Mitoxantrone,MITOXANTRONE HYDROCHLORIDE,Inhibitor
+366,mitoxantrone,multiple sclerosis,Mitoxantrone,MITOXANTRONE HYDROCHLORIDE,Activator
+366,mitoxantrone,cancer,Mitoxantrone,MITOXANTRONE HYDROCHLORIDE,Activator
+367,ocrelizumab,multiple sclerosis,Ocrelizumab,OCREVUS,
+368,ozanimod,multiple sclerosis,Ozanimod,ZEPOSIA STARTER KIT,Agonist
+368,ozanimod,multiple sclerosis,Ozanimod,ZEPOSIA,Agonist
+368,ozanimod,multiple sclerosis,Ozanimod,ZEPOSIA 7-DAY STARTER PACK,Agonist
+369,peginterferon beta-1a,multiple sclerosis,Peginterferon Beta-1A,Biib017,Modulator
+369,peginterferon beta-1a,multiple sclerosis,Peginterferon Beta-1A,Plegridy,Modulator
+370,ponesimod,multiple sclerosis,Ponesimod,PONVORY,Agonist
+371,teriflunomide,multiple sclerosis,Teriflunomide,AUBAGIO,Inhibitor
+373,teriflunomide,multiple sclerosis,Teriflunomide,AUBAGIO,Modulator
+377,modafinil,narcolepsy,Modafinil,Modafinil,Modulator
+381,filgrastim,cancer,Filgrastim,Releuko,Modulator
+381,filgrastim,cancer,Filgrastim,Zarxio,Modulator
+381,filgrastim,cancer,Filgrastim,Accofil,Modulator
+381,filgrastim,cancer,Filgrastim,Grastofil,Modulator
+381,filgrastim,cancer,Filgrastim,Granix,Modulator
+381,filgrastim,cancer,Filgrastim,Nivestym,Modulator
+381,filgrastim,cancer,Filgrastim,Ratiograstim,Modulator
+381,filgrastim,cancer,Filgrastim,Neupogen,Modulator
+381,filgrastim,cancer,Filgrastim,Nivestim,Modulator
+387,sibutramine,schizophrenia,Sibutramine,Reductil,Modulator
+387,sibutramine,bipolar disorder,Sibutramine,Reductil,Modulator
+389,naloxone,depression,Naloxone,Nalone,Antagonist
+390,sirolimus,multiple sclerosis,Sirolimus,Rapamune,Inhibitor
+390,sirolimus,multiple sclerosis,Sirolimus,Sirolimus,Inhibitor
+393,denosumab,menopausal conditions,Denosumab,Prolia,
+393,denosumab,cancer,Denosumab,Prolia,
+393,denosumab,menopausal conditions,Denosumab,Xgeva,
+393,denosumab,cancer,Denosumab,Xgeva,
+394,raloxifene,depression,Raloxifene,Ostiral,Modulator
+394,raloxifene,schizophrenia,Raloxifene,Ostiral,Modulator
+394,raloxifene,depression,Raloxifene,Evirex,Modulator
+394,raloxifene,schizophrenia,Raloxifene,Evirex,Modulator
+394,raloxifene,depression,Raloxifene,Raloxifene hydrochloride,Modulator
+394,raloxifene,schizophrenia,Raloxifene,Raloxifene hydrochloride,Modulator
+394,raloxifene,depression,Raloxifene,Evista,Modulator
+394,raloxifene,schizophrenia,Raloxifene,Evista,Modulator
+394,raloxifene,depression,Raloxifene,Razylan,Modulator
+394,raloxifene,schizophrenia,Raloxifene,Razylan,Modulator
+394,raloxifene,depression,Raloxifene,Optruma,Modulator
+394,raloxifene,schizophrenia,Raloxifene,Optruma,Modulator
+397,inebilizumab,neuromyelitis optica spectrum disorder,Inebilizumab,Uplizna 3 Vial Kit,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,VANATOL S,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,ACEPHEN,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,DARVOCET-N,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,GOODY'S BODY PAIN,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,ESGIC,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,TYLENOL WITH CODEINE,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,XOLOX,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,ZEBUTAL,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,ORBIVAN,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,DOLOGEN,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,FIORICET,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,CETAFEN,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,EXCEDRIN,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,TRIATEC-30,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,PHARBETOL,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,LITTLE FEVERS,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,TACTINAL,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,GOODY'S PM,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,VANATOL,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,PERCOGESIC REFORMULATED JAN 2011,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,DOLOGESIC REFORMULATED JUN 2016,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,PAMPRIN MAX FORMULA,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,ZYDONE,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,DOLOFIN,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,APADAZ,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,SUDAFED PE SINUS HEADACHE,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,EXAPRIN,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,PREMSYN PMS,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,PEDIACARE CHILDREN'S FEVER REDUCER PAIN RELIEVER,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,CORICIDIN HBP COLD & FLU,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,XODOL,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,LEGATRIN PM,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,LORTAB,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,GOODY'S BACK & BODY PAIN RELIEF,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,DURALGINA,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,ZAMICET,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,FEVERALL,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,PAMPRIN MULTI-SYMPTOM,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,EXCEDRIN PM TRIPLE ACTION,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,VANQUISH,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,TYLENOL PM,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,HYCET,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,DAYQUIL SINEX,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,BUPAP,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,ARTHRITEN INFLAMMATORY PAIN,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,ROBAXACET-8,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,TYLENOL,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,DVORAH,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,ACETADRYL,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,ZFLEX,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,NORCO,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,TREZIX,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,MIDOL CRAMPS & BODYACHES,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,TENCON,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,MAPAP,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,ROBAXACET,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,ROXICET,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,FIORICET WITH CODEINE,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,MERSYNDOL,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,ALLZITAL,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,BUTAPAP,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,TRIATEC,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,NALOCET,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,VTOL,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,LORCET,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,PERCOCET,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,MIDOL COMPLETE,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,ULTRACET,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,ENDOCET,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,RIVACOCET,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,DIPHEN,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,PROLATE,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,CHILDREN'S SILAPAP,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,GOODY'S HEADACHE RELIEF SHOT,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,EXCEDRIN TENSION HEADACHE,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,TRIATEC-8,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,GOODY'S EXTRA STRENGTH,Inhibitor
+402,acetaminophen,analgesic,Acetaminophen,PANADOL,Inhibitor
+405,aspirin,migraine,Acetylsalicylic acid,DUOPLAVIN*BC ORIGINAL FORMULA*ST. JOSEPH ASPIRIN*ECPIRIN*VANQUISH*ALKA-SELTZER FRUIT CHEWS*ENDODAN REFORMULATED MAY 2009*EXAPRIN*FIORINAL WITH CODEINE*ASPIR-LOW*FIORINAL*GOODY'S BODY PAIN,Inhibitor
+405,aspirin,migraine,Acetylsalicylic acid,AGGRENOX*ARTHRITEN INFLAMMATORY PAIN*ANACIN*BUFFERIN*TRIANAL*BC ARTHRITIS*TRIANAL C*EXCEDRIN*ALKA-SELTZER*ORPHENGESIC*DURLAZA*BAYER WOMENS*ROBAXISAL*ASPI-COR*ECOTRIN*EQUAGESIC*ASCOMP*NORGESIC FORTE*GOODY'S PM*MINIPRIN*FASPRIN*GOODY'S EXTRA STRENGTH*PAMPRIN MAX FORMULA*VAZALORE*STANBACK HEADACHE POWDER REFORMULATED JAN 2011*YOSPRALA*EXCEDRIN PM TRIPLE ACTION*BAYER ASPIRIN,Inhibitor
+409,epinephrine,anesthetic,Epinephrine,Sensorcaine,Antagonist
+409,epinephrine,anesthetic,Epinephrine,Articadent,Antagonist
+409,epinephrine,anesthetic,Epinephrine,Citanest Forte,Antagonist
+409,epinephrine,anesthetic,Epinephrine,Citanest,Antagonist
+409,epinephrine,anesthetic,Epinephrine,Sensorcaine With Epinephrine,Antagonist
+409,epinephrine,anesthetic,Epinephrine,Scandonest,Antagonist
+409,epinephrine,anesthetic,Epinephrine,Octocaine With Epinephrine,Antagonist
+409,epinephrine,anesthetic,Epinephrine,Xylocaine With Epinephrine,Antagonist
+409,epinephrine,anesthetic,Epinephrine,Marcaine With Epinephrine,Antagonist
+409,epinephrine,anesthetic,Epinephrine,Adrenalin,Antagonist
+409,epinephrine,anesthetic,Epinephrine,Lignospan,Antagonist
+409,epinephrine,anesthetic,Epinephrine,Octocaine,Antagonist
+409,epinephrine,anesthetic,Epinephrine,Anapen,Antagonist
+409,epinephrine,anesthetic,Epinephrine,Xylocaine,Antagonist
+409,epinephrine,anesthetic,Epinephrine,Marcaine,Antagonist
+409,epinephrine,anesthetic,Epinephrine,Auvi-Q,Antagonist
+409,epinephrine,anesthetic,Epinephrine,Allerject,Antagonist
+409,epinephrine,anesthetic,Epinephrine,Ultracaine,Antagonist
+409,epinephrine,anesthetic,Epinephrine,Emerade,Antagonist
+409,epinephrine,anesthetic,Epinephrine,Astracaine,Antagonist
+409,epinephrine,anesthetic,Epinephrine,Septanest,Antagonist
+409,epinephrine,anesthetic,Epinephrine,Zorcaine,Antagonist
+409,epinephrine,anesthetic,Epinephrine,Orabloc,Antagonist
+409,epinephrine,anesthetic,Epinephrine,Ultacan,Antagonist
+409,epinephrine,anesthetic,Epinephrine,Epipen,Antagonist
+409,epinephrine,anesthetic,Epinephrine,Vivacaine,Antagonist
+409,epinephrine,anesthetic,Epinephrine,Septocaine,Antagonist
+409,epinephrine,anesthetic,Epinephrine,Symjepi,Antagonist
+410,gabapentin,seizures,Gabapentin,GRALISE,Antagonist
+410,gabapentin,diabetes,Gabapentin,GRALISE,Antagonist
+410,gabapentin,seizures,Gabapentin,NEURONTIN,Antagonist
+410,gabapentin,diabetes,Gabapentin,NEURONTIN,Antagonist
+411,ibuprofen,analgesic,Ibuprofen,Ibutab,Modulator
+411,ibuprofen,analgesic,Ibuprofen,Advil Congestion Relief,Modulator
+411,ibuprofen,analgesic,Ibuprofen,Ibu,Modulator
+411,ibuprofen,analgesic,Ibuprofen,Junior Strength Motrin,Modulator
+411,ibuprofen,analgesic,Ibuprofen,Advil,Modulator
+411,ibuprofen,analgesic,Ibuprofen,Nuprin,Modulator
+411,ibuprofen,analgesic,Ibuprofen,Cedaprin,Modulator
+411,ibuprofen,analgesic,Ibuprofen,Neoprofen,Modulator
+411,ibuprofen,analgesic,Ibuprofen,Advil Sinus Congestion and Pain,Modulator
+411,ibuprofen,analgesic,Ibuprofen,Wal-profen Congestion Relief and Pain,Modulator
+411,ibuprofen,analgesic,Ibuprofen,Vicoprofen,Modulator
+411,ibuprofen,analgesic,Ibuprofen,Reprexain,Modulator
+411,ibuprofen,analgesic,Ibuprofen,Pedea,Modulator
+411,ibuprofen,analgesic,Ibuprofen,Diphen,Modulator
+411,ibuprofen,analgesic,Ibuprofen,Sudafed PE Head Congestion Plus Pain,Modulator
+411,ibuprofen,analgesic,Ibuprofen,Caldolor,Modulator
+411,ibuprofen,analgesic,Ibuprofen,Duexis,Modulator
+411,ibuprofen,analgesic,Ibuprofen,Proprinal,Modulator
+411,ibuprofen,analgesic,Ibuprofen,Motrin,Modulator
+411,ibuprofen,analgesic,Ibuprofen,Motrin PM,Modulator
+411,ibuprofen,analgesic,Ibuprofen,Advil Cold and Sinus,Modulator
+411,ibuprofen,analgesic,Ibuprofen,Advil PM,Modulator
+411,ibuprofen,analgesic,Ibuprofen,Children's Ibuprofen,Modulator
+411,ibuprofen,analgesic,Ibuprofen,Alivio,Modulator
+411,ibuprofen,analgesic,Ibuprofen,Addaprin,Modulator
+412,ketamine,anesthetic,Ketamine,KETAMINE HYDROCHLORIDE,Antagonist
+412,ketamine,anesthetic,Ketamine,KETALAR,Antagonist
+416,oxycodone,analgesic,Oxycodone,XOLOX,Agonist
+416,oxycodone,analgesic,Oxycodone,ROXICET,Agonist
+416,oxycodone,analgesic,Oxycodone,OXYNEO,Agonist
+416,oxycodone,analgesic,Oxycodone,ROXICODONE,Agonist
+416,oxycodone,analgesic,Oxycodone,OXAYDO,Agonist
+416,oxycodone,analgesic,Oxycodone,TARGIN,Agonist
+416,oxycodone,analgesic,Oxycodone,ENDODAN REFORMULATED MAY 2009,Agonist
+416,oxycodone,analgesic,Oxycodone,ENDOCET,Agonist
+416,oxycodone,analgesic,Oxycodone,TARGINIQ,Agonist
+416,oxycodone,analgesic,Oxycodone,PERCOCET,Agonist
+416,oxycodone,analgesic,Oxycodone,PROLATE,Agonist
+416,oxycodone,analgesic,Oxycodone,OXY.IR,Agonist
+416,oxycodone,analgesic,Oxycodone,OXYCONTIN,Agonist
+416,oxycodone,analgesic,Oxycodone,XTAMPZA,Agonist
+416,oxycodone,analgesic,Oxycodone,ROXYBOND,Agonist
+416,oxycodone,analgesic,Oxycodone,RIVACOCET,Agonist
+416,oxycodone,analgesic,Oxycodone,NALOCET,Agonist
+417,oxycodone,analgesic,Oxycodone,XOLOX,Modulator
+417,oxycodone,analgesic,Oxycodone,ROXICET,Modulator
+417,oxycodone,analgesic,Oxycodone,OXYNEO,Modulator
+417,oxycodone,analgesic,Oxycodone,ROXICODONE,Modulator
+417,oxycodone,analgesic,Oxycodone,OXAYDO,Modulator
+417,oxycodone,analgesic,Oxycodone,TARGIN,Modulator
+417,oxycodone,analgesic,Oxycodone,ENDODAN REFORMULATED MAY 2009,Modulator
+417,oxycodone,analgesic,Oxycodone,ENDOCET,Modulator
+417,oxycodone,analgesic,Oxycodone,TARGINIQ,Modulator
+417,oxycodone,analgesic,Oxycodone,PERCOCET,Modulator
+417,oxycodone,analgesic,Oxycodone,PROLATE,Modulator
+417,oxycodone,analgesic,Oxycodone,OXY.IR,Modulator
+417,oxycodone,analgesic,Oxycodone,OXYCONTIN,Modulator
+417,oxycodone,analgesic,Oxycodone,XTAMPZA,Modulator
+417,oxycodone,analgesic,Oxycodone,ROXYBOND,Modulator
+417,oxycodone,analgesic,Oxycodone,RIVACOCET,Modulator
+417,oxycodone,analgesic,Oxycodone,NALOCET,Modulator
+421,pergolide,parkinson's disease,Pergolide,,Modulator
+424,rasagiline,parkinson's disease,Rasagiline,,Inhibitor
+425,tolcapone,parkinson's disease,Tolcapone,Tasmar,Inhibitor
+425,tolcapone,parkinson's disease,Tolcapone,Tolcapone,Inhibitor
+426,apomorphine,parkinson's disease,Apomorphine,Apokyn,Agonist
+426,apomorphine,parkinson's disease,Apomorphine,Movapo,Agonist
+426,apomorphine,parkinson's disease,Apomorphine,Kynmobi,Agonist
+428,benserazide,parkinson's disease,Benserazide,Prolopa,Inhibitor
+429,benztropine,parkinson's disease,Benzatropine,Cogentin,Antagonist
+430,biperiden,parkinson's disease,Biperiden,AKINETON,Antagonist
+431,bromocriptine,parkinson's disease,Bromocriptine,Cycloset,Agonist
+431,bromocriptine,acromegaly,Bromocriptine,Cycloset,Agonist
+431,bromocriptine,parkinson's disease,Bromocriptine,Parlodel,Agonist
+431,bromocriptine,acromegaly,Bromocriptine,Parlodel,Agonist
+432,cabergoline,parkinson's disease,Cabergoline,Dostinex,Agonist
+433,carbidopa,parkinson's disease,Carbidopa,Stalevo,Inhibitor
+433,carbidopa,parkinson's disease,Carbidopa,Duodopa,Inhibitor
+433,carbidopa,parkinson's disease,Carbidopa,Rytary,Inhibitor
+433,carbidopa,parkinson's disease,Carbidopa,Sinemet,Inhibitor
+433,carbidopa,parkinson's disease,Carbidopa,Parcopa,Inhibitor
+433,carbidopa,parkinson's disease,Carbidopa,Dhivy,Inhibitor
+433,carbidopa,parkinson's disease,Carbidopa,Lodosyn,Inhibitor
+433,carbidopa,parkinson's disease,Carbidopa,Duopa,Inhibitor
+434,diphenhydramine,parkinson's disease,Diphenhydramine,Aleve PM,Inhibitor
+434,diphenhydramine,parkinson's disease,Diphenhydramine,Calagel,Inhibitor
+434,diphenhydramine,parkinson's disease,Diphenhydramine,Sominex,Inhibitor
+434,diphenhydramine,parkinson's disease,Diphenhydramine,Tylenol PM,Inhibitor
+434,diphenhydramine,parkinson's disease,Diphenhydramine,Goody's PM,Inhibitor
+434,diphenhydramine,parkinson's disease,Diphenhydramine,Excedrin PM Triple Action,Inhibitor
+434,diphenhydramine,parkinson's disease,Diphenhydramine,Nytol,Inhibitor
+434,diphenhydramine,parkinson's disease,Diphenhydramine,Diphenhist,Inhibitor
+434,diphenhydramine,parkinson's disease,Diphenhydramine,Unisom Sleep,Inhibitor
+434,diphenhydramine,parkinson's disease,Diphenhydramine,Acetadryl,Inhibitor
+434,diphenhydramine,parkinson's disease,Diphenhydramine,Benadryl-D Allergy and Sinus,Inhibitor
+434,diphenhydramine,parkinson's disease,Diphenhydramine,Simply Sleep,Inhibitor
+434,diphenhydramine,parkinson's disease,Diphenhydramine,Unisom,Inhibitor
+434,diphenhydramine,parkinson's disease,Diphenhydramine,Allegra Cooling Relief Anti-itch,Inhibitor
+434,diphenhydramine,parkinson's disease,Diphenhydramine,Percogesic Reformulated Jan 2011,Inhibitor
+434,diphenhydramine,parkinson's disease,Diphenhydramine,Siladryl,Inhibitor
+434,diphenhydramine,parkinson's disease,Diphenhydramine,Triaminic Night Time Cold & Cough,Inhibitor
+434,diphenhydramine,parkinson's disease,Diphenhydramine,Wal-som (doxylamine),Inhibitor
+434,diphenhydramine,parkinson's disease,Diphenhydramine,Diphenist,Inhibitor
+434,diphenhydramine,parkinson's disease,Diphenhydramine,Diphen,Inhibitor
+434,diphenhydramine,parkinson's disease,Diphenhydramine,Banophen,Inhibitor
+434,diphenhydramine,parkinson's disease,Diphenhydramine,Dimetapp Nighttime Cold & Congestion,Inhibitor
+434,diphenhydramine,parkinson's disease,Diphenhydramine,Sleepinal,Inhibitor
+434,diphenhydramine,parkinson's disease,Diphenhydramine,Motrin PM,Inhibitor
+434,diphenhydramine,parkinson's disease,Diphenhydramine,Vanamine,Inhibitor
+434,diphenhydramine,parkinson's disease,Diphenhydramine,Wal-dryl,Inhibitor
+434,diphenhydramine,parkinson's disease,Diphenhydramine,Damylin With Codeine,Inhibitor
+434,diphenhydramine,parkinson's disease,Diphenhydramine,Nytol Quickgels,Inhibitor
+434,diphenhydramine,parkinson's disease,Diphenhydramine,Benadryl,Inhibitor
+434,diphenhydramine,parkinson's disease,Diphenhydramine,Legatrin PM,Inhibitor
+434,diphenhydramine,parkinson's disease,Diphenhydramine,Zzzquil,Inhibitor
+434,diphenhydramine,parkinson's disease,Diphenhydramine,Advil PM,Inhibitor
+434,diphenhydramine,parkinson's disease,Diphenhydramine,Benadryl Itch Stopping,Inhibitor
+435,diphenhydramine,parkinson's disease,Diphenhydramine,Aleve PM,Antagonist
+435,diphenhydramine,parkinson's disease,Diphenhydramine,Calagel,Antagonist
+435,diphenhydramine,parkinson's disease,Diphenhydramine,Sominex,Antagonist
+435,diphenhydramine,parkinson's disease,Diphenhydramine,Tylenol PM,Antagonist
+435,diphenhydramine,parkinson's disease,Diphenhydramine,Goody's PM,Antagonist
+435,diphenhydramine,parkinson's disease,Diphenhydramine,Excedrin PM Triple Action,Antagonist
+435,diphenhydramine,parkinson's disease,Diphenhydramine,Nytol,Antagonist
+435,diphenhydramine,parkinson's disease,Diphenhydramine,Diphenhist,Antagonist
+435,diphenhydramine,parkinson's disease,Diphenhydramine,Unisom Sleep,Antagonist
+435,diphenhydramine,parkinson's disease,Diphenhydramine,Acetadryl,Antagonist
+435,diphenhydramine,parkinson's disease,Diphenhydramine,Benadryl-D Allergy and Sinus,Antagonist
+435,diphenhydramine,parkinson's disease,Diphenhydramine,Simply Sleep,Antagonist
+435,diphenhydramine,parkinson's disease,Diphenhydramine,Unisom,Antagonist
+435,diphenhydramine,parkinson's disease,Diphenhydramine,Allegra Cooling Relief Anti-itch,Antagonist
+435,diphenhydramine,parkinson's disease,Diphenhydramine,Percogesic Reformulated Jan 2011,Antagonist
+435,diphenhydramine,parkinson's disease,Diphenhydramine,Siladryl,Antagonist
+435,diphenhydramine,parkinson's disease,Diphenhydramine,Triaminic Night Time Cold & Cough,Antagonist
+435,diphenhydramine,parkinson's disease,Diphenhydramine,Wal-som (doxylamine),Antagonist
+435,diphenhydramine,parkinson's disease,Diphenhydramine,Diphenist,Antagonist
+435,diphenhydramine,parkinson's disease,Diphenhydramine,Diphen,Antagonist
+435,diphenhydramine,parkinson's disease,Diphenhydramine,Banophen,Antagonist
+435,diphenhydramine,parkinson's disease,Diphenhydramine,Dimetapp Nighttime Cold & Congestion,Antagonist
+435,diphenhydramine,parkinson's disease,Diphenhydramine,Sleepinal,Antagonist
+435,diphenhydramine,parkinson's disease,Diphenhydramine,Motrin PM,Antagonist
+435,diphenhydramine,parkinson's disease,Diphenhydramine,Vanamine,Antagonist
+435,diphenhydramine,parkinson's disease,Diphenhydramine,Wal-dryl,Antagonist
+435,diphenhydramine,parkinson's disease,Diphenhydramine,Damylin With Codeine,Antagonist
+435,diphenhydramine,parkinson's disease,Diphenhydramine,Nytol Quickgels,Antagonist
+435,diphenhydramine,parkinson's disease,Diphenhydramine,Benadryl,Antagonist
+435,diphenhydramine,parkinson's disease,Diphenhydramine,Legatrin PM,Antagonist
+435,diphenhydramine,parkinson's disease,Diphenhydramine,Zzzquil,Antagonist
+435,diphenhydramine,parkinson's disease,Diphenhydramine,Advil PM,Antagonist
+435,diphenhydramine,parkinson's disease,Diphenhydramine,Benadryl Itch Stopping,Antagonist
+436,entacapone,parkinson's disease,Entacapone,Stalevo,Inhibitor
+436,entacapone,parkinson's disease,Entacapone,Comtan,Inhibitor
+436,entacapone,parkinson's disease,Entacapone,Comtess,Inhibitor
+437,levodopa,parkinson's disease,Levodopa,Stalevo,Modulator
+437,levodopa,parkinson's disease,Levodopa,Duodopa,Modulator
+437,levodopa,parkinson's disease,Levodopa,Rytary,Modulator
+437,levodopa,parkinson's disease,Levodopa,Inbrija,Modulator
+437,levodopa,parkinson's disease,Levodopa,Parcopa,Modulator
+437,levodopa,parkinson's disease,Levodopa,Dhivy,Modulator
+437,levodopa,parkinson's disease,Levodopa,Sinemet,Modulator
+437,levodopa,parkinson's disease,Levodopa,Duopa,Modulator
+437,levodopa,parkinson's disease,Levodopa,Prolopa,Modulator
+438,opicapone,parkinson's disease,Opicapone,Ongentys,Inhibitor
+439,profenamine,parkinson's disease,Profenamine,Parkin,Modulator
+439,profenamine,parkinson's disease,Profenamine,Parsidan,Modulator
+439,profenamine,parkinson's disease,Profenamine,Parsidol,Modulator
+440,ropinirole,parkinson's disease,Ropinirole,Requip,Modulator
+442,rotigotine,parkinson's disease,Rotigotine,Neupro,Agonist
+443,safinamide mesylate,parkinson's disease,Safinamide,Xadago,Inhibitor
+444,sarizotan,schizophrenia,Sarizotan,,Modulator
+444,sarizotan,parkinson's disease,Sarizotan,,Modulator
+446,pimavanserin,parkinson's disease,Pimavanserin,Nuplazid,Modulator
+447,trihexyphenidyl,parkinson's disease,Trihexyphenidyl,,Antagonist
+448,trihexyphenidyl,parkinson's disease,Trihexyphenidyl,,Agonist
+449,drospirenone,menopausal conditions,Drospirenone,Jasmiel 28 Day,Binder
+449,drospirenone,contraceptive,Drospirenone,Jasmiel 28 Day,Binder
+449,drospirenone,menopausal conditions,Drospirenone,Yaz Plus,Binder
+449,drospirenone,contraceptive,Drospirenone,Yaz Plus,Binder
+449,drospirenone,menopausal conditions,Drospirenone,Nikki 28 Day,Binder
+449,drospirenone,contraceptive,Drospirenone,Nikki 28 Day,Binder
+449,drospirenone,menopausal conditions,Drospirenone,Yaz 28 Day,Binder
+449,drospirenone,contraceptive,Drospirenone,Yaz 28 Day,Binder
+449,drospirenone,menopausal conditions,Drospirenone,Syeda 28 Day,Binder
+449,drospirenone,contraceptive,Drospirenone,Syeda 28 Day,Binder
+449,drospirenone,menopausal conditions,Drospirenone,Angeliq 0.25/0.5 28 Day,Binder
+449,drospirenone,contraceptive,Drospirenone,Angeliq 0.25/0.5 28 Day,Binder
+449,drospirenone,menopausal conditions,Drospirenone,Vestura,Binder
+449,drospirenone,contraceptive,Drospirenone,Vestura,Binder
+449,drospirenone,menopausal conditions,Drospirenone,Yasmin 28 Day,Binder
+449,drospirenone,contraceptive,Drospirenone,Yasmin 28 Day,Binder
+449,drospirenone,menopausal conditions,Drospirenone,Beyaz 28 Day,Binder
+449,drospirenone,contraceptive,Drospirenone,Beyaz 28 Day,Binder
+449,drospirenone,menopausal conditions,Drospirenone,Slynd,Binder
+449,drospirenone,contraceptive,Drospirenone,Slynd,Binder
+449,drospirenone,menopausal conditions,Drospirenone,Lo-zumandimine 28 Day,Binder
+449,drospirenone,contraceptive,Drospirenone,Lo-zumandimine 28 Day,Binder
+449,drospirenone,menopausal conditions,Drospirenone,Safyral 28 Day,Binder
+449,drospirenone,contraceptive,Drospirenone,Safyral 28 Day,Binder
+449,drospirenone,menopausal conditions,Drospirenone,Gianvi 28-day,Binder
+449,drospirenone,contraceptive,Drospirenone,Gianvi 28-day,Binder
+449,drospirenone,menopausal conditions,Drospirenone,Ocella 28 Day,Binder
+449,drospirenone,contraceptive,Drospirenone,Ocella 28 Day,Binder
+449,drospirenone,menopausal conditions,Drospirenone,Zumandimine 28 Day,Binder
+449,drospirenone,contraceptive,Drospirenone,Zumandimine 28 Day,Binder
+449,drospirenone,menopausal conditions,Drospirenone,Nextstellis 28 Day,Binder
+449,drospirenone,contraceptive,Drospirenone,Nextstellis 28 Day,Binder
+449,drospirenone,menopausal conditions,Drospirenone,Loryna,Binder
+449,drospirenone,contraceptive,Drospirenone,Loryna,Binder
+449,drospirenone,menopausal conditions,Drospirenone,Yasmin,Binder
+449,drospirenone,contraceptive,Drospirenone,Yasmin,Binder
+449,drospirenone,menopausal conditions,Drospirenone,Zarah,Binder
+449,drospirenone,contraceptive,Drospirenone,Zarah,Binder
+449,drospirenone,menopausal conditions,Drospirenone,Tydemy 28 Day,Binder
+449,drospirenone,contraceptive,Drospirenone,Tydemy 28 Day,Binder
+450,desogestrel,contraceptive,Desogestrel,Simliya,Modulator
+450,desogestrel,contraceptive,Desogestrel,Freya,Modulator
+450,desogestrel,contraceptive,Desogestrel,Emoquette,Modulator
+450,desogestrel,contraceptive,Desogestrel,Cyred 28 Day,Modulator
+450,desogestrel,contraceptive,Desogestrel,Linessa,Modulator
+450,desogestrel,contraceptive,Desogestrel,Mircette 28 Day,Modulator
+450,desogestrel,contraceptive,Desogestrel,Apri 28 Day,Modulator
+450,desogestrel,contraceptive,Desogestrel,Cesia 28 Day,Modulator
+450,desogestrel,contraceptive,Desogestrel,Reclipsen,Modulator
+450,desogestrel,contraceptive,Desogestrel,Velivet 28 Day,Modulator
+450,desogestrel,contraceptive,Desogestrel,Volnea 28 Day,Modulator
+450,desogestrel,contraceptive,Desogestrel,Azurette 28 Day,Modulator
+450,desogestrel,contraceptive,Desogestrel,Caziant 28 Day,Modulator
+450,desogestrel,contraceptive,Desogestrel,Marvelon,Modulator
+450,desogestrel,contraceptive,Desogestrel,Kalliga,Modulator
+450,desogestrel,contraceptive,Desogestrel,Enskyce 28 Day,Modulator
+450,desogestrel,contraceptive,Desogestrel,Pimtrea Pack,Modulator
+450,desogestrel,contraceptive,Desogestrel,Isibloom 28 Day,Modulator
+450,desogestrel,contraceptive,Desogestrel,Bekyree 28 Day,Modulator
+450,desogestrel,contraceptive,Desogestrel,Juleber 28 Day,Modulator
+450,desogestrel,contraceptive,Desogestrel,Viorele 28 Day,Modulator
+450,desogestrel,contraceptive,Desogestrel,Kariva 28 Day,Modulator
+452,leuprolide,cancer,Leuprolide,Fensolvi,Agonist
+452,leuprolide,cancer,Leuprolide,Eligard,Agonist
+452,leuprolide,cancer,Leuprolide,Lupron Depot-ped,Agonist
+452,leuprolide,cancer,Leuprolide,Lupron,Agonist
+452,leuprolide,cancer,Leuprolide,Viadur,Agonist
+452,leuprolide,cancer,Leuprolide,Lupaneta Pack 1-month,Agonist
+452,leuprolide,cancer,Leuprolide,Camcevi,Agonist
+452,leuprolide,cancer,Leuprolide,Zeulide Depot,Agonist
+453,triptorelin,cancer,Triptorelin,Decapeptyl sr,Modulator
+453,triptorelin,cancer,Triptorelin,Gonapeptyl depot,Modulator
+453,triptorelin,cancer,Triptorelin,Decapeptyl,Modulator
+463,methylprednisolone,diabetes,Methylprednisolone,Readysharp-p40,Binder
+463,methylprednisolone,diabetes,Methylprednisolone,Readysharp-p80,Binder
+463,methylprednisolone,diabetes,Methylprednisolone,Hybrisil,Binder
+463,methylprednisolone,diabetes,Methylprednisolone,Depo-medrol,Binder
+463,methylprednisolone,diabetes,Methylprednisolone,Depo-medrol With Lidocaine,Binder
+463,methylprednisolone,diabetes,Methylprednisolone,Medroloan Suik,Binder
+463,methylprednisolone,diabetes,Methylprednisolone,Medrol,Binder
+464,bifeprunox,schizophrenia,Bifeprunox,,Modulator
+464,bifeprunox,parkinson's disease,Bifeprunox,,Modulator
+467,prochlorperazine,anxiety,Prochlorperazine,Compro,Antagonist
+467,prochlorperazine,schizophrenia,Prochlorperazine,Compro,Antagonist
+467,prochlorperazine,psychotic disorders,Prochlorperazine,Compro,Antagonist
+467,prochlorperazine,migraine,Prochlorperazine,Compro,Antagonist
+467,prochlorperazine,anxiety,Prochlorperazine,Compazine,Antagonist
+467,prochlorperazine,schizophrenia,Prochlorperazine,Compazine,Antagonist
+467,prochlorperazine,psychotic disorders,Prochlorperazine,Compazine,Antagonist
+467,prochlorperazine,migraine,Prochlorperazine,Compazine,Antagonist
+467,prochlorperazine,anxiety,Prochlorperazine,Stemetil eff,Antagonist
+467,prochlorperazine,schizophrenia,Prochlorperazine,Stemetil eff,Antagonist
+467,prochlorperazine,psychotic disorders,Prochlorperazine,Stemetil eff,Antagonist
+467,prochlorperazine,migraine,Prochlorperazine,Stemetil eff,Antagonist
+467,prochlorperazine,anxiety,Prochlorperazine,Prochlorperazine,Antagonist
+467,prochlorperazine,schizophrenia,Prochlorperazine,Prochlorperazine,Antagonist
+467,prochlorperazine,psychotic disorders,Prochlorperazine,Prochlorperazine,Antagonist
+467,prochlorperazine,migraine,Prochlorperazine,Prochlorperazine,Antagonist
+468,samidorphan,schizophrenia,Samidorphan,,Inhibitor
+468,samidorphan,bipolar disorder,Samidorphan,,Inhibitor
+469,amisulpride,depression,Amisulpride,BARHEMSYS,Antagonist
+469,amisulpride,schizophrenia,Amisulpride,BARHEMSYS,Antagonist
+470,asenapine,schizophrenia,Asenapine,Sycrest,Modulator
+470,asenapine,schizophrenia,Asenapine,Saphris,Modulator
+470,asenapine,schizophrenia,Asenapine,Secuado,Modulator
+471,cariprazine,depression,Cariprazine,VRAYLAR,Modulator
+471,cariprazine,schizophrenia,Cariprazine,VRAYLAR,Modulator
+471,cariprazine,bipolar disorder,Cariprazine,VRAYLAR,Modulator
+471,cariprazine,psychotic disorders,Cariprazine,VRAYLAR,Modulator
+473,chlorpromazine,depression,Chlorpromazine,,Antagonist
+473,chlorpromazine,schizophrenia,Chlorpromazine,,Antagonist
+474,chlorprothixene,schizophrenia,Chlorprothixene,,Antagonist
+474,chlorprothixene,bipolar disorder,Chlorprothixene,,Antagonist
+474,chlorprothixene,psychotic disorders,Chlorprothixene,,Antagonist
+475,clozapine,schizophrenia,Clozapine,FAZACLO,Modulator
+475,clozapine,psychotic disorders,Clozapine,FAZACLO,Modulator
+475,clozapine,schizophrenia,Clozapine,CLOZARIL*VERSACLOZ,Modulator
+475,clozapine,psychotic disorders,Clozapine,CLOZARIL*VERSACLOZ,Modulator
+476,dexmedetomidine,schizophrenia,Dexmedetomidine,PRECEDEX,Agonist
+476,dexmedetomidine,bipolar disorder,Dexmedetomidine,PRECEDEX,Agonist
+476,dexmedetomidine,schizophrenia,Dexmedetomidine,DEXDOR,Agonist
+476,dexmedetomidine,bipolar disorder,Dexmedetomidine,DEXDOR,Agonist
+476,dexmedetomidine,schizophrenia,Dexmedetomidine,IGALMI,Agonist
+476,dexmedetomidine,bipolar disorder,Dexmedetomidine,IGALMI,Agonist
+477,flupentixol,depression,Flupentixol,FLUANXOL,Antagonist
+477,flupentixol,anxiety,Flupentixol,FLUANXOL,Antagonist
+477,flupentixol,schizophrenia,Flupentixol,FLUANXOL,Antagonist
+478,fluphenazine,schizophrenia,Fluphenazine,Modecate,Modulator
+479,fluspirilene,schizophrenia,Fluspirilene,,Antagonist
+480,haloperidol,schizophrenia,Haloperidol,Haldol,Antagonist
+481,iloperidone,schizophrenia,Iloperidone,Fanapt,Antagonist
+481,iloperidone,psychotic disorders,Iloperidone,Fanapt,Antagonist
+483,loxapine,schizophrenia,Loxapine,Xylac,Antagonist
+483,loxapine,bipolar disorder,Loxapine,Xylac,Antagonist
+483,loxapine,schizophrenia,Loxapine,Adasuve,Antagonist
+483,loxapine,bipolar disorder,Loxapine,Adasuve,Antagonist
+484,lurasidone,depression,Lurasidone,LATUDA,Modulator
+484,lurasidone,schizophrenia,Lurasidone,LATUDA,Modulator
+484,lurasidone,bipolar disorder,Lurasidone,LATUDA,Modulator
+486,mesoridazine,schizophrenia,Mesoridazine,SERENTIL,Agonist
+486,mesoridazine,alcohol addiction,Mesoridazine,SERENTIL,Agonist
+487,methotrimeprazine,schizophrenia,Methotrimeprazine,Nozinan,Modulator
+487,methotrimeprazine,bipolar disorder,Methotrimeprazine,Nozinan,Modulator
+488,molindone,schizophrenia,Molindone,MOBAN,Binder
+489,paliperidone,schizophrenia,Paliperidone,INVEGA*XEPLION,Antagonist
+490,perazine,schizophrenia,Perazine,TORECAN* MULTIFUGE*COMPAZINE*PROCOMP*STELAZINE,Modulator
+490,perazine,schizophrenia,Perazine,TRIFLUOPERAZINE HYDROCHLORIDE*PROCHLORPERAZINE*PIPERAZINE CITRATE,Modulator
+491,perphenazine,psychotic disorders,Perphenazine,FENTAZIN* TRILIFAN*PZC,Antagonist
+491,perphenazine,psychotic disorders,Perphenazine,DECENTAN*TRILAFON*PERPHENAN*EMESINAL,Antagonist
+492,pozanicline,schizophrenia,Pozanicline,,Agonist
+492,pozanicline,alzheimer's disease,Pozanicline,,Agonist
+492,pozanicline,attention deficit hyperactivity disorder,Pozanicline,,Agonist
+493,propiomazine,insomnia,Propiomazine,LARGON,Antagonist
+494,remoxipride,schizophrenia,Remoxipride,REMOXIPRIDE,Antagonist
+494,remoxipride,psychotic disorders,Remoxipride,REMOXIPRIDE,Antagonist
+495,risperidone,schizophrenia,Risperidone,PERSERIS*RISPERDAL,Antagonist
+495,risperidone,bipolar disorder,Risperidone,PERSERIS*RISPERDAL,Antagonist
+495,risperidone,psychotic disorders,Risperidone,PERSERIS*RISPERDAL,Antagonist
+496,sertindole,schizophrenia,Sertindole,,Antagonist
+497,sulpiride,schizophrenia,Sulpiride,DOLMATIL*DOGMATIL*BOSNYL*EGLONYL,Antagonist
+497,sulpiride,schizophrenia,Sulpiride,MERESA,Antagonist
+498,thiothixene,schizophrenia,Thiothixene,NAVANE,Antagonist
+499,ziprasidone,schizophrenia,Ziprasidone,GEODON*ZELDOX,Agonist
+499,ziprasidone,bipolar disorder,Ziprasidone,GEODON*ZELDOX,Agonist
+499,ziprasidone,psychotic disorders,Ziprasidone,GEODON*ZELDOX,Agonist
+500,ziprasidone,schizophrenia,Ziprasidone,GEODON*ZELDOX,Binder
+500,ziprasidone,bipolar disorder,Ziprasidone,GEODON*ZELDOX,Binder
+500,ziprasidone,psychotic disorders,Ziprasidone,GEODON*ZELDOX,Binder
+504,topiramate,seizures,Topiramate,Epitomax,Antagonist
+504,topiramate,migraine,Topiramate,Epitomax,Antagonist
+504,topiramate,seizures,Topiramate,Qudexy xr,Antagonist
+504,topiramate,migraine,Topiramate,Qudexy xr,Antagonist
+504,topiramate,seizures,Topiramate,Topamax sprinkle,Antagonist
+504,topiramate,migraine,Topiramate,Topamax sprinkle,Antagonist
+504,topiramate,seizures,Topiramate,Trokendi xr,Antagonist
+504,topiramate,migraine,Topiramate,Trokendi xr,Antagonist
+504,topiramate,seizures,Topiramate,Topamax,Antagonist
+504,topiramate,migraine,Topiramate,Topamax,Antagonist
+504,topiramate,seizures,Topiramate,Topiramate,Antagonist
+504,topiramate,migraine,Topiramate,Topiramate,Antagonist
+504,topiramate,seizures,Topiramate,Tro,Antagonist
+504,topiramate,migraine,Topiramate,Tro,Antagonist
+505,ganaxolone,seizures,Ganaxolone,Ztalmy,Agonist
+506,ganaxolone,seizures,Ganaxolone,Ztalmy,Modulator
+510,eszopiclone,insomnia,Eszopiclone,Lunesta,Agonist
+512,melatonin,insomnia,Melatonin,CIRCADIN,Binder
+512,melatonin,autism spectrum disorder,Melatonin,CIRCADIN,Binder
+513,melatonin,insomnia,Melatonin,CIRCADIN,Inhibitor
+513,melatonin,autism spectrum disorder,Melatonin,CIRCADIN,Inhibitor
+514,pramipexole,parkinson's disease,Pramipexole,OPRYMEA,Modulator
+514,pramipexole,parkinson's disease,Pramipexole,MIRAPEX* DAQUIRAN*MIRAPEXIN*SIFROL,Modulator
+518,aliskiren,stroke,Aliskiren,Rasilez,Inhibitor
+518,aliskiren,hypertension,Aliskiren,Rasilez,Inhibitor
+518,aliskiren,stroke,Aliskiren,Tekturna,Inhibitor
+518,aliskiren,hypertension,Aliskiren,Tekturna,Inhibitor
+518,aliskiren,stroke,Aliskiren,Tekturna Hct,Inhibitor
+518,aliskiren,hypertension,Aliskiren,Tekturna Hct,Inhibitor
+519,alteplase,stroke,Alteplase,Activase,Activator
+519,alteplase,stroke,Alteplase,Cathflo Activase,Activator
+519,alteplase,stroke,Alteplase,Cathflo,Activator
+520,amlodipine,hypertension,Amlodipine,,Blocker
+520,amlodipine,hypertension,Amlodipine,Dafiro,Blocker
+520,amlodipine,hypertension,Amlodipine,Norliqva,Blocker
+520,amlodipine,hypertension,Amlodipine,Exforge Hct,Blocker
+520,amlodipine,hypertension,Amlodipine,Katerzia,Blocker
+520,amlodipine,hypertension,Amlodipine,Lotrel,Blocker
+520,amlodipine,hypertension,Amlodipine,Azor,Blocker
+520,amlodipine,hypertension,Amlodipine,Exforge,Blocker
+520,amlodipine,hypertension,Amlodipine,Amlobenz,Blocker
+520,amlodipine,hypertension,Amlodipine,Caduet,Blocker
+521,atenolol,multiple sclerosis,Atenolol,Tenormin,Antagonist
+521,atenolol,hypertension,Atenolol,Tenormin,Antagonist
+521,atenolol,multiple sclerosis,Atenolol,ANTIPRESSAN,Antagonist
+521,atenolol,hypertension,Atenolol,ANTIPRESSAN,Antagonist
+521,atenolol,multiple sclerosis,Atenolol,Tenoretic,Antagonist
+521,atenolol,hypertension,Atenolol,Tenoretic,Antagonist
+523,clopidogrel,stroke,Clopidogrel,Zyllt,Antagonist
+523,clopidogrel,stroke,Clopidogrel,Duoplavin,Antagonist
+523,clopidogrel,stroke,Clopidogrel,Plavix,Antagonist
+524,repinotan,depression,Repinotan,,Antagonist
+524,repinotan,stroke,Repinotan,,Antagonist
+526,atacicept,cancer,Atacicept,,Modulator
+528,valbenazine,tardive dyskinesia,Valbenazine,Ingrezza,Antagonist
+531,pimozide,tourette's syndrome,Pimozide,Pimozide,Antagonist
+531,pimozide,tourette's syndrome,Pimozide,Orap,Antagonist
+534,exenatide,diabetes,Exenatide,Bydureon,Binder
+534,exenatide,diabetes,Exenatide,Byetta,Binder
+535,dapagliflozin,diabetes,Dapagliflozin,Farxiga,Modulator
+535,dapagliflozin,diabetes,Dapagliflozin,Edistride,Modulator
+535,dapagliflozin,diabetes,Dapagliflozin,Forxiga,Modulator
+535,dapagliflozin,diabetes,Dapagliflozin,Xigduo,Modulator
+535,dapagliflozin,diabetes,Dapagliflozin,Qternmet,Modulator
+535,dapagliflozin,diabetes,Dapagliflozin,Qtern,Modulator
+536,liraglutide,diabetes,Liraglutide,Xultophy,Agonist
+536,liraglutide,diabetes,Liraglutide,Victoza,Agonist
+536,liraglutide,diabetes,Liraglutide,Saxenda,Agonist
+537,metformin,diabetes,Metformin,,Inhibitor
+537,metformin,diabetes,Metformin,Avandamet,Inhibitor
+537,metformin,diabetes,Metformin,Actoplus Met,Inhibitor
+539,pioglitazone,diabetes,Pioglitazone,INCRESYNC*GLUBRAVA*GLUSTIN,Agonist
+539,pioglitazone,diabetes,Pioglitazone,ACTOPLUS MET*OSENI*TANDEMACT*ACTOS*GLIDIPION*DUETACT,Agonist
+540,semaglutide,diabetes,Semaglutide,Ozempic,Agonist
+540,semaglutide,diabetes,Semaglutide,Rybelsus,Agonist
+540,semaglutide,diabetes,Semaglutide,Wegovy,Agonist
+541,levonorgestrel,menopausal conditions,Levonorgestrel,Plan B,Binder
+541,levonorgestrel,contraceptive,Levonorgestrel,Plan B,Binder
+541,levonorgestrel,menopausal conditions,Levonorgestrel,Triquilar,Binder
+541,levonorgestrel,contraceptive,Levonorgestrel,Triquilar,Binder
+541,levonorgestrel,menopausal conditions,Levonorgestrel,React,Binder
+541,levonorgestrel,contraceptive,Levonorgestrel,React,Binder
+541,levonorgestrel,menopausal conditions,Levonorgestrel,Aftera,Binder
+541,levonorgestrel,contraceptive,Levonorgestrel,Aftera,Binder
+541,levonorgestrel,menopausal conditions,Levonorgestrel,Loseasonique,Binder
+541,levonorgestrel,contraceptive,Levonorgestrel,Loseasonique,Binder
+541,levonorgestrel,menopausal conditions,Levonorgestrel,Option 2,Binder
+541,levonorgestrel,contraceptive,Levonorgestrel,Option 2,Binder
+541,levonorgestrel,menopausal conditions,Levonorgestrel,Iclevia 91 Day,Binder
+541,levonorgestrel,contraceptive,Levonorgestrel,Iclevia 91 Day,Binder
+541,levonorgestrel,menopausal conditions,Levonorgestrel,Sronyx 28 Day,Binder
+541,levonorgestrel,contraceptive,Levonorgestrel,Sronyx 28 Day,Binder
+541,levonorgestrel,menopausal conditions,Levonorgestrel,Twirla 3 Count Weekly Patch,Binder
+541,levonorgestrel,contraceptive,Levonorgestrel,Twirla 3 Count Weekly Patch,Binder
+541,levonorgestrel,menopausal conditions,Levonorgestrel,Aviane 28,Binder
+541,levonorgestrel,contraceptive,Levonorgestrel,Aviane 28,Binder
+541,levonorgestrel,menopausal conditions,Levonorgestrel,Larissia 28 Day Pack,Binder
+541,levonorgestrel,contraceptive,Levonorgestrel,Larissia 28 Day Pack,Binder
+541,levonorgestrel,menopausal conditions,Levonorgestrel,Tyblume 28 Day,Binder
+541,levonorgestrel,contraceptive,Levonorgestrel,Tyblume 28 Day,Binder
+541,levonorgestrel,menopausal conditions,Levonorgestrel,Take Action,Binder
+541,levonorgestrel,contraceptive,Levonorgestrel,Take Action,Binder
+541,levonorgestrel,menopausal conditions,Levonorgestrel,My Way,Binder
+541,levonorgestrel,contraceptive,Levonorgestrel,My Way,Binder
+541,levonorgestrel,menopausal conditions,Levonorgestrel,Marlissa 28 Day,Binder
+541,levonorgestrel,contraceptive,Levonorgestrel,Marlissa 28 Day,Binder
+541,levonorgestrel,menopausal conditions,Levonorgestrel,Afirmelle 28 Day,Binder
+541,levonorgestrel,contraceptive,Levonorgestrel,Afirmelle 28 Day,Binder
+541,levonorgestrel,menopausal conditions,Levonorgestrel,Vienva 28 Day,Binder
+541,levonorgestrel,contraceptive,Levonorgestrel,Vienva 28 Day,Binder
+541,levonorgestrel,menopausal conditions,Levonorgestrel,Dolishale 28 Day,Binder
+541,levonorgestrel,contraceptive,Levonorgestrel,Dolishale 28 Day,Binder
+541,levonorgestrel,menopausal conditions,Levonorgestrel,My Choice,Binder
+541,levonorgestrel,contraceptive,Levonorgestrel,My Choice,Binder
+541,levonorgestrel,menopausal conditions,Levonorgestrel,Next Choice One Dose,Binder
+541,levonorgestrel,contraceptive,Levonorgestrel,Next Choice One Dose,Binder
+541,levonorgestrel,menopausal conditions,Levonorgestrel,Indayo,Binder
+541,levonorgestrel,contraceptive,Levonorgestrel,Indayo,Binder
+541,levonorgestrel,menopausal conditions,Levonorgestrel,Alesse,Binder
+541,levonorgestrel,contraceptive,Levonorgestrel,Alesse,Binder
+541,levonorgestrel,menopausal conditions,Levonorgestrel,Enpresse 28 Day,Binder
+541,levonorgestrel,contraceptive,Levonorgestrel,Enpresse 28 Day,Binder
+541,levonorgestrel,menopausal conditions,Levonorgestrel,Trivora 28 Day,Binder
+541,levonorgestrel,contraceptive,Levonorgestrel,Trivora 28 Day,Binder
+541,levonorgestrel,menopausal conditions,Levonorgestrel,Jolessa 91 Day,Binder
+541,levonorgestrel,contraceptive,Levonorgestrel,Jolessa 91 Day,Binder
+541,levonorgestrel,menopausal conditions,Levonorgestrel,Amethia 91 Day,Binder
+541,levonorgestrel,contraceptive,Levonorgestrel,Amethia 91 Day,Binder
+541,levonorgestrel,menopausal conditions,Levonorgestrel,Lutera 28 Day,Binder
+541,levonorgestrel,contraceptive,Levonorgestrel,Lutera 28 Day,Binder
+541,levonorgestrel,menopausal conditions,Levonorgestrel,Preventeza,Binder
+541,levonorgestrel,contraceptive,Levonorgestrel,Preventeza,Binder
+541,levonorgestrel,menopausal conditions,Levonorgestrel,Kurvelo,Binder
+541,levonorgestrel,contraceptive,Levonorgestrel,Kurvelo,Binder
+541,levonorgestrel,menopausal conditions,Levonorgestrel,Delyla 28 Day,Binder
+541,levonorgestrel,contraceptive,Levonorgestrel,Delyla 28 Day,Binder
+541,levonorgestrel,menopausal conditions,Levonorgestrel,Quartette 91 Day Pack,Binder
+541,levonorgestrel,contraceptive,Levonorgestrel,Quartette 91 Day Pack,Binder
+541,levonorgestrel,menopausal conditions,Levonorgestrel,Econtra,Binder
+541,levonorgestrel,contraceptive,Levonorgestrel,Econtra,Binder
+541,levonorgestrel,menopausal conditions,Levonorgestrel,Introvale 91 Day,Binder
+541,levonorgestrel,contraceptive,Levonorgestrel,Introvale 91 Day,Binder
+541,levonorgestrel,menopausal conditions,Levonorgestrel,Myzilra 28 Day,Binder
+541,levonorgestrel,contraceptive,Levonorgestrel,Myzilra 28 Day,Binder
+541,levonorgestrel,menopausal conditions,Levonorgestrel,Min-ovral,Binder
+541,levonorgestrel,contraceptive,Levonorgestrel,Min-ovral,Binder
+541,levonorgestrel,menopausal conditions,Levonorgestrel,LoJaimiess,Binder
+541,levonorgestrel,contraceptive,Levonorgestrel,LoJaimiess,Binder
+541,levonorgestrel,menopausal conditions,Levonorgestrel,Morning After,Binder
+541,levonorgestrel,contraceptive,Levonorgestrel,Morning After,Binder
+541,levonorgestrel,menopausal conditions,Levonorgestrel,Portia 28 Day,Binder
+541,levonorgestrel,contraceptive,Levonorgestrel,Portia 28 Day,Binder
+541,levonorgestrel,menopausal conditions,Levonorgestrel,Skyla,Binder
+541,levonorgestrel,contraceptive,Levonorgestrel,Skyla,Binder
+541,levonorgestrel,menopausal conditions,Levonorgestrel,Amethyst,Binder
+541,levonorgestrel,contraceptive,Levonorgestrel,Amethyst,Binder
+541,levonorgestrel,menopausal conditions,Levonorgestrel,Aubra 28 Day,Binder
+541,levonorgestrel,contraceptive,Levonorgestrel,Aubra 28 Day,Binder
+541,levonorgestrel,menopausal conditions,Levonorgestrel,Levonest 28 Day,Binder
+541,levonorgestrel,contraceptive,Levonorgestrel,Levonest 28 Day,Binder
+541,levonorgestrel,menopausal conditions,Levonorgestrel,Liletta,Binder
+541,levonorgestrel,contraceptive,Levonorgestrel,Liletta,Binder
+541,levonorgestrel,menopausal conditions,Levonorgestrel,Orsythia 28 Day,Binder
+541,levonorgestrel,contraceptive,Levonorgestrel,Orsythia 28 Day,Binder
+541,levonorgestrel,menopausal conditions,Levonorgestrel,Rivelsa 91 Day,Binder
+541,levonorgestrel,contraceptive,Levonorgestrel,Rivelsa 91 Day,Binder
+541,levonorgestrel,menopausal conditions,Levonorgestrel,Climara Pro,Binder
+541,levonorgestrel,contraceptive,Levonorgestrel,Climara Pro,Binder
+541,levonorgestrel,menopausal conditions,Levonorgestrel,Setlakin 91 Day,Binder
+541,levonorgestrel,contraceptive,Levonorgestrel,Setlakin 91 Day,Binder
+541,levonorgestrel,menopausal conditions,Levonorgestrel,Plan B One-step,Binder
+541,levonorgestrel,contraceptive,Levonorgestrel,Plan B One-step,Binder
+541,levonorgestrel,menopausal conditions,Levonorgestrel,Altavera 28 Day,Binder
+541,levonorgestrel,contraceptive,Levonorgestrel,Altavera 28 Day,Binder
+541,levonorgestrel,menopausal conditions,Levonorgestrel,Levora 0.15/30 28 Day,Binder
+541,levonorgestrel,contraceptive,Levonorgestrel,Levora 0.15/30 28 Day,Binder
+541,levonorgestrel,menopausal conditions,Levonorgestrel,Opcicon One-step,Binder
+541,levonorgestrel,contraceptive,Levonorgestrel,Opcicon One-step,Binder
+541,levonorgestrel,menopausal conditions,Levonorgestrel,Seasonique,Binder
+541,levonorgestrel,contraceptive,Levonorgestrel,Seasonique,Binder
+541,levonorgestrel,menopausal conditions,Levonorgestrel,Seasonale,Binder
+541,levonorgestrel,contraceptive,Levonorgestrel,Seasonale,Binder
+541,levonorgestrel,menopausal conditions,Levonorgestrel,Fallback Solo,Binder
+541,levonorgestrel,contraceptive,Levonorgestrel,Fallback Solo,Binder
+541,levonorgestrel,menopausal conditions,Levonorgestrel,Camreselo 91 Day,Binder
+541,levonorgestrel,contraceptive,Levonorgestrel,Camreselo 91 Day,Binder
+541,levonorgestrel,menopausal conditions,Levonorgestrel,Balcoltra 28 Day,Binder
+541,levonorgestrel,contraceptive,Levonorgestrel,Balcoltra 28 Day,Binder
+541,levonorgestrel,menopausal conditions,Levonorgestrel,Lillow 28 Day,Binder
+541,levonorgestrel,contraceptive,Levonorgestrel,Lillow 28 Day,Binder
+541,levonorgestrel,menopausal conditions,Levonorgestrel,Mirena,Binder
+541,levonorgestrel,contraceptive,Levonorgestrel,Mirena,Binder
+541,levonorgestrel,menopausal conditions,Levonorgestrel,Daysee 91 Day,Binder
+541,levonorgestrel,contraceptive,Levonorgestrel,Daysee 91 Day,Binder
+541,levonorgestrel,menopausal conditions,Levonorgestrel,Her Style,Binder
+541,levonorgestrel,contraceptive,Levonorgestrel,Her Style,Binder
+541,levonorgestrel,menopausal conditions,Levonorgestrel,Jaimiess 91 Day,Binder
+541,levonorgestrel,contraceptive,Levonorgestrel,Jaimiess 91 Day,Binder
+541,levonorgestrel,menopausal conditions,Levonorgestrel,Lo Simpesse,Binder
+541,levonorgestrel,contraceptive,Levonorgestrel,Lo Simpesse,Binder
+541,levonorgestrel,menopausal conditions,Levonorgestrel,Chateal 28 Day,Binder
+541,levonorgestrel,contraceptive,Levonorgestrel,Chateal 28 Day,Binder
+541,levonorgestrel,menopausal conditions,Levonorgestrel,Ayuna 28 Day Pack,Binder
+541,levonorgestrel,contraceptive,Levonorgestrel,Ayuna 28 Day Pack,Binder
+541,levonorgestrel,menopausal conditions,Levonorgestrel,New Day,Binder
+541,levonorgestrel,contraceptive,Levonorgestrel,New Day,Binder
+541,levonorgestrel,menopausal conditions,Levonorgestrel,Bionafem,Binder
+541,levonorgestrel,contraceptive,Levonorgestrel,Bionafem,Binder
+541,levonorgestrel,menopausal conditions,Levonorgestrel,Ashlyna 91 Day,Binder
+541,levonorgestrel,contraceptive,Levonorgestrel,Ashlyna 91 Day,Binder
+541,levonorgestrel,menopausal conditions,Levonorgestrel,Next Choice,Binder
+541,levonorgestrel,contraceptive,Levonorgestrel,Next Choice,Binder
+541,levonorgestrel,menopausal conditions,Levonorgestrel,Simpesse,Binder
+541,levonorgestrel,contraceptive,Levonorgestrel,Simpesse,Binder
+541,levonorgestrel,menopausal conditions,Levonorgestrel,Camrese 91 Day,Binder
+541,levonorgestrel,contraceptive,Levonorgestrel,Camrese 91 Day,Binder
+541,levonorgestrel,menopausal conditions,Levonorgestrel,Fayosim 91 Day,Binder
+541,levonorgestrel,contraceptive,Levonorgestrel,Fayosim 91 Day,Binder
+541,levonorgestrel,menopausal conditions,Levonorgestrel,Kyleena,Binder
+541,levonorgestrel,contraceptive,Levonorgestrel,Kyleena,Binder
+541,levonorgestrel,menopausal conditions,Levonorgestrel,Falmina 28 Day,Binder
+541,levonorgestrel,contraceptive,Levonorgestrel,Falmina 28 Day,Binder
+543,warfarin,stroke,Warfarin,,Inhibitor
+545,calcitriol,thyroid disorders,Calcitriol,Rocaltrol,Agonist
+545,calcitriol,thyroid disorders,Calcitriol,Vectical,Agonist
+546,vitamin d3,thyroid disorders,Cholecalciferol,Citranatal Harmony,Antagonist
+546,vitamin d3,thyroid disorders,Cholecalciferol,Fosavance,Antagonist
+546,vitamin d3,thyroid disorders,Cholecalciferol,Mvc-fluoride,Antagonist
+546,vitamin d3,thyroid disorders,Cholecalciferol,Infuvite,Antagonist
+546,vitamin d3,thyroid disorders,Cholecalciferol,Animi-3 With Vitamin D,Antagonist
+546,vitamin d3,thyroid disorders,Cholecalciferol,Natafort,Antagonist
+546,vitamin d3,thyroid disorders,Cholecalciferol,Infuvite Pediatric,Antagonist
+546,vitamin d3,thyroid disorders,Cholecalciferol,Fosamax Plus D,Antagonist
+546,vitamin d3,thyroid disorders,Cholecalciferol,Adrovance,Antagonist
+546,vitamin d3,thyroid disorders,Cholecalciferol,Pregvit,Antagonist
+546,vitamin d3,thyroid disorders,Cholecalciferol,Vidextra,Antagonist
+546,vitamin d3,thyroid disorders,Cholecalciferol,Citranatal B-calm Kit,Antagonist
