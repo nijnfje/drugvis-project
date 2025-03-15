@@ -33,10 +33,6 @@ section {
     height: 100vh;
     width: 100vw;
 
-    /* Alt dimensions TODO: how to properly set dimensions? */
-    /*aspect-ratio: 4 / 3;*/
-    /*height: min(100vh, (3 / 4) * 100vw);*/
-
     font-family: "Varela Round", sans-serif;
     color: #076cbc;
     background-color: #fefae8;

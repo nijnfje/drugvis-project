@@ -1,0 +1,25 @@
+<head>
+    <meta charset="UTF-8">
+    <title>Drug-Condition Heatmap</title>
+    <link rel="stylesheet" href="css/vis/heatmap_styles.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+
+<div>
+    <div class="filter-panel">
+        <div id="actionCheckboxes" class="action-checkboxes"></div>
+
+        <label for="topNSelect">Show Top N Conditions:</label>
+        <select id="topNSelect"></select>
+
+        <button id="applyFilter">Apply Filter</button>
+        <button id="resetFilter">Reset Filter</button>
+    </div>
+
+    <div id="heatmap-container"></div>
+
+    <div id="tooltip" class="tooltip"></div>
+
+    <script src="js/heatmap.js"></script>
+
+</div>

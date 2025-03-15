@@ -1,6 +1,6 @@
 /***************************************
     General styles for the visualizations
-    We want:
+    Want:
     - Visualizations to be centered
     - Explanations to be centered
  ***************************************/
@@ -15,6 +15,10 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+iframe {
+    height: 100%;
 }
 
 .vis-explanation-parent {

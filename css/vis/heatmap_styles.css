@@ -1,12 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Gaegu:wght@400;700&family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cagliostro&family=Varela+Round&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    font-family: "Varela Round", sans-serif;
 }
 
 body {
     font-family: "Helvetica Neue", Arial, sans-serif;
-    background: #fafafa;
     color: #333;
     padding: 1rem;
 }
