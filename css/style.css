@@ -78,12 +78,6 @@ section {
 .section-3 {
     position: relative;
     height: 100vh; /* prev: 100% */
-    /*left: 25%;*/ /* move the explanation from the left */
-
-   /* Debugging */
-   /* border: 2px solid blue;*/
-
-
 }
 
 .s3-explanation {
@@ -93,11 +87,30 @@ section {
 }
 
 .soup-temperature-container{
+    width: 100%;
+
     position: absolute;
     bottom: 10rem;
-    left: 50%;
-    transform: translateX(-50%);
+
+    /* Positioning inside contents */
+    left: 25%;
 }
+
+.soup {
+    /* Soup bowl shape */
+    height: 6rem;
+    width: 10rem;
+    border-radius: 7rem 7rem 50rem 50rem;
+    border: 0.5rem solid #c3cec2;
+
+    /* Positioning */
+    margin-right: 1rem;
+}
+
+.soup:hover {
+    background-color: rgba(204, 82, 0, 0.27); /* Darker shade */
+}
+
 
 .salt-rat-parent {
     position: relative;
