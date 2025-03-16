@@ -1,4 +1,4 @@
-d3.csv("data/Final_Cleaned_Drug_Data.csv", row => {
+d3.csv("Final_Cleaned_Drug_Data.csv", row => {
     row.drug_name = row.drug_name;
     row.list_of_conditions = row.list_of_conditions;
     return row;

@@ -103,6 +103,12 @@ section {
     margin-right: 1rem;
 }
 
+.steam-gif {
+    /* Dimensions */
+    height: 6rem;
+    width: 10rem;
+}
+
 .soup:hover {
     background-color: rgba(204, 82, 0, 0.27); /* Darker shade */
 }
@@ -162,6 +168,12 @@ section {
 /***************************************
     SECTION 5: Disease related by medications (Vis #7)
  ***************************************/
+.vis-salt {
+    position: absolute;
+    height: 80%;
+    bottom: 0;
+}
+
 #salt-shaker-img{
     width: 100%;
 }
