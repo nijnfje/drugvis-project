@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Cagliostro&family=Varela+Round&display=swap');
-/*************
- GENERAL SECTION STYLES
-*************/
+
+/***************************************
+        GENERAL SECTION STYLES
+***************************************/
 
 /*body {*/
 /*    !* Fonts *!*/
@@ -11,20 +12,31 @@
 /*}*/
 /* TODO: Why does changing this affect the assembly line picture? */
 
-/* Determine heights */
+/* To inherit heights */
 html, body {
     height: 100%;
     margin: 0;
     padding: 0;
 }
 
+/* For scroll snapping. Source: Anansi Creative, https://www.youtube.com/watch?v=o_lWNEevHJo&t=354s*/
 .scroll-snap-wrapper {
-    position: relative; /* So absolute children are positioned inside */
+    position: relative;
     scroll-snap-type: y mandatory;
     overflow-y: scroll; /* Enables vertical scrolling */
     height: 100vh;
 }
 
+.scroll-snap-wrapper { /* Disable scrollbars */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.scroll-snap-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+/* Individual section (slide) styles */
 section {
     position: relative;
     scroll-snap-align: start;
@@ -34,17 +46,14 @@ section {
     width: 100vw;
 
     font-family: "Varela Round", sans-serif;
+    font-weight: bold;
     color: #076cbc;
-    background-color: #fefae8;
+    background-color: #fff8e0; /* alt: #f2ebdb */
 }
 
-/* Disable scrollbars */
-.scroll-snap-wrapper {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
-.scroll-snap-wrapper::-webkit-scrollbar {
-    display: none;
+/* To pause animations when needed */
+.paused {
+    animation-play-state: paused;
 }
 
 /***************************************
@@ -56,24 +65,45 @@ section {
     width: 100vw;
 }
 
-#title-rat-img {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    height: 75vh;
-    max-height: 100%;
-}
-
 #title-subtitle-sign{
     position: absolute;
     left: 20%;
     top: 50%;
+
     height: 27rem;
     max-height: 100%;
-
     filter: invert(54%) sepia(92%) saturate(177%) hue-rotate(191deg) brightness(82%) contrast(77%);    /*Source to convert color to filter: https://codepen.io/sosuke/pen/Pjoqqp */
-
 }
+
+#title-rat-img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    height: 75vh;
+    max-height: 100%;
+}
+
+#title-rat-sparkle-gif{
+    position: absolute;
+    right: 7%;
+    bottom: 30%;
+
+    height: 20%;
+    filter: invert(15%) sepia(66%) saturate(630%) hue-rotate(318deg) brightness(105%) contrast(103%);
+
+    /*visibility: hidden;*/
+    /*transition: opacity 1s ease-in-out;*/
+
+    opacity: 0;
+}
+
+#title-rat-sparkle-gif.show {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease-in-out, visibility 0s linear 0s; /* Immediate visibility after fade-in */
+}
+
 
 /***************************************
     SECTION 2: Mental illness in Canada

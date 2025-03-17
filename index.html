@@ -23,19 +23,15 @@
     <div class="scroll-snap-wrapper">
         <!-- Section 1: Title -->
         <section>
-<!--            Section 1: Title card-->
+            <div class="row">
+                <img id="title-scroll" src="img/title-scroll.png" class="animate__animated animate__slideInDown">
+            </div>
+
             <div>
-                <div class="row">
-                    <img id="title-scroll" src="img/title-scroll.png" class="animate__animated animate__slideInDown">
-                    <!-- TODO: Add "flipInX" animation or Rotating entrances or Zooming entrances-->
-                </div>
-                <div>
-                    <div class="title-subtitle-container">
-                        <img id="title-subtitle-sign" src="img/signboard-clipart-xl.png" class="animate__animated animate__flipInX animate__delay-1s animate__slow">
-                    </div>
-                    <img id="title-rat-img" src="img/title-rat.png" class="animate__animated animate__slideInUp">
-                    <!-- TODO: Add "slideInUp" animation -->
-                </div>
+                <!-- TODO: Add proper subtitle -->
+                <img id="title-subtitle-sign" src="img/signboard-clipart-xl.png" class="animate__animated animate__flipInX animate__delay-1s animate__slow">
+                <img id="title-rat-img" src="img/title-rat.png" class="animate__animated animate__slideInUp" onclick="showSparkle()">
+                <img id="title-rat-sparkle-gif" src="https://i.gifer.com/origin/f9/f9abd21a7f2be6472c1852518c8e605b.gif" onclick="showSparkle()">
             </div>
         </section>
 
