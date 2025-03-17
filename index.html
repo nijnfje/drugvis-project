@@ -8,6 +8,8 @@
 
     <!--    BOOTSTRAP     -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--    Animate.css     -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet"/>
 
     <!-- Own Stylesheets -->
     <link rel="stylesheet" href="css/style.css">
@@ -24,11 +26,14 @@
 <!--            Section 1: Title card-->
             <div>
                 <div class="row">
-                    <img id="title-scroll" src="img/title-scroll.png">
+                    <img id="title-scroll" src="img/title-scroll.png" class="animate__animated animate__slideInDown">
                     <!-- TODO: Add "flipInX" animation or Rotating entrances or Zooming entrances-->
                 </div>
                 <div>
-                    <img id="title-rat-img" src="img/title-rat.png">
+                    <div class="title-subtitle-container">
+                        <img id="title-subtitle-sign" src="img/signboard-clipart-xl.png" class="animate__animated animate__flipInX animate__delay-1s animate__slow">
+                    </div>
+                    <img id="title-rat-img" src="img/title-rat.png" class="animate__animated animate__slideInUp">
                     <!-- TODO: Add "slideInUp" animation -->
                 </div>
             </div>
@@ -83,30 +88,30 @@
             <div class="row">
                 <div class="col-md-7">
                     <div class="section-3">
-<!--                        <div class="s3-LHS-parent">-->
-                            <div class="s3-explanation">
-                                Maybe you've heard of mental conditions described as "chemical imbalances". <br>
-                                This can be true! <br>
-                                Brains want the "just-right" amount of chemicals to function properly. <br>
-                                Otherwise, there can be undesired effects.
-                            </div>
-                            <div class="soup-temperature-container">
-                                <div class="steam-container">
-                                    <img class="steam-gif" src="https://media.baamboozle.com/uploads/images/613393/1673809501_61805_gif-url.gif">
-                                    <img class="steam-gif" src="https://media.baamboozle.com/uploads/images/613393/1673809501_61805_gif-url.gif">
-                                    <img class="steam-gif" src="https://media.baamboozle.com/uploads/images/613393/1673809501_61805_gif-url.gif">
-                                </div>
-                                <div class="bowl-container">
-                                    <button class="soup"> Too hot </button>
-                                    <button class="soup"> Too cold </button>
-                                    <button class="soup"> Just right! </button>
-                                </div>
+                        <div class="s3-explanation">
+                            Maybe you've heard of mental conditions described as "chemical imbalances". <br>
+                            Sometimes, this is can be the case! <br>
+                            Similar to Goldilocks looking for a perfect bowl of porridge,
+                            too much or too little of certain brain chemicals can cause undesired effects. <br>
+                            Brains want the "just-right" amount of chemicals to function properly!
+                        </div>
 
+                        <div class="soup-temperature-container">
+                            <div class="steam-container">
+                                <img id="steam1" class="steam-gif" src="https://media.baamboozle.com/uploads/images/613393/1673809501_61805_gif-url.gif">
+                                <img id="steam2" class="steam-gif" src="https://media.baamboozle.com/uploads/images/613393/1673809501_61805_gif-url.gif">
+                                <img id="steam3" class="steam-gif" src="https://media.baamboozle.com/uploads/images/613393/1673809501_61805_gif-url.gif">
                             </div>
-<!--                        </div>-->
+                            <div class="bowl-container">
+                                <button class="soup"> Too hot </button>
+                                <button class="soup"> Too cold </button>
+                                <button class="soup"> Just right! </button>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
+
                 <div class="col-md-5 salt-rat-parent">
                     <img id="salt-rat" src="img/rat-salt.png">
                 </div>

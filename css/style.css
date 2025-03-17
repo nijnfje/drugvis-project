@@ -47,9 +47,9 @@ section {
     display: none;
 }
 
-/**************************
+/***************************************
     SECTION 1: Title card
- **************************/
+***************************************/
 
 #title-scroll{
     height: 75vh;
@@ -62,6 +62,17 @@ section {
     bottom: 0;
     height: 75vh;
     max-height: 100%;
+}
+
+#title-subtitle-sign{
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    height: 27rem;
+    max-height: 100%;
+
+    filter: invert(54%) sepia(92%) saturate(177%) hue-rotate(191deg) brightness(82%) contrast(77%);    /*Source to convert color to filter: https://codepen.io/sosuke/pen/Pjoqqp */
+
 }
 
 /***************************************
@@ -107,6 +118,13 @@ section {
     /* Dimensions */
     height: 6rem;
     width: 10rem;
+
+    margin-right: 1rem;
+
+}
+
+#steam2 {
+    transform: scaleX(-1);
 }
 
 .soup:hover {
