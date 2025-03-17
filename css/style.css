@@ -63,6 +63,7 @@ section {
 #title-scroll{
     height: 75vh;
     width: 100vw;
+    z-index: 2;
 }
 
 #title-subtitle-sign{
@@ -73,6 +74,15 @@ section {
     height: 27rem;
     max-height: 100%;
     filter: invert(54%) sepia(92%) saturate(177%) hue-rotate(191deg) brightness(82%) contrast(77%);    /*Source to convert color to filter: https://codepen.io/sosuke/pen/Pjoqqp */
+}
+
+#garden {
+    position: absolute;
+    bottom: -50%;
+
+    height: 50rem;
+    width: 100vw;
+    transform: rotate(0deg);
 }
 
 #title-rat-img {
