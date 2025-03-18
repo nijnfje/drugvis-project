@@ -288,13 +288,18 @@
         </section>
 
         <!-- Section 7: vis #3 drugs and diseases -->
-        <section>
-            Section 7
+        <section id="s7">
             <div class="row">
                 <div class="col-md-6">
                     <div class="vis-explanation-parent">
                         <div class="vis-explanation">
-                            Here's a rough presentation of medications available for different conditions. <br>
+                            Here's a presentation of some of the medications available for different disorders. <br>
+                            Click on the different conditions and see if you've heard of some of the medications!
+                            <div class="continue-button-container s7-continue-button animate__animated animate__fadeIn animate__delay-1s" onclick="nextSection(event)">
+                                <div class="continue-button">
+                                    <i class="continue-button-icon arrow right"> </i>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -311,8 +316,7 @@
         </section>
 
         <!-- Section 8: vis #4 drugs and receptors -->
-        <section id="8">
-            Section 8
+        <section id="s8">
             <div class="row">
                 <div class="col-md-6">
                     <div class="vis-area-parent">
@@ -324,8 +328,22 @@
                 <div class="col-md-6">
                     <div class="vis-explanation-parent">
                         <div class="vis-explanation">
-                            If you are curious about medications and their target structure, this section is for you! <br>
-                            Although we can't make causal claims, it's interesting to see how drugs might affect multiple conditions.
+                            <div id="s8-explanation-1" class="s8-explanation-break">
+                                If you are curious about medications and their target structure, this section is for you! <br>
+                            </div>
+                            <div id="s8-explanation-2" class="s9-explanation-break">
+                                Although we can't make causal claims with this information, <br>
+                            </div>
+                            <div id="s8-explanation-3" class="s9-explanation-break">
+                                it's interesting to see how drugs might interact with multiple conditions.
+                            </div>
+
+                            <div class="continue-button-container s7-continue-button animate__animated animate__fadeIn animate__delay-1s" onclick="nextSection(event)">
+                                <div class="continue-button">
+                                    <i class="continue-button-icon arrow right"> </i>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -333,15 +351,29 @@
         </section>
 
         <!-- Section 9: Be nice -->
-        <section id="9">
-            Section 9
+        <section id="s9">
             <div class="row">
                 <div class="col-md-7">
                     <div class="s9-explanation-parent">
                         <div class="s9-explanation">
-                            Struggling with mental conditions can affect more of daily life than you'd think.
-                            Due to the concealed nature of its effects, we can't know what someone is going through.
-                            Try to be as kind as you can-- to a manageable degree.
+                            <div id="s9-explanation-1" class="s9-explanation-break">
+                                Struggling with mental health can affect more of daily life than meets the eye.
+                            </div>
+                            <div id="s9-explanation-2" class="s9-explanation-break">
+                                Due to the concealed nature of one's mental well-being,
+                            </div>
+                            <div id="s9-explanation-3" class="s9-explanation-break">
+                                we can't know what someone is going through.
+                            </div>
+                            <div id="s9-explanation-4" class="s9-explanation-break">
+                                Try to be as kind as you can-- without compromising yourself.
+                            </div>
+                        </div>
+
+                        <div class="continue-button-container s9-continue-button animate__animated animate__fadeIn animate__delay-1s" onclick="nextSection(event)">
+                            <div class="continue-button">
+                                <i class="continue-button-icon arrow right"> </i>
+                            </div>
                         </div>
 
                     </div>
@@ -349,20 +381,26 @@
                 </div>
             </div>
 
-                <div class="rat-rain-img-parent">
-                    <img id="rat-rain-img" src="img/rat-rain.png">
-                </div>
+            <div class="rain-container">
+                <img id="rain-floor-1" class="rain-floor" src="https://i.gifer.com/origin/c2/c25c35a6cbc70bdc9f52dd1d4d5a3cbe_w200.webp">
+                <img id="rain-floor-2" class="rain-floor" src="https://i.gifer.com/origin/c2/c25c35a6cbc70bdc9f52dd1d4d5a3cbe_w200.webp">
+                <img id="rain-floor-3" class="rain-floor" src="https://i.gifer.com/origin/c2/c25c35a6cbc70bdc9f52dd1d4d5a3cbe_w200.webp">
+            </div>
+
+            <div class="rat-rain-img-parent">
+                <img id="rain-gif" src="https://img1.picmix.com/output/stamp/normal/8/9/3/7/697398_ab88f.gif">
+                <img id="rat-rain-img" src="img/rat-rain.png">
+            </div>
+
         </section>
 
         <!-- Section 10: Resources -->
-        <section id="10">
-            Section 10
+        <section id="s10">
             <div class="s10-explanation-parent">
                 <div class="s10-explanation">
-                    (Mental health resources)
                     If you, or someone you know needs help,
                     here's some resources: <br>
-                    For medical emergencies, call 9-1-1.
+                    For medical emergencies, call 9-1-1. <br>
                     For mental health crisis, call 9-8-8.<br>
                     For uoft specific mental health sources, visit https://mentalhealth.utoronto.ca/.
                 </div>

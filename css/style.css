@@ -442,8 +442,13 @@ section {
 /***************************************
     SECTION 7: Drugs available per disease (Vis #4)
  ***************************************/
+#s7 .vis-explanation-parent{
+    height: 75%;
+}
 
-
+.s7-continue-button{
+    margin: 5rem;
+}
 
 /***************************************
     SECTION 8: Drugs and receptors (Vis #3)
@@ -456,25 +461,66 @@ section {
 
 .s9-explanation-parent{
     position: relative;
-    height: 50vh;
+    height: 65vh;
+
+    padding: 2rem;
+    margin-left: 3rem;
 }
 
 .s9-explanation{
     position: absolute;
     top: 50%;
+    transform: translateY(-50%);
 }
 
+.s9-continue-button{
+    left: 75%;
+    bottom: 8rem;
+}
+
+.rain-container {
+    position: relative;
+    height: 100%;
+}
+
+.rain-floor{
+    position: relative;
+    right: 0;
+    top: 0;
+    width: 25%;
+
+    filter: invert(78%) sepia(22%) saturate(7487%) hue-rotate(183deg) brightness(103%) contrast(91%);
+    opacity: 0.3;
+}
+
+#rain-floor-2 {
+    transform: scale(0.7) scaleX(-1);
+}
 
 .rat-rain-img-parent{
     position: absolute;
-    right: 0;
-    bottom: 0;
+    right: -5%;
+    bottom: 1rem;
     max-height: 100%;
 }
 
+#rain-gif {
+    position: absolute;
+    top: 25%;
+    right: 0;
+    height: 70%;
+
+    filter: invert(30%) sepia(22%) saturate(7487%) hue-rotate(183deg) brightness(103%) contrast(91%);
+    opacity: 0.2;
+    /*mix-blend-mode: difference;*/
+    /*z-index: 1;*/
+}
+
 #rat-rain-img{
+    position: relative;
     height: 99vh;
 }
+
 
 /***************************************
     SECTION 10: Seek help
