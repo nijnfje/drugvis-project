@@ -38,6 +38,7 @@
 
         <!-- Section 2: Mental Illness in Canada (CAMH) -->
         <!-- TODO: Add "according to camh..." -->
+        <!-- TODO (Optional): Add transitions to each img element  -->
         <section id="2">
             <img src="https://static.vecteezy.com/system/resources/thumbnails/009/307/490/small/wooden-spoon-isolated-on-transparent-background-file-png.png"
                 id="wooden-spoon-img">
@@ -98,23 +99,38 @@
                 <div class="col-md-7">
                     <div class="section-3">
                         <div class="s3-explanation">
-                            Maybe you've heard of mental conditions described as "chemical imbalances". <br>
-                            Sometimes, this is can be the case! <br>
-                            Similar to Goldilocks looking for a perfect bowl of porridge,
-                            too much or too little of certain brain chemicals can cause undesired effects. <br>
-                            Brains want the "just-right" amount of chemicals to function properly!
+                            <div id="s3-explanation-1" class="animate__animated animate__fadeIn animate__slower">
+                                Maybe you've heard of mental conditions described as "chemical imbalances".
+                            </div>
+
+                            <div id="s3-explanation-2" class="s3-explanation-break animate__animated animate__fadeIn animate__slower animate__delay-1s">
+                                Sometimes, this is can be the case!
+                            </div>
+                            <div id="s3-explanation-3" class="s3-explanation-break animate__animated animate__fadeIn animate__slower animate__delay-2s">
+                                Similar to Goldilocks looking for a perfect bowl of porridge,
+                            </div>
+                            <div id="s3-explanation-4" class="s3-explanation-break animate__animated animate__fadeIn animate__slower animate__delay-3s">
+                                too much or too little of certain brain chemicals can cause undesired effects.
+                            </div>
+                            <div id="s3-explanation-5" class="s3-explanation-break animate__animated animate__fadeIn animate__slower animate__delay-4s">
+                                Brains want the "just-right" amount of chemicals to function properly!
+                            </div>
                         </div>
 
-                        <div class="soup-temperature-container">
+                        <div id="soup-table">
+
+                        </div>
+                        <!-- animate__slower animate__delay-5s -->
+                        <div class="soup-temperature-container animate__animated animate__bounceInLeft">
                             <div class="steam-container">
                                 <img id="steam1" class="steam-gif" src="https://media.baamboozle.com/uploads/images/613393/1673809501_61805_gif-url.gif">
                                 <img id="steam2" class="steam-gif" src="https://media.baamboozle.com/uploads/images/613393/1673809501_61805_gif-url.gif">
                                 <img id="steam3" class="steam-gif" src="https://media.baamboozle.com/uploads/images/613393/1673809501_61805_gif-url.gif">
                             </div>
-                            <div class="bowl-container">
-                                <button class="soup"> Too hot </button>
-                                <button class="soup"> Too cold </button>
-                                <button class="soup"> Just right! </button>
+                            <div class="bowl-container ">
+                                <button class="soup" value="hot" onclick="changeExpression(event)"> Too hot </button>
+                                <button class="soup" value="cold" onclick="changeExpression(event)"> Too cold </button>
+                                <button class="soup" value="right" onclick="changeExpression(event)"> Just right! </button>
                             </div>
                         </div>
                     </div>
@@ -123,6 +139,8 @@
 
                 <div class="col-md-5 salt-rat-parent">
                     <img id="salt-rat" src="img/rat-salt.png">
+                    <img id="salt-rat-hot" src="img/rat-salt-hot.png">
+                    <img id="salt-rat-cold" src="img/rat-salt-cold.png">
                 </div>
             </div>
         </section>

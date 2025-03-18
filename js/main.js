@@ -101,3 +101,39 @@ function nextSection(event) {
     }
 }
 
+/**
+ * Change the expression of salt rat
+ */
+function changeExpression(event){
+    let hot_opacity, cold_opacity, right_opacity = 0;
+
+    switch(event.target.value){
+        case "hot":
+            hot_opacity = 1;
+            break;
+        case "cold":
+            cold_opacity = 1;
+            break;
+        case "right":
+            right_opacity = 1;
+            break;
+        default:
+            console.log("default");
+    }
+    let duration = 1000;
+
+    d3.select("#salt-rat")
+        .transition()
+        .duration(duration)
+        .style("opacity", right_opacity);
+
+    d3.select("#salt-rat-hot")
+        .transition()
+        .duration(duration)
+        .style("opacity", hot_opacity);
+
+    d3.select("#salt-rat-cold")
+        .transition()
+        .duration(duration)
+        .style("opacity", cold_opacity);
+}

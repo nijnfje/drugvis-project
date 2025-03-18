@@ -50,7 +50,7 @@ section {
     font-family: "Belanosima", sans-serif;
     font-size: 1.2rem;
 
-    color: #076cbc;
+    color: #1880d5;
     background-color: #fff8e0; /* alt: #f2ebdb */
 
     overflow: hidden; /* prevent overflow */
@@ -280,18 +280,33 @@ section {
 
 .s3-explanation {
     position: absolute;
-    left: 25%;
+    left: 10%;
     top: 10rem;
+}
+
+.s3-explanation-break{
+    margin: 0.3rem;
+}
+
+#soup-table{
+    position: absolute;
+    bottom: -1.5rem;
+
+    width: 98%;
+    height: 25%;
+
+    background-color: #b2845d;
+    border-radius: 1rem ;
 }
 
 .soup-temperature-container{
     width: 100%;
 
     position: absolute;
-    bottom: 10rem;
+    bottom: 7rem;
 
     /* Positioning inside contents */
-    left: 25%;
+    left: 10%;
 }
 
 .soup {
@@ -299,10 +314,13 @@ section {
     height: 6rem;
     width: 10rem;
     border-radius: 7rem 7rem 50rem 50rem;
-    border: 0.5rem solid #c3cec2;
+    border: 0.4rem solid #b7c5bd;
 
     /* Positioning */
     margin-right: 1rem;
+
+    /* font color */
+    color: #ffb24b;
 }
 
 .steam-gif {
@@ -311,6 +329,7 @@ section {
     width: 10rem;
 
     margin-right: 1rem;
+    opacity: 0.5;
 }
 
 #steam2 {
@@ -318,21 +337,30 @@ section {
 }
 
 .soup:hover {
-    background-color: rgba(204, 82, 0, 0.27); /* Darker shade */
+    transform: scale(1.1);
+    transition: transform 0.5s ease-in-out;
 }
 
+.soup:not(:hover){
+    transform: scale(1);
+    transition: transform 0.5s ease-in-out;
+}
 
 .salt-rat-parent {
     position: relative;
     height: 100vh; /* Needs height for children */
 }
 
-#salt-rat {
+#salt-rat, #salt-rat-hot, #salt-rat-cold {
     position: absolute;
     right: 0;
     bottom: 0;
     height: 80vh;
     max-height: 100%;
+}
+
+#salt-rat-hot, #salt-rat-cold{
+    opacity: 0;
 }
 
 /**************************
