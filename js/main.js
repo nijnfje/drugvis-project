@@ -33,30 +33,35 @@ const observer = new IntersectionObserver((entries) => {
 animatedElements.forEach(element => observer.observe(element));
  */
 
-/** To pause elements if not in view (by sections) **/
+/**
+ * To pause elements if not in view (by sections)
+ * TODO: Edit so that it does not affect non-animated elements
+ **/
 
 const sections = document.querySelectorAll("section");
 // IntersectionObserver: monitors viewport and element visibility
 const observer = new IntersectionObserver((entries) => {
-    let i = 0;
     entries.forEach(entry => {
-        console.log("START index:", i, entry.target);
+        console.log("START index:",  entry.target);
         if (entry.isIntersecting) {
             console.log("is resumed");
-            const childElements = entry.target.querySelectorAll(':scope > *');
+            const childElements = entry.target.querySelectorAll('*');
             childElements.forEach(childElement => childElement.classList.remove("paused"));
         } else {
             console.log("is paused");
-            const childElements = entry.target.querySelectorAll(':scope > *');
+            const childElements = entry.target.querySelectorAll('*');
             childElements.forEach(childElement => childElement.classList.add("paused"));
         }
         console.log("END");
-        i++;
-
     });
-}, { threshold: 0.1 }); // 0% visibility required to be "in view"
+}, { threshold: 0.1 }); // 10% visibility required to be "in view"
 
-sections.forEach(element => observer.observe(element));
+sections.forEach((element) => observer.observe(element));
+
+/**
+ * To pause button animations
+ */
+
 
 /**
  * Show/hide sparkle gif on click
@@ -67,13 +72,32 @@ function showSparkle(){
 
     sparkles
         .transition()
-        .duration(1500)
+        .duration(500)
         .style("opacity", 1)
         .on("end", function() {
-            sparkles
-                .transition()
-                .duration(1500)
-                .style("opacity", 0);
+            setTimeout( () => {
+                sparkles
+                    .transition()
+                    .duration(1500)
+                    .style("opacity", 0);
+            }, 1000);
         });
+}
+
+/** Move to the next section **/
+function nextSection(event) {
+    let curr_section = event.target.closest("section");
+
+    // Log the ID of the parent <section>
+    console.log("Parent Section ID: " + curr_section.id);
+
+    let next_section = curr_section.nextElementSibling;
+    console.log(next_section)
+
+    if (next_section) {
+        next_section.scrollIntoView({
+            behavior: "smooth" // Smooth scrolling to the next section
+        });
+    }
 }
 

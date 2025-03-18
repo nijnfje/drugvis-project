@@ -22,65 +22,77 @@
 <body>
     <div class="scroll-snap-wrapper">
         <!-- Section 1: Title -->
-        <section>
+        <!-- TODO: Add proper subtitle (line 33)-->
+        <section id="1">
             <div class="row">
                 <img id="title-scroll" src="img/title-scroll.png" class="animate__animated animate__slideInDown">
             </div>
 
             <div>
-                <!-- TODO: Add proper subtitle -->
-                <img id="garden" src="img/garden.svg" class="animate__animated animate__slideInUp animate__delay-2s">
-                <img id="title-subtitle-sign" src="img/signboard-clipart-xl.png" class="animate__animated animate__flipInX animate__delay-1s animate__slow">
-                <img id="title-rat-img" src="img/title-rat.png" class="animate__animated animate__slideInUp" onclick="showSparkle()">
+                <img id="garden" src="img/garden.svg" class="animate__animated animate__bounceInUp animate__delay-3s animate__slow">
+                <img id="title-subtitle-sign" src="img/signboard-clipart-xl.png" class="animate__animated animate__flipInX animate__delay-2s animate__slow">
+                <img id="title-rat-img" src="img/title-rat.png" class="animate__animated animate__slideInUp animate__flipInX animate__delay-1s" onclick="showSparkle()">
                 <img id="title-rat-sparkle-gif" src="https://i.gifer.com/origin/f9/f9abd21a7f2be6472c1852518c8e605b.gif" onclick="showSparkle()">
             </div>
         </section>
 
         <!-- Section 2: Mental Illness in Canada (CAMH) -->
-        <section>
-            Section 2
+        <!-- TODO: Add "according to camh..." -->
+        <section id="2">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/009/307/490/small/wooden-spoon-isolated-on-transparent-background-file-png.png"
+                id="wooden-spoon-img">
+            <img id="tomato1" src="https://pngimg.com/uploads/tomato/tomato_PNG12573.png">
+            <img id="tomato2" src="https://www.freepnglogos.com/uploads/tomato-png/tomato-viva-mamma-pasta-italian-style-authentic-meal-usa-22.png">
+            <img id="tomato3" src="https://pngimg.com/uploads/tomato/tomato_PNG12573.png">
+            <img id="towel" src="https://previews.123rf.com/images/opicobello/opicobello1605/opicobello160500032/56556720-seamless-blue-colored-checkered-table-cloth-pattern-for-background-design.jpg">
+            <img id="cheese" src="https://www.freeiconspng.com/thumbs/cheese/fresh-cheese-original-photo-21.png">
+            <img class="basil-frame" src="img/basil-frame.png">
+
             <div class="orbit-parent">
-            <div class="orbit">
+                <div class="orbit">
 
-                <div class="orbit-center-content">
-                    1 in 5 Canadians will experience a mental illness.
+                    <div class="orbit-center-content">
+                        <div class="camh-info animate__animated animate__fadeIn animate__slower"> 1 in 5 Canadians will experience a mental illness. </div>
+                            <div class="continue-button-container animate__animated animate__fadeIn animate__delay-2s" onclick="nextSection(event)">
+                                <div class="continue-button">
+                                    <i class="continue-button-icon arrow right"> </i>
+                                </div>
+                            </div>
+                    </div>
+
+                    <ul>
+                        <li>
+                            <img src="img/rat-orbit/rat-orbit-1.png" alt="">
+                            <p> rat </p>
+                        </li>
+
+                        <li>
+                            <img src="img/rat-orbit/rat-orbit-2.png" alt="">
+                            <p> rat </p>
+                        </li>
+
+                        <li>
+                            <img src="img/rat-orbit/rat-orbit-3.png" alt="">
+                            <p> rat </p>
+                        </li>
+
+                        <li>
+                            <img src="img/rat-orbit/rat-orbit-4.png" alt="">
+                            <p> rat </p>
+                        </li>
+
+                        <li>
+                            <img src="img/rat-orbit/rat-orbit-5.png" alt="">
+                            <p> rat </p>
+                        </li>
+                    </ul>
                 </div>
-
-                <ul>
-                    <li>
-                        <img src="img/rat-orbit/rat-orbit-1.png" alt="">
-                        <p> rat </p>
-                    </li>
-
-                    <li>
-                        <img src="img/rat-orbit/rat-orbit-2.png" alt="">
-                        <p> rat </p>
-                    </li>
-
-                    <li>
-                        <img src="img/rat-orbit/rat-orbit-3.png" alt="">
-                        <p> rat </p>
-                    </li>
-
-                    <li>
-                        <img src="img/rat-orbit/rat-orbit-4.png" alt="">
-                        <p> rat </p>
-                    </li>
-
-                    <li>
-                        <img src="img/rat-orbit/rat-orbit-5.png" alt="">
-                        <p> rat </p>
-                    </li>
-
-
-                </ul>
-            </div>
             </div>
         </section>
 
 
         <!-- Section 3: Common view - chemical imbalances -->
-        <section>
+        <section id="3">
 <!--            Section 3-->
             <div class="row">
                 <div class="col-md-7">

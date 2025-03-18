@@ -12,6 +12,9 @@
         width: 10rem;
         height: 10rem;
         place-content: center;
+
+        display: flex;
+        flex-direction: column;
     }
 
     /*.img {*/
