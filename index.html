@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/vis_styles.css">
     <link rel="stylesheet" href="css/s2-styles.css">
+    <link rel="stylesheet" href="css/s6_styles.css">
 
     <title>CSC316 Brain Drugs</title>
 </head>
@@ -23,7 +24,7 @@
     <div class="scroll-snap-wrapper">
         <!-- Section 1: Title -->
         <!-- TODO: Add proper subtitle (line 33)-->
-        <section id="1">
+        <section id="s1">
             <div class="row">
                 <img id="title-scroll" src="img/title-scroll.png" class="animate__animated animate__slideInDown">
             </div>
@@ -39,7 +40,7 @@
         <!-- Section 2: Mental Illness in Canada (CAMH) -->
         <!-- TODO: Add "according to camh..." -->
         <!-- TODO (Optional): Add transitions to each img element  -->
-        <section id="2">
+        <section id="s2">
             <img src="https://static.vecteezy.com/system/resources/thumbnails/009/307/490/small/wooden-spoon-isolated-on-transparent-background-file-png.png"
                 id="wooden-spoon-img">
             <img id="tomato1" src="https://pngimg.com/uploads/tomato/tomato_PNG12573.png">
@@ -93,7 +94,7 @@
 
 
         <!-- Section 3: Common view - chemical imbalances -->
-        <section id="3">
+        <section id="s3">
 <!--            Section 3-->
             <div class="row">
                 <div class="col-md-7">
@@ -147,32 +148,42 @@
 
 
         <!-- Section 4: Assembly line -->
-        <section>
+        <section id="s4">
             <div class="section-4">
                 <div class="s4-explanation-container">
-                    <div class="s4-explanation-text">
-                        About the interconnectedness of the brain.
-                        (Assembly line of rats.) <br>
-                        Researchers work hard every day to understand how the brain works. <br>
-                        Although we don't have all the answers, we know that the brain and its networks <br>
-                        are intricately connected. They all need to be in sync to work properly!
+                    <div class="s4-explanation">
+                        <br>
+                        <div id="s4-explanation-1" class="s4-explanation-break">
+                            Although we don't have all the answers of how the brain works,
+                        </div>
+                        <div id="s4-explanation-2" class="s4-explanation-break">
+                            we know that the brain and its networks are intricately connected.
+                        </div>
+                        <div id="s4-explanation-3" class="s4-explanation-break">
+                            All structures need to be in sync to work properly!
+                        </div>
+
+                        <div class="continue-button-container s4-continue-button animate__animated animate__fadeIn animate__delay-2s" onclick="nextSection(event)">
+                            <div class="continue-button">
+                                <i class="continue-button-icon arrow right"> </i>
+                            </div>
+                        </div>
+
                     </div>
 <!--                    <img src=""> TODO: scalloped square-->
                 </div>
 
-                <div class="rat-assembly-line-parent">
-                    <div id="rat-assembly-line">
-                        <img src="img/rat-assembly-line.png">
-                    </div>
+                <div id="rat-assembly-line">
+                    <img src="img/rat-assembly-line.png">
                 </div>
+
             </div>
 
         </section>
 
 
         <!-- Section 5: vis #1 Network graph -->
-        <section>
-            Section 5
+        <section id="s5">
             <div class="row">
                 <div class="col-md-6">
                     <div class="vis-area-parent">
@@ -183,13 +194,18 @@
                 <div class="col-md-6">
                     <img id="salt-shaker-img" src="img/salt-shaker.png">
                     <div class="row">
-                        <div class="col-md-4"></div>
-                        <div class="col-md-7">
+                        <div class="col-md-3"></div>
+                        <div class="col-md-8">
                             <div class="vis-explanation-parent">
                                 <div class="vis-explanation">
-                                    (Relevant explanation here)
-                                    Due to the interconnectedness of the brain, a drug meant to treat one condition
-                                    can turn out to treat multiple other conditions.
+                                    Due to the interconnectedness of the brain structures, <br>
+                                    a drug meant to treat one condition
+                                    can end up treating multiple other conditions.
+                                </div>
+                            </div>
+                            <div class="continue-button-container s5-continue-button animate__animated animate__fadeIn animate__delay-2s" onclick="nextSection(event)">
+                                <div class="continue-button">
+                                    <i class="continue-button-icon arrow right"> </i>
                                 </div>
                             </div>
                         </div>
@@ -203,15 +219,61 @@
 
 
         <!-- Section 6: vis #2 Heatmap  -->
-        <section>
-            Section 6
+        <section id="s6">
             <div class="row">
                 <div class="col-md-6">
                     <div class="vis-explanation-parent">
                         <div class="vis-explanation">
                             In (very) simple terms, drugs target structures in the brain to produce its effects. <br>
-                            However, there is no one magic target! One target can be linked to multiple conditions. <br>
-                            Here's a visualization of diseases and the receptors its drugs tend to target.
+                            These drugs can affect brain structures in different ways. <br>
+                            Here's an explanation for some of them: <br>
+
+                            <div class="mechanism-explanations-container">
+                                <div class="term-container">
+                                    <div class="term">
+                                        Agonists
+                                    </div>
+                                    <div class="definition">
+                                        [Definition]
+                                    </div>
+                                </div>
+
+                                <div class="term-container">
+                                    <div class="term">
+                                        Antagonists
+                                    </div>
+                                    <div class="definition">
+                                        [Definition]
+                                    </div>
+                                </div>
+
+                                <div class="term-container">
+                                    <div class="term">
+                                        Inhibitors
+                                    </div>
+                                    <div class="definition">
+                                        [Definition]
+                                    </div>
+                                </div>
+
+                                <div class="term-container">
+                                    <div class="term">
+                                        Modulators
+                                    </div>
+                                    <div class="definition">
+                                        [Definition]
+                                    </div>
+                                </div>
+                            </div>
+
+                            However, there is no one magic mechanism! <br>
+                            Here's a visualization of diseases and the number of mechanisms a drug might use to treat it.
+
+                            <div class="continue-button-container s6-continue-button animate__animated animate__fadeIn animate__delay-2s" onclick="nextSection(event)">
+                                <div class="continue-button">
+                                    <i class="continue-button-icon arrow right"> </i>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -249,7 +311,7 @@
         </section>
 
         <!-- Section 8: vis #4 drugs and receptors -->
-        <section>
+        <section id="8">
             Section 8
             <div class="row">
                 <div class="col-md-6">
@@ -271,7 +333,7 @@
         </section>
 
         <!-- Section 9: Be nice -->
-        <section>
+        <section id="9">
             Section 9
             <div class="row">
                 <div class="col-md-7">
@@ -293,7 +355,7 @@
         </section>
 
         <!-- Section 10: Resources -->
-        <section>
+        <section id="10">
             Section 10
             <div class="s10-explanation-parent">
                 <div class="s10-explanation">

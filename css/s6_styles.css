@@ -1,0 +1,49 @@
+/*.mechanism-explanations-container {*/
+/*    position: relative;*/
+/*    height: 70%;*/
+/*}*/
+
+/* Basic styling for the container */
+.term-container {
+    /*width: 200px;*/
+    /*padding: 10px;*/
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden; /* Hide the definition initially */
+    transition: all 0.3s ease; /* Smooth transition for expansion */
+}
+
+.term {
+    cursor: pointer;
+    color: beige;
+    background-color: #82acef;
+    padding: 10px;
+    text-align: center;
+
+    transition: all 0.5s ease;
+
+}
+
+/* Hide the definition */
+.definition {
+    opacity: 0;
+    height: 0;
+    padding: 0;
+    margin-top: 0;
+    color: #98a6c4;
+
+    transition: all 0.3s ease;
+}
+
+/* On hover, expand the container to reveal the definition */
+.term-container:hover .definition {
+    opacity: 1;
+    height: auto;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.term-container:hover .term{
+    color: #60afff;
+    background-color: #ffe27e;
+}

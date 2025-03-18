@@ -217,7 +217,6 @@ section {
 
 .continue-button-container{
     position: absolute;
-    bottom: 0;
     left: 50%;
 
     transform: translateX(-50%);
@@ -228,6 +227,10 @@ section {
     border-radius: 2.5rem;
     border: 0.15rem solid rgba(77, 109, 192, 0.76);
     opacity: 0.8;
+}
+
+.orbit .continue-button-container{
+    bottom: 0;
 }
 
 /*#continue-button-svg{*/
@@ -373,6 +376,14 @@ section {
     width: 100vw;
 }
 
+.s4-explanation-break{
+    margin: 0.7rem;
+}
+
+.s4-continue-button{
+    z-index: 2;
+}
+
 .rat-assembly-line-parent{
     position: relative;
     height: 100vh;
@@ -382,15 +393,8 @@ section {
     position: absolute;
     height: 100%;
     width: 100%;
-    bottom: 0; /* This will place it at the bottom */
+    bottom: -5%; /* This will place it at the bottom */
 }
-
-/*#rat-assembly-line img{*/
-/*    position: absolute;*/
-/*    bottom: 0;*/
-/*    width: 75%;*/
-/*    max-height: 100%;*/
-/*}*/
 
 #rat-assembly-line img {
     position: absolute;
@@ -414,12 +418,26 @@ section {
     width: 100%;
 }
 
+.s5-continue-button{
+    left: 85vw;
+    bottom: 15%;
+}
 
 /***************************************
     SECTION 6: Drug actions Heatmap (Vis #1)
  ***************************************/
 
+#s6 .vis-explanation-parent{
+    height: 90%;
+}
 
+.mechanism-explanations-container{
+    margin: 1rem;
+}
+
+.s6-continue-button{
+    margin-top: 2rem;
+}
 
 /***************************************
     SECTION 7: Drugs available per disease (Vis #4)
