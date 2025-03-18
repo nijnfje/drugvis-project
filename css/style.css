@@ -528,12 +528,13 @@ section {
 
 .s10-explanation-parent{
     position: relative;
-    height: 25vh;
+    height: 35%;
+    width: 65%;
 }
 
 .s10-explanation{
     position: absolute;
-    top: 50%;
+    top: 55%;
     transform: translateY(-50%);
     left: 3%;
 }
@@ -545,6 +546,20 @@ section {
     max-height: 100%;
 }
 
+#window {
+    position: absolute;
+    top: -20%;
+    right: -30%;
+
+    height: 150%;
+
+    /*filter: invert(30%) sepia(22%) saturate(7487%) hue-rotate(183deg) brightness(103%) contrast(91%);*/
+    /*filter: invert(73%) sepia(42%) saturate(484%) hue-rotate(174deg) brightness(101%) contrast(103%);*/
+    filter: invert(84%) sepia(96%) saturate(1706%) hue-rotate(162deg) brightness(98%) contrast(106%);
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
 #rat-therapy-img{
+    position: relative;
     height: 75vh;
 }
