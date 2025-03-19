@@ -1,17 +1,31 @@
+// Data structures
 let conditionToDrugsAll = new Map(); // condition => Set of drugNames
 let drugToType = new Map();         // drugName => TypeOfAction
 let drugCountAll = new Map();       // drugName => how many conditions it appears in
 let uniqueActions = new Set();      // collect unique Type_Of_Action
 
+// DOM elements
 let thresholdSlider, thresholdValueSpan;
 let typeActionContainer;
 let sigmaContainer;
 let layoutToggle;
 let edgeTooltip;
+let renderer;
 
 let allConditions = [];
+let currentGraph = null;
 
 document.addEventListener("DOMContentLoaded", function () {
+    initializeUI();
+    loadData();
+
+    // Event listeners
+    window.addEventListener('resize', debounce(() => {
+        if (renderer) resizeGraph();
+    }, 250));
+});
+
+function initializeUI() {
     thresholdSlider = document.getElementById("edgeThreshold");
     thresholdValueSpan = document.getElementById("thresholdValue");
     typeActionContainer = document.getElementById("typeActionCheckboxes");
@@ -19,68 +33,80 @@ document.addEventListener("DOMContentLoaded", function () {
     layoutToggle = document.getElementById("layoutToggle");
     edgeTooltip = document.getElementById("edge-tooltip");
 
+    // Threshold slider
     thresholdSlider.addEventListener("input", () => {
         thresholdValueSpan.textContent = thresholdSlider.value;
+        updateVisualization();
     });
 
-    // Load CSV
-    d3.csv("drug_data_progress.csv").then(data => {
-        data.forEach(row => {
-            let cond = row.list_of_conditions ? row.list_of_conditions.trim() : null;
-            let drug = row.drug_name ? row.drug_name.trim() : null;
-            let action = row.Type_Of_Action ? row.Type_Of_Action.trim() : null;
+    // Layout toggle
+    layoutToggle.addEventListener("change", updateVisualization);
 
-            if (!cond || !drug || !action) return;
+    // Reset button
+    document.getElementById("resetFilter").addEventListener("click", resetFilters);
+}
 
-            if (!conditionToDrugsAll.has(cond)) {
-                conditionToDrugsAll.set(cond, new Set());
-            }
-            conditionToDrugsAll.get(cond).add(drug);
-
-            drugToType.set(drug, action);
-
-            let oldCount = drugCountAll.get(drug) || 0;
-            drugCountAll.set(drug, oldCount + 1);
-
-            // Collect unique Type_Of_Action
-            uniqueActions.add(action);
-        });
-
-        // Build array of conditions
-        allConditions = Array.from(conditionToDrugsAll.keys());
-
-        // Dynamically generate checkboxes for Type_Of_Action
-        uniqueActions.forEach(a => {
-            let label = document.createElement("label");
-            let input = document.createElement("input");
-            input.type = "checkbox";
-            input.name = "actionType";
-            input.value = a;
-            label.appendChild(input);
-            label.appendChild(document.createTextNode(a));
-            typeActionContainer.appendChild(label);
-        });
-
-        // Initial render with default threshold=2, no action filter
-        renderNetwork(+thresholdSlider.value, [], layoutToggle.checked);
-
-        // Apply Filter button
-        document.getElementById("applyFilter").addEventListener("click", () => {
-            let selectedTypes = getSelectedActions();
-            let thresholdVal = +thresholdSlider.value;
-            renderNetwork(thresholdVal, selectedTypes, layoutToggle.checked);
-        });
-
-        document.getElementById("resetFilter").addEventListener("click", () => {
-            // Uncheck all action boxes
-            document.querySelectorAll("input[name='actionType']").forEach(cb => cb.checked = false);
-            thresholdSlider.value = 2;
-            thresholdValueSpan.textContent = 2;
-            layoutToggle.checked = true; // default back to circular
-            renderNetwork(2, [], true);
-        });
+function loadData() {
+    d3.csv("Final_Cleaned_Drug_Data.csv").then(data => {
+        processData(data);
+        setupTypeFilters();
+        updateVisualization();
+    }).catch(error => {
+        console.error("Error loading drug data:", error);
+        sigmaContainer.innerHTML = '<div style="padding: 2rem; text-align: center;">Error loading data. Please check the console for details.</div>';
     });
-});
+}
+
+function processData(data) {
+    data.forEach(row => {
+        let cond = row.list_of_conditions ? capitalizeFirst(row.list_of_conditions.trim()) : null;
+        let drug = row.drug_name ? capitalizeFirst(row.drug_name.trim()) : null;
+        let action = row.Type_Of_Action ? capitalizeFirst(row.Type_Of_Action.trim()) : null;
+
+        if (!cond || !drug || !action) return;
+
+        if (!conditionToDrugsAll.has(cond)) {
+            conditionToDrugsAll.set(cond, new Set());
+        }
+        conditionToDrugsAll.get(cond).add(drug);
+
+        drugToType.set(drug, action);
+
+        let oldCount = drugCountAll.get(drug) || 0;
+        drugCountAll.set(drug, oldCount + 1);
+
+        uniqueActions.add(action);
+    });
+
+    allConditions = Array.from(conditionToDrugsAll.keys()).sort();
+}
+
+function setupTypeFilters() {
+    // Sort actions alphabetically
+    const sortedActions = Array.from(uniqueActions).sort();
+
+    // Generate checkboxes for Type_Of_Action
+    sortedActions.forEach(action => {
+        let label = document.createElement("label");
+        let input = document.createElement("input");
+        input.type = "checkbox";
+        input.name = "actionType";
+        input.value = action;
+        input.addEventListener("change", updateVisualization);
+
+        label.appendChild(input);
+        label.appendChild(document.createTextNode(action));
+        typeActionContainer.appendChild(label);
+    });
+}
+
+function updateVisualization() {
+    const threshold = +thresholdSlider.value;
+    const selectedTypes = getSelectedActions();
+    const useCircular = layoutToggle.checked;
+
+    renderNetwork(threshold, selectedTypes, useCircular);
+}
 
 function getSelectedActions() {
     let selected = [];
@@ -91,10 +117,11 @@ function getSelectedActions() {
 }
 
 function renderNetwork(threshold, selectedActions, useCircular) {
-    // Clear any existing content
+    // Clear existing graph
     sigmaContainer.innerHTML = "";
 
     const graph = new graphology.Graph();
+    currentGraph = graph;
 
     // Create a filtered condition->drugs map
     let useAll = (selectedActions.length === 0);
@@ -111,9 +138,12 @@ function renderNetwork(threshold, selectedActions, useCircular) {
         });
     });
 
+    // Calculate node sizes based on drug count
+    const nodeSizes = calculateNodeSizes(filteredMap);
+
+    // Add nodes
     let i = 0;
     allConditions.forEach(cond => {
-        // Decide position
         let xPos, yPos;
         if (useCircular) {
             // Circular layout
@@ -121,8 +151,8 @@ function renderNetwork(threshold, selectedActions, useCircular) {
             xPos = Math.cos(angle) * 10;
             yPos = Math.sin(angle) * 10;
         } else {
-            xPos = (Math.random() * 20) - 10;
-            yPos = (Math.random() * 20) - 10;
+            xPos = (Math.random() * 16) - 8;
+            yPos = (Math.random() * 16) - 8;
         }
         i++;
 
@@ -131,11 +161,12 @@ function renderNetwork(threshold, selectedActions, useCircular) {
             label: cond,
             x: xPos,
             y: yPos,
-            size: 8,
+            size: nodeSizes.get(cond) || 5,
             color: "#5A75DB",
         });
     });
 
+    // Add edges based on shared drugs
     let condArray = Array.from(allConditions);
     for (let a = 0; a < condArray.length; a++) {
         for (let b = a + 1; b < condArray.length; b++) {
@@ -144,7 +175,7 @@ function renderNetwork(threshold, selectedActions, useCircular) {
             let setA = filteredMap.get(cA);
             let setB = filteredMap.get(cB);
 
-            // Intersection
+            // Find shared drugs
             let sharedDrugs = [];
             if (setA.size < setB.size) {
                 setA.forEach(drug => {
@@ -158,35 +189,60 @@ function renderNetwork(threshold, selectedActions, useCircular) {
 
             let sharedCount = sharedDrugs.length;
             if (sharedCount >= threshold) {
+                // Group shared drugs by action type for better tooltip display
+                const drugsByType = groupDrugsByType(sharedDrugs);
+
                 graph.addEdge(cA, cB, {
-                    size: Math.min(sharedCount, 10), // edge thickness
-                    color: "#009900",
+                    size: Math.min(Math.max(1, sharedCount / 2), 8), // Balanced edge thickness
+                    color: getEdgeColor(sharedCount),
                     label: sharedCount + " shared",
-                    sharedDrugs: sharedDrugs, // store the actual common drugs
+                    sharedDrugs: sharedDrugs,
+                    drugsByType: drugsByType,
                 });
             }
         }
     }
 
-    const renderer = new Sigma(graph, sigmaContainer, {
+    renderer = new Sigma(graph, sigmaContainer, {
         renderEdgeLabels: true,
         enableEdgeEvents: true,
+        defaultEdgeColor: "#c5c5c5",
+        defaultNodeColor: "#6f42c1",
+        labelSize: 14,
+        labelColor: {
+            color: "#333"
+        },
+        nodeHoverColor: "#6f42c1",
+        edgeHoverColor: "#6f42c1",
+        nodeBorderSize: 2,
+        zoomToSizeRatioFunction: (x) => x,
     });
 
-    // Edge Hover: show shared drugs
+    setupGraphInteractions(graph);
+}
+
+function setupGraphInteractions(graph) {
     let hoveredEdge = null;
 
+    // Edge hover: show shared drugs tooltip
     renderer.on("enterEdge", (e) => {
         const edgeId = e.edge;
         hoveredEdge = edgeId;
 
-        let drugs = graph.getEdgeAttribute(edgeId, "sharedDrugs") || [];
-        let drugList = drugs.join(", ");
+        const drugs = graph.getEdgeAttribute(edgeId, "sharedDrugs") || [];
+        const drugsByType = graph.getEdgeAttribute(edgeId, "drugsByType") || {};
 
-        const pos = e.event; // {x, y} in viewport coordinates
+        let tooltipContent = `<strong>${drugs.length} Shared Drugs</strong>`;
+
+        Object.entries(drugsByType).forEach(([type, drugs]) => {
+            tooltipContent += `<br><b>${type}</b>: ${drugs.join(", ")}`;
+        });
+
+        // Position and show tooltip
+        const pos = e.event;
         edgeTooltip.style.left = pos.x + 10 + "px";
         edgeTooltip.style.top = pos.y + 10 + "px";
-        edgeTooltip.innerHTML = "<strong>Common Drugs:</strong> " + drugList;
+        edgeTooltip.innerHTML = tooltipContent;
         edgeTooltip.style.display = "block";
     });
 
@@ -197,4 +253,96 @@ function renderNetwork(threshold, selectedActions, useCircular) {
             edgeTooltip.innerHTML = "";
         }
     });
+
+    // Node hover: highlight connected nodes
+    renderer.on("enterNode", (e) => {
+        const nodeId = e.node;
+        graph.setNodeAttribute(nodeId, "highlighted", true);
+
+        graph.forEachNeighbor(nodeId, (neighbor) => {
+            graph.setNodeAttribute(neighbor, "highlighted", true);
+        });
+
+        renderer.refresh();
+    });
+
+    renderer.on("leaveNode", (e) => {
+        const nodeId = e.node;
+        graph.setNodeAttribute(nodeId, "highlighted", false);
+
+        graph.forEachNeighbor(nodeId, (neighbor) => {
+            graph.setNodeAttribute(neighbor, "highlighted", false);
+        });
+
+        renderer.refresh();
+    });
+}
+
+function calculateNodeSizes(filteredMap) {
+    const sizes = new Map();
+    const counts = Array.from(filteredMap.entries()).map(([cond, drugs]) => drugs.size);
+    const minCount = Math.min(...counts);
+    const maxCount = Math.max(...counts);
+    const range = maxCount - minCount;
+
+    filteredMap.forEach((drugs, cond) => {
+        const count = drugs.size;
+        // Scale size between 4 and 12 based on drug count
+        const size = range === 0 ? 8 : 4 + ((count - minCount) / range) * 8;
+        sizes.set(cond, size);
+    });
+
+    return sizes;
+}
+
+function groupDrugsByType(drugs) {
+    const grouped = {};
+
+    drugs.forEach(drug => {
+        const type = drugToType.get(drug) || "Unknown";
+        if (!grouped[type]) {
+            grouped[type] = [];
+        }
+        grouped[type].push(drug);
+    });
+
+    return grouped;
+}
+
+function getEdgeColor(sharedCount) {
+    if (sharedCount > 8) return "#1a5336"; // Very strong connection
+    if (sharedCount > 6) return "#217a4d"; // Strong connection
+    if (sharedCount > 4) return "#2aa264"; // Medium strong connection
+    if (sharedCount > 2) return "#3ecf7c"; // Medium connection
+    return "#65da97"; // Basic connection
+}
+
+function capitalizeFirst(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+function resetFilters() {
+    document.querySelectorAll("input[name='actionType']").forEach(cb => cb.checked = false);
+    thresholdSlider.value = 2;
+    thresholdValueSpan.textContent = 2;
+    layoutToggle.checked = true;
+    updateVisualization();
+}
+
+function resizeGraph() {
+    if (renderer) {
+        renderer.refresh();
+    }
+}
+
+// handling resize events
+function debounce(func, wait) {
+    let timeout;
+    return function () {
+        const context = this, args = arguments;
+        clearTimeout(timeout);
+        timeout = setTimeout(() => {
+            func.apply(context, args);
+        }, wait);
+    };
 }

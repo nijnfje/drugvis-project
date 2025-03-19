@@ -1,18 +1,22 @@
 class HeatmapVis {
     constructor(_parentElement) {
         this.parentElement = _parentElement;
+        this.margin = { top: 50, right: 80, bottom: 120, left: 120 };
 
-        this.margin = { top: 50, right: 80, bottom: 100, left: 100 };
+        // Create base SVG
         this.svg = d3.select("#" + this.parentElement)
             .append("svg")
             .append("g");
 
+        // Initialize scales
         this.x = null;
         this.y = null;
         this.color = null;
 
+        // Initialize data structures
         this.data = [];
         this.highlighted = null;
+        this.maxValue = 0;
 
         // Create axis groups
         this.xAxisGroup = this.svg.append("g").attr("class", "x-axis axis");
@@ -22,14 +26,15 @@ class HeatmapVis {
     updateData(newData) {
         this.data = newData;
 
+        // Get unique conditions
         let conditions = [...new Set(this.data.map(d => d.rowCondition))];
         let numConds = conditions.length;
 
-        //    cellSize * numConds + margins
-        let cellSize = 30; // adjust as needed
+        let cellSize = Math.max(25, Math.min(35, 800 / numConds));
         let dynamicWidth = numConds * cellSize;
         let dynamicHeight = numConds * cellSize;
 
+        // Set SVG dimensions
         let totalWidth = dynamicWidth + this.margin.left + this.margin.right;
         let totalHeight = dynamicHeight + this.margin.top + this.margin.bottom;
 
@@ -39,6 +44,7 @@ class HeatmapVis {
 
         this.svg.attr("transform", `translate(${this.margin.left}, ${this.margin.top})`);
 
+        // Set up scales
         this.x = d3.scaleBand()
             .domain(conditions)
             .range([0, dynamicWidth])
@@ -49,9 +55,19 @@ class HeatmapVis {
             .range([0, dynamicHeight])
             .padding(0.05);
 
-        let maxVal = d3.max(this.data, d => d.count);
-        this.color = d3.scaleSequential(d3.interpolateOrRd)
-            .domain([0, maxVal]);
+        this.maxValue = d3.max(this.data.filter(d => d.rowCondition !== d.colCondition), d => d.count);
+        console.log("Maximum shared drugs value:", this.maxValue);
+
+        // Log the top 5 pairs
+        const topPairs = this.data
+            .filter(d => d.rowCondition !== d.colCondition)
+            .sort((a, b) => b.count - a.count)
+            .slice(0, 5);
+        console.log("Top 5 highest value pairs:", topPairs);
+
+        this.color = d3.scaleLinear()
+            .domain([0, this.maxValue])
+            .range(["#f6f2ff", "#42b6c1"]);
 
         // Update the axes
         this.xAxis = d3.axisBottom(this.x).tickSize(0);
@@ -61,221 +77,300 @@ class HeatmapVis {
             .attr("transform", `translate(0, ${dynamicHeight})`)
             .call(this.xAxis)
             .selectAll("text")
-            .attr("dy", "1.0em")
-            .attr("dx", "-0.9em")
+            .attr("dy", "0.8em")
+            .attr("dx", "-0.8em")
             .attr("transform", "rotate(-45)")
-            .style("text-anchor", "end");
+            .style("text-anchor", "end")
+            .style("font-size", Math.max(8, Math.min(11, 250 / numConds)) + "px");
 
         this.yAxisGroup
-            .call(this.yAxis);
+            .call(this.yAxis)
+            .selectAll("text")
+            .style("font-size", Math.max(8, Math.min(11, 250 / numConds)) + "px");
 
-        // squares
-        let vis = this;
-        let rects = this.svg.selectAll(".heat-rect")
-            .data(this.data, d => d.rowCondition + "-" + d.colCondition);
+        // Clear existing cells to avoid issues
+        this.svg.selectAll(".heat-rect").remove();
 
-        rects.join(
-            enter => enter.append("rect")
-                .attr("class", "heat-rect")
-                .attr("x", d => vis.x(d.colCondition))
-                .attr("y", d => vis.y(d.rowCondition))
-                .attr("width", vis.x.bandwidth())
-                .attr("height", vis.y.bandwidth())
-                .style("fill", d => vis.color(d.count))
-                .style("opacity", 0)
-                .call(enter => enter.transition().duration(500).style("opacity", 1))
-                .on("mouseover", (event, d) => {
-                    let drugList = d.sharedDrugs || [];
-                    let displayList = drugList.slice(0, 10).join(", ");
-                    let moreCount = Math.max(0, drugList.length - 10);
+        // Draw new cells using a simplified approach - direct rect creation
+        const cells = this.svg.selectAll(".heat-rect")
+            .data(this.data)
+            .enter()
+            .append("rect")
+            .attr("class", "heat-rect")
+            .attr("x", d => this.x(d.colCondition))
+            .attr("y", d => this.y(d.rowCondition))
+            .attr("width", this.x.bandwidth())
+            .attr("height", this.y.bandwidth())
+            .style("fill", d => {
+                // Diagonal cells are white
+                if (d.rowCondition === d.colCondition) return "#f8f9fa";
 
-                    d3.select("#tooltip")
-                        .style("opacity", 1)
-                        .style("left", (event.pageX + 10) + "px")
-                        .style("top", (event.pageY + 10) + "px")
-                        .html(`
-              <strong>${d.rowCondition}</strong> & <strong>${d.colCondition}</strong><br>
-              Shared drug count: ${d.count}<br>
-              <em>${displayList}${moreCount > 0 ? " ... (+" + moreCount + " more)" : ""}</em>
-            `);
-                })
-                .on("mousemove", event => {
-                    d3.select("#tooltip")
-                        .style("left", (event.pageX + 10) + "px")
-                        .style("top", (event.pageY + 10) + "px");
-                })
-                .on("mouseleave", () => {
-                    d3.select("#tooltip").style("opacity", 0);
-                })
-                .on("click", (event, d) => {
-                    if (vis.highlighted &&
-                        vis.highlighted.rowCondition === d.rowCondition &&
-                        vis.highlighted.colCondition === d.colCondition) {
-                        vis.highlighted = null;
-                    } else {
-                        vis.highlighted = d;
-                    }
-                    vis.updateHighlight();
-                }),
-            update => update
-                .call(update => update.transition().duration(500)
-                    .style("fill", d => vis.color(d.count))
-                ),
-            exit => exit
-                .call(exit => exit.transition().duration(300).style("opacity", 0).remove())
-        );
+                // Non-diagonal cells use color scale - diagnostic coloring
+                if (d.count === 0) return "#f8f9fa";
 
-        this.updateHighlight();
+                // Use simple red scale
+                return this.color(d.count);
+            })
+            .style("stroke", "#fff")
+            .style("stroke-width", 1)
+            .on("mouseover", (event, d) => {
+                if (d.rowCondition !== d.colCondition) {
+                    this.showTooltip(event, d);
+
+                    // Highlight cell
+                    d3.select(event.currentTarget)
+                        .style("stroke", "#333")
+                        .style("stroke-width", 2);
+                }
+            })
+            .on("mousemove", (event) => {
+                // Move tooltip with mouse
+                d3.select("#tooltip")
+                    .style("left", (event.pageX + 10) + "px")
+                    .style("top", (event.pageY + 10) + "px");
+            })
+            .on("mouseleave", (event) => {
+                // Hide tooltip
+                d3.select("#tooltip").style("opacity", 0);
+
+                // Reset highlight
+                d3.select(event.currentTarget)
+                    .style("stroke", "#fff")
+                    .style("stroke-width", 1);
+            });
+
+        // Update color legend
+        this.updateColorLegend();
+
+        // Log some diagnostic counts for the first few cells
+        console.log("Sample cell values:");
+        this.data.filter(d => d.count > 0).slice(0, 10).forEach(d => {
+            console.log(`${d.rowCondition} & ${d.colCondition}: ${d.count}`);
+        });
     }
 
-    updateHighlight() {
-        let vis = this;
-        this.svg.selectAll(".heat-rect")
-            .classed("highlighted", rectData => {
-                if (!vis.highlighted) return false;
-                return (
-                    rectData.rowCondition === vis.highlighted.rowCondition ||
-                    rectData.colCondition === vis.highlighted.colCondition
-                );
-            });
+    showTooltip(event, d) {
+        // Skip tooltip for diagonal cells or zero-value cells
+        if (d.rowCondition === d.colCondition || d.count === 0) return;
+
+        // Format the tooltip content
+        let tooltipContent = `
+            <strong>${d.rowCondition}</strong> & <strong>${d.colCondition}</strong><br>
+            Shared drugs: ${d.count}
+        `;
+
+        // Add drug details if available
+        if (d.count > 0 && d.sharedDrugs && d.sharedDrugs.length > 0) {
+            const displayDrugs = d.sharedDrugs.slice(0, 5);
+            const remaining = d.sharedDrugs.length - 5;
+
+            tooltipContent += `<em>${displayDrugs.join(", ")}`;
+            if (remaining > 0) {
+                tooltipContent += ` and ${remaining} more`;
+            }
+            tooltipContent += `</em>`;
+        }
+
+        // Display the tooltip
+        d3.select("#tooltip")
+            .style("opacity", 1)
+            .style("left", (event.pageX + 10) + "px")
+            .style("top", (event.pageY + 10) + "px")
+            .html(tooltipContent);
+    }
+
+    updateColorLegend() {
+        // Get the gradient div
+        const legendGradient = document.getElementById("legend-gradient");
+        if (!legendGradient) return;
+
+        legendGradient.style.background = "linear-gradient(to right, #f6f2ff, #42b6c1)";
     }
 }
 
+// Initialize visualization when document is ready
+document.addEventListener("DOMContentLoaded", function () {
+    loadData();
+});
 
-d3.csv("drug_data_progress.csv").then(rawData => {
-    // Build sets & maps
+// Data structures
+let conditionToDrugsAll = new Map();
+let drugToType = new Map();
+let conditionCounts = [];
+let heatmapVis;
+
+function loadData() {
+    d3.csv("Final_Cleaned_Drug_Data.csv").then(rawData => {
+        processData(rawData);
+        setupUI();
+        updateVisualization();
+    }).catch(error => {
+        console.error("Error loading data:", error);
+        document.getElementById("heatmap-container").innerHTML =
+            '<div style="padding: 2rem; text-align: center;">Error loading data. Please check the console for details.</div>';
+    });
+}
+
+function processData(rawData) {
+    // Extract unique drug types
     let uniqueTypes = new Set();
-    let conditionToDrugsAll = new Map();
-    let drugToType = new Map();
 
     rawData.forEach(row => {
-        uniqueTypes.add(row.Type_Of_Action);
-        drugToType.set(row.drug_name, row.Type_Of_Action);
+        // Skip invalid entries
+        if (!row.drug_name || !row.Type_Of_Action || !row.list_of_conditions) return;
 
-        let condList = row.list_of_conditions.split(",").map(d => d.trim());
-        condList.forEach(cond => {
+        // Capitalize first
+        let drugName = capitalizeFirst(row.drug_name.trim());
+        let drugType = capitalizeFirst(row.Type_Of_Action.trim());
+
+        uniqueTypes.add(drugType);
+        drugToType.set(drugName, drugType);
+
+        let conditions = row.list_of_conditions.split(",")
+            .map(c => capitalizeFirst(c.trim()))
+            .filter(c => c.length > 0);
+
+        conditions.forEach(cond => {
             if (!conditionToDrugsAll.has(cond)) {
                 conditionToDrugsAll.set(cond, new Set());
             }
-            conditionToDrugsAll.get(cond).add(row.drug_name);
+            conditionToDrugsAll.get(cond).add(drugName);
         });
     });
 
-    // Sort conditions by total drug count
-    let conditionCounts = [];
+    // Sort conditions
     conditionToDrugsAll.forEach((drugSet, cond) => {
         conditionCounts.push({ condition: cond, count: drugSet.size });
     });
     conditionCounts.sort((a, b) => d3.descending(a.count, b.count));
 
-    // Create dynamic checkboxes
+    // Create heatmap visualization
+    heatmapVis = new HeatmapVis("heatmap-container");
+}
+
+function setupUI() {
     let actionCheckboxContainer = d3.select("#actionCheckboxes");
-    uniqueTypes.forEach(t => {
+
+    // Sort drug types alphabetically
+    let sortedTypes = Array.from(new Set(Array.from(drugToType.values())))
+        .filter(type => type && type.length > 0)
+        .sort();
+
+    sortedTypes.forEach(type => {
         let label = actionCheckboxContainer.append("label");
-        label.append("input")
+        let input = label.append("input")
             .attr("type", "checkbox")
             .attr("name", "actionType")
-            .attr("value", t);
-        label.append("span").text(t);
+            .attr("value", type);
+
+        input.on("change", updateVisualization);
+
+        label.append("span").text(type);
     });
 
-    // Populate topNSelect
+    // Populate topN
     let topNOptions = [5, 10, 15, 20, 30, 50];
     let topNSelect = d3.select("#topNSelect");
+
+    topNSelect.selectAll("option").remove();
+
     topNOptions.forEach(n => {
         topNSelect.append("option")
             .attr("value", n)
             .text(n);
     });
-    topNSelect.property("value", 10); // default
 
-    function buildPairwiseData(selectedTypes, topN) {
-        let topNConds = conditionCounts.slice(0, topN).map(d => d.condition);
+    topNSelect.property("value", 10)
+        .on("change", updateVisualization);
 
-        let useAll = (selectedTypes.length === 0);
+    // Reset filters
+    d3.select("#resetFilter").on("click", resetFilters);
+}
 
-        let filteredMap = new Map();
-        topNConds.forEach(cond => {
-            filteredMap.set(cond, new Set());
-        });
+function updateVisualization() {
+    // Get current
+    let selectedTypes = [];
+    d3.selectAll("input[name='actionType']:checked").each(function () {
+        selectedTypes.push(this.value);
+    });
 
-        topNConds.forEach(cond => {
-            let originalSet = conditionToDrugsAll.get(cond);
+    let topN = +d3.select("#topNSelect").property("value");
+
+    let pairwiseData = buildPairwiseData(selectedTypes, topN);
+    heatmapVis.updateData(pairwiseData);
+}
+
+function buildPairwiseData(selectedTypes, topN) {
+    // Get top N conditions
+    let topNConds = conditionCounts.slice(0, topN).map(d => d.condition);
+    let useAll = (selectedTypes.length === 0);
+
+    // Create filtered drug sets
+    let filteredMap = new Map();
+    topNConds.forEach(cond => {
+        filteredMap.set(cond, new Set());
+
+        let originalSet = conditionToDrugsAll.get(cond);
+        if (originalSet) {
             originalSet.forEach(drug => {
-                let drugType = drugToType.get(drug);
+                const drugType = drugToType.get(drug);
                 if (useAll || selectedTypes.includes(drugType)) {
                     filteredMap.get(cond).add(drug);
                 }
             });
-        });
-
-        let pairwiseData = [];
-        for (let i = 0; i < topNConds.length; i++) {
-            for (let j = 0; j < topNConds.length; j++) {
-                let condA = topNConds[i];
-                let condB = topNConds[j];
-                let setA = filteredMap.get(condA);
-                let setB = filteredMap.get(condB);
-
-                let shared = [];
-                if (setA.size < setB.size) {
-                    setA.forEach(drug => {
-                        if (setB.has(drug)) shared.push(drug);
-                    });
-                } else {
-                    setB.forEach(drug => {
-                        if (setA.has(drug)) shared.push(drug);
-                    });
-                }
-
-                if (condA === condB) {
-                    // Force diagonal to 0
-                    pairwiseData.push({
-                        rowCondition: condA,
-                        colCondition: condB,
-                        count: 0,
-                        sharedDrugs: []
-                    });
-                } else {
-                    pairwiseData.push({
-                        rowCondition: condA,
-                        colCondition: condB,
-                        count: shared.length,
-                        sharedDrugs: shared
-                    });
-                }
-
-            }
         }
-        return pairwiseData;
+    });
+
+    let pairwiseData = [];
+
+    // Process each pair of conditions
+    for (let i = 0; i < topNConds.length; i++) {
+        for (let j = 0; j < topNConds.length; j++) {
+            let condA = topNConds[i];
+            let condB = topNConds[j];
+
+            // Get drug sets
+            let drugsA = filteredMap.get(condA);
+            let drugsB = filteredMap.get(condB);
+
+            let sharedDrugs = [];
+
+            if (drugsA && drugsB) {
+                drugsA.forEach(drug => {
+                    if (drugsB.has(drug)) {
+                        sharedDrugs.push(drug);
+                    }
+                });
+            }
+
+            // Create data object
+            pairwiseData.push({
+                rowCondition: condA,
+                colCondition: condB,
+                count: sharedDrugs.length,
+                sharedDrugs: sharedDrugs
+            });
+        }
     }
 
-    // heatmap
-    let heatmapVis = new HeatmapVis("heatmap-container");
+    const nonZeroCounts = pairwiseData.filter(d => d.count > 0).length;
+    console.log(`Found ${nonZeroCounts} cell pairs with shared drugs`);
 
-    // Render initial data
-    let defaultTopN = +topNSelect.property("value");
-    let initialData = buildPairwiseData([], defaultTopN);
-    heatmapVis.updateData(initialData);
+    return pairwiseData;
+}
 
-    // Apply filter
-    d3.select("#applyFilter").on("click", () => {
-        let selectedTypes = [];
-        d3.selectAll("input[name='actionType']:checked").each(function () {
-            selectedTypes.push(this.value);
-        });
-        let topN = +topNSelect.property("value");
+function resetFilters() {
+    // Uncheck all
+    d3.selectAll("input[name='actionType']").property("checked", false);
 
-        let updatedData = buildPairwiseData(selectedTypes, topN);
-        heatmapVis.updateData(updatedData);
-    });
+    // Reset to default top N
+    d3.select("#topNSelect").property("value", 10);
 
-    // Reset filter
-    d3.select("#resetFilter").on("click", () => {
-        d3.selectAll("input[name='actionType']").property("checked", false);
-        topNSelect.property("value", 10);
+    // Update visualization
+    updateVisualization();
+}
 
-        let resetData = buildPairwiseData([], 10);
-        heatmapVis.updateData(resetData);
-    });
-});
+function capitalizeFirst(str) {
+    if (!str) return "";
+    return str.charAt(0).toUpperCase() + str.slice(1);
+}

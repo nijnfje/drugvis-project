@@ -1,30 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drug Condition Relationship Visualization</title>
   <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/graphology@0.26.0/dist/graphology.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sigma@2.4.0/build/sigma.min.js"></script>
   <link rel="stylesheet" href="chord_styles.css">
 </head>
 
 <body>
-  <div class="filter-panel">
+<!--  <div class="header">-->
+<!--    <h1>Drug-Condition Relationship Network</h1>-->
+<!--  </div>-->
 
+  <div class="filter-panel">
     <div class="slider-block">
-      <label for="edgeThreshold">Min Shared Drugs for Edge:</label>
+      <label for="edgeThreshold">Min Shared Drugs:</label>
       <input type="range" id="edgeThreshold" min="1" max="10" value="2" />
       <span id="thresholdValue">2</span>
     </div>
-
-    <div id="typeActionCheckboxes" class="type-action-boxes"></div>
 
     <div class="toggle-group">
       <label class="toggle-switch">
         <input type="checkbox" id="layoutToggle" checked />
         <span class="toggle-slider round"></span>
       </label>
-      <span>Use Circular Layout</span>
+      <span>Circular Layout</span>
     </div>
 
-    <button id="applyFilter">Apply Filter</button>
-    <button id="resetFilter">Reset Filter</button>
+    <div id="typeActionCheckboxes" class="type-action-boxes"></div>
+
+    <button id="resetFilter">Reset Filters</button>
   </div>
 
   <div id="sigma-container"></div>
@@ -33,3 +42,5 @@
 
   <script src="chord.js"></script>
 </body>
+
+</html>

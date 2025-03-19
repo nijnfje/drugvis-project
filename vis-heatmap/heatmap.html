@@ -7,16 +7,30 @@
 
 <div>
     <div class="filter-panel">
+        <div class="top-n-control">
+            <label for="topNSelect">Top Conditions to Display:</label>
+            <select id="topNSelect">
+                <option value="5">5</option>
+                <option value="10" selected>10</option>
+                <option value="15">15</option>
+                <option value="20">20</option>
+                <option value="30">30</option>
+                <option value="50">50</option>
+            </select>
+        </div>
+
         <div id="actionCheckboxes" class="action-checkboxes"></div>
 
-        <label for="topNSelect">Show Top N Conditions:</label>
-        <select id="topNSelect"></select>
-
-        <button id="applyFilter">Apply Filter</button>
-        <button id="resetFilter">Reset Filter</button>
+        <button id="resetFilter">Reset Filters</button>
     </div>
 
     <div id="heatmap-container"></div>
+
+    <div class="color-legend">
+        <span class="legend-label">Fewer Shared Drugs</span>
+        <div id="legend-gradient" class="legend-gradient"></div>
+        <span class="legend-label">More Shared Drugs</span>
+    </div>
 
     <div id="tooltip" class="tooltip"></div>
 
