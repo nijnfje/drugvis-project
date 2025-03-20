@@ -1,8 +1,8 @@
 class SharedDrugsForDiseases {
-    constructor(path, width = 800, height = 600) {
+    constructor(path) {
         this.path = path;
-        this.width = width;
-        this.height = height;
+        this.width = window.innerWidth;
+        this.height = window.innerHeight;
         this.svg = null;
         this.nodes = [];
         this.vertices = [];
@@ -11,6 +11,16 @@ class SharedDrugsForDiseases {
         this.node = null;
         this.label = null;
         this.vertex = null;
+        this.hitbox = null;
+        window.addEventListener("resize", this.resizeCanvas.bind(this));
+    }
+
+    resizeCanvas() {
+        this.width = window.innerWidth;
+        this.height = window.innerHeight;
+        this.svg.attr("width", this.width).attr("height", this.height);
+
+        this.simulation.force("center", d3.forceCenter(this.width / 2, this.height / 2));
     }
     
     init() {
@@ -30,8 +40,10 @@ class SharedDrugsForDiseases {
     
     loadData() {
         d3.csv(this.path, row => {
-            row.drug = row.drug_name;
-            row.condition = row.list_of_conditions;
+            row.drug = row.drug_name.replace(/\b\w/g,
+                    c => c.toUpperCase()).replace(/'S\b/, "'s");
+            row.condition = row.list_of_conditions.replace(/\b\w/g,
+                    c => c.toUpperCase()).replace(/'S\b/, "'s");
             return row;
         }).then(data => {
             this.processData(data);
@@ -75,34 +87,59 @@ class SharedDrugsForDiseases {
     createGraph() {
         this.simulation = d3.forceSimulation(this.nodes)
             .force("link", d3.forceLink(this.vertices).id(d => d.id).strength(d => d.weight * 0.1))
-            .force("charge", d3.forceManyBody().strength(-100))
-            .force("center", d3.forceCenter(this.width / 2, this.height / 2));
+            .force("charge", d3.forceManyBody().strength(-500))
+            .force("center", d3.forceCenter(this.width / 2, this.height / 2))
+            .force("collide", d3.forceCollide().radius(d => d.radius + 5).iterations(2));
 
         this.createVertices();
         this.createNodes();
         this.createLabels();
         this.setupSimulation();
     }
-    
+
     createVertices() {
         const vertexScale = d3.scaleLinear()
             .domain([1, d3.max(this.vertices, d => d.weight)])
             .range([1, 10]);
 
-        this.vertex = this.svg.selectAll("line")
+        this.vertex = this.svg.selectAll(".edge")
             .data(this.vertices)
             .enter().append("line")
+            .attr("class", "edge")
             .style("opacity", 0.5)
             .style("stroke", "grey")
-            .style("stroke-width", d => vertexScale(d.weight))
+            .style("stroke-width", d => vertexScale(d.weight));
+
+        this.hitbox = this.svg.selectAll(".hover-line")
+            .data(this.vertices)
+            .enter().append("line")
+            .attr("class", "hover-line")
+            .style("opacity", 0)
+            .style("stroke", "transparent")
+            .style("stroke-width", d => vertexScale(d.weight) + 10)
             .on("mouseover", (event, d) => {
+                this.vertex.filter(edge => edge.source.id === d.source.id && edge.target.id === d.target.id)
+                    // Edge interaction
+                    .transition()
+                    .duration(200)
+                    .style("stroke", "red")
+                    .style("opacity", 1);
+                this.node.filter(node => node.id === d.source.id || node.id === d.target.id)
+                    .transition()
+                    .duration(200)
+                    .style("fill", "orange")
+                    .attr("r", 14);
                 this.tooltip.style("visibility", "visible")
-                    .html(`Shared Drugs between <strong>${d.source.id}</strong> and <strong>
-${d.target.id}</strong>: <ul>${d.sharedDrugs.map(drug => `<li>${drug}</li>`).join('')}</ul>`)
+                    .html(`Shared drugs between <strong>${d.source.id}</strong> and <strong>
+                            ${d.target.id}</strong>: <ul>${d.sharedDrugs.map(drug => `<li>${drug}</li>`).join('')}</ul>`)
                     .style("left", (event.pageX + 10) + "px")
                     .style("top", (event.pageY - 10) + "px");
             })
-            .on("mouseout", () => this.tooltip.style("visibility", "hidden"));
+            .on("mouseout", () => {
+                this.vertex.style("stroke", "grey").style("opacity", 0.5);
+                this.node.style("fill", "lightblue").attr("r", 7);
+                this.tooltip.style("visibility", "hidden");
+            });
     }
     
     createNodes() {
@@ -114,15 +151,48 @@ ${d.target.id}</strong>: <ul>${d.sharedDrugs.map(drug => `<li>${drug}</li>`).joi
             .call(d3.drag()
                 .on("start", this.dragStarted.bind(this))
                 .on("drag", this.dragged.bind(this))
-                .on("end", this.dragEnded.bind(this)));
+                .on("end", this.dragEnded.bind(this)))
+            // Node interactions
+            .on("mouseover", function(event, d) {
+                d3.select(this)
+                    .transition()
+                    .duration(200)
+                    .attr("r", 14)
+                    .style("fill", "#4e7fd9");
+
+                // Label interaction
+                const labelId = `label-${d.id.replace(/\s+/g, '_')}`;
+                d3.select(`#${labelId}`)
+                    .transition()
+                    .duration(200)
+                    .style("font-size", "18px")
+                    .attr("opacity", 1);
+            })
+            .on("mouseout", function(event, d) {
+                d3.select(this)
+                    .transition()
+                    .duration(200)
+                    .attr("r", 7)               // Return to original state
+                    .style("fill", "lightblue");
+
+                const labelId = `label-${d.id.replace(/\s+/g, '_')}`;
+                d3.select(`#${labelId}`)
+                    .transition()
+                    .duration(200)
+                    .style("font-size", "15px")
+                    .attr("opacity", 0.5);
+            });
     }
     
     createLabels() {
         this.label = this.svg.selectAll("text")
             .data(this.nodes)
-            .enter().append("text")
+            .enter()
+            .append("text")
+            .attr("id", d => `label-${d.id.replace(/\s+/g, '_')}`)
             .style("fill", "black")
             .style("font-size", "15px")
+            .attr("opacity", "0.5")
             .text(d => d.id)
             .attr("text-anchor", "middle");
     }
@@ -140,6 +210,11 @@ ${d.target.id}</strong>: <ul>${d.sharedDrugs.map(drug => `<li>${drug}</li>`).joi
                 });
 
             this.vertex.attr("x1", d => d.source.x)
+                .attr("y1", d => d.source.y)
+                .attr("x2", d => d.target.x)
+                .attr("y2", d => d.target.y);
+
+            this.hitbox.attr("x1", d => d.source.x)
                 .attr("y1", d => d.source.y)
                 .attr("x2", d => d.target.x)
                 .attr("y2", d => d.target.y);

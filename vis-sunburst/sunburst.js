@@ -5,7 +5,7 @@ class ConditionDrugMap {
         this.height = height;
         this.radius = this.width / 2;
         this.conditionToDrugs = {};
-        this.sliderValue = 30;
+        this.sliderValue = 15;
         this.maxDrugs = 0;
         this.svg = null;
         this.partition = d3.partition().size([2 * Math.PI, this.radius]);
@@ -28,8 +28,10 @@ class ConditionDrugMap {
 
     async loadData() {
         const data = await d3.csv(this.csvFilePath, row => {
-            row.drug_name = row.drug_name;
-            row.list_of_conditions = row.list_of_conditions;
+            row.drug_name = row.drug_name.replace(/\b\w/g,
+                    c => c.toUpperCase()).replace(/'S\b/, "'s");
+            row.list_of_conditions = row.list_of_conditions
+                .replace(/\b\w/g, c => c.toUpperCase()).replace(/'S\b/, "'s");
             return row;
         });
 
@@ -57,9 +59,9 @@ class ConditionDrugMap {
 
         const slider = sliderContainer.append("input")
             .attr("type", "range")
-            .attr("min", 1)
-            .attr("max", this.maxDrugs)
-            .attr("step", 1)
+            .attr("min", 0)
+            .attr("max", 40) // prev: this.maxDrugs
+            .attr("step", 5)
             .attr("value", this.sliderValue);
 
         const sliderValue = sliderContainer.append("span")
@@ -83,6 +85,7 @@ class ConditionDrugMap {
     }
 
     updateVisualization(filterMin) {
+        // Filter by conditions
         const filteredConditions = Object.keys(this.conditionToDrugs).filter(condition => {
             return this.conditionToDrugs[condition].length >= filterMin;
         });
@@ -96,7 +99,7 @@ class ConditionDrugMap {
             name: "root",
             children: filteredConditions.map(condition => ({
                 name: condition,
-                children: Array.from(this.conditionToDrugs[condition]).map(drug => ({
+                children: this.conditionToDrugs[condition].map(drug => ({
                     name: drug
                 }))
             }))
@@ -110,32 +113,58 @@ class ConditionDrugMap {
 
         this.svg.selectAll("*").remove();
 
-        this.svg.selectAll("path")
-            .data(hierarchy.descendants().slice(1))
-            .enter()
+        // Color scales
+        const pastelColors = d3.quantize(d3.interpolateRainbow, filteredConditions.length + 1)
+            .map(color => d3.interpolateRgb(color, "#ffffff")(0.45));
+        const colorScale = d3.scaleOrdinal(pastelColors); // prev: d3.scaleOrdinal(d3.schemeSet3);
+
+        const diseaseColors = new Map();
+        console.log(filteredConditions);
+
+        hierarchy.children.forEach((condition, i) => {
+            diseaseColors.set(condition.data.name, colorScale(i));
+        });
+
+        const paths = this.svg.selectAll("path").data(hierarchy.descendants().slice(1));
+
+        paths.enter()
             .append("path")
             .attr("d", this.arc)
-            .style("stroke", "white")
-            .style("fill", d => d.depth === 1 ? "#69b3a2" : "#ffcc00")
+            .style("stroke", "#fff8e0")
+            .style("fill", d => d.depth === 1 ?
+                diseaseColors.get(d.data.name) : diseaseColors.get(d.parent.data.name))
+            .style("opacity", 0)
             .on("mouseover", function(event, d) {
-                d3.select(this).style("opacity", 0.5);
+                d3.select(this).transition().duration(200).style("opacity", 0.70);
             })
             .on("mouseout", function(event, d) {
-                d3.select(this).style("opacity", 1);
+                d3.select(this).transition().duration(200).style("opacity", 1);
             })
-            .on("click", (event, d) => this.hightlight(d));  // Add click listener to path
+            .on("click", (event, d) => this.hightlight(d))
+            .merge(paths)
+            .transition().duration(700)
+            .attr("d", this.arc)
+            .style("opacity", 1);
 
-        this.svg.selectAll("text")
-            .data(hierarchy.descendants().slice(1))
-            .enter()
+        const labels = this.svg.selectAll("text").data(hierarchy.descendants().slice(1));
+
+        labels.enter()
             .append("text")
+            .attr("dy", "0.35em")
             .attr("transform", d => `translate(${this.arc.centroid(d)}) 
-            rotate(${(d.x0 + d.x1) / 2 * 180 / Math.PI - 90})`)
+        rotate(${(d.x0 + d.x1) / 2 * 180 / Math.PI - 90})`)
             .style("text-anchor", "middle")
-            .style("font-size", "10px")
+            .style("font-size", d => `${Math.min(10, Math.max(5, 18 - d.data.name.length / 2))}px`)
             .style("fill", "black")
-            .text(d => d.data.name);
+            .style("opacity", 0)
+            .text(d => d.data.name)
+            .merge(labels)
+            .transition().duration(500)
+            .attr("transform", d => `translate(${this.arc.centroid(d)}) 
+        rotate(${(d.x0 + d.x1) / 2 * 180 / Math.PI - 90})`)
+            .style("opacity", 1);
     }
+
 
     hightlight(d) {
         if (d.depth === 1) {
