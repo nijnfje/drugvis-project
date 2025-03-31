@@ -2,6 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap');
 
 /***************************************
+            COLOR VARIABLES
+***************************************/
+:root {
+    --bg-color: #fff8e0; /* alt: #f2ebdb */
+}
+
+
+/***************************************
         GENERAL SECTION STYLES
 ***************************************/
 
@@ -62,7 +70,7 @@ section {
 }
 
 /***************************************
-    SECTION 1: Title card
+        SECTION 1: Title card
 ***************************************/
 
 #title-scroll{
@@ -79,7 +87,38 @@ section {
 
     height: 27rem;
     max-height: 100%;
-    filter: invert(54%) sepia(92%) saturate(177%) hue-rotate(191deg) brightness(82%) contrast(77%);    /*Source to convert color to filter: https://codepen.io/sosuke/pen/Pjoqqp */
+    filter: invert(54%) sepia(92%) saturate(177%) hue-rotate(191deg) brightness(82%) contrast(77%);
+    /*Source to convert color to filter: https://codepen.io/sosuke/pen/Pjoqqp */
+}
+
+#title-subtitle-sign-text{
+    position: absolute;
+    left: 20%;
+    top: 50%;
+
+    height: 27rem;
+    max-height: 100%;
+}
+
+
+#tomato-vine-title{
+    position: absolute;
+    height: 50%;
+    width: 40%;
+
+    left: -10rem;
+    transform: rotate(-7deg);
+}
+
+#tomato-vine-title-2{
+    position: absolute;
+    height: 35%;
+    width: 30%;
+
+    top: -7rem;
+    right: -3rem;
+    transform: scale(-1, 1);
+
 }
 
 #garden {
@@ -193,6 +232,8 @@ section {
     transform: rotate(-45deg);
 }
 
+/* Center text */
+
 .camh-info {
     position: absolute;
     transform: translateY(-20%);
@@ -227,6 +268,10 @@ section {
     border-radius: 2.5rem;
     border: 0.15rem solid rgba(77, 109, 192, 0.76);
     opacity: 0.8;
+
+    /* For interaction */
+    cursor: pointer;
+    z-index: 10;
 }
 
 .orbit .continue-button-container{
@@ -273,6 +318,29 @@ section {
     transition: background-color 0.05s ease-in-out;
 }
 
+/* For rats */
+
+li p {
+    opacity: 0;
+}
+
+#rat-red{
+    opacity: 0;
+}
+
+.flower-reaction{
+    width: 8rem;
+    height: 8rem;
+
+    filter: sepia(0.2) saturate(175%);
+    opacity: 0;
+}
+
+.sad-reaction{
+    width: 5rem;
+    height: 5rem;
+}
+
 /***************************************
     SECTION 3: Salt rat (Soup?)
  ***************************************/
@@ -284,11 +352,23 @@ section {
 .s3-explanation {
     position: absolute;
     left: 10%;
-    top: 10rem;
+    top: 8rem;
 }
 
 .s3-explanation-break{
     margin: 0.3rem;
+}
+
+#stove-gif {
+    position: absolute;
+    bottom: -16rem; /* alt: 40%, or 13rem */
+    left: -6rem;
+
+    width: 95%;
+
+    filter: sepia(200%) hue-rotate(0deg) saturate(20);
+    opacity: .25;
+
 }
 
 #soup-table{
@@ -299,6 +379,7 @@ section {
     height: 25%;
 
     background-color: #b2845d;
+    box-shadow: 0 0 50px 80px var(--bg-color);
     border-radius: 1rem ;
 }
 
@@ -354,6 +435,18 @@ section {
     height: 100vh; /* Needs height for children */
 }
 
+#salt-rat-utensils {
+    position: absolute;
+    right: 3rem;
+    top: 7rem;
+
+    height: 25rem;
+
+    filter: brightness(1.3) saturate(150%);
+    opacity: .6;
+
+}
+
 #salt-rat, #salt-rat-hot, #salt-rat-cold {
     position: absolute;
     right: 0;
@@ -364,6 +457,33 @@ section {
 
 #salt-rat-hot, #salt-rat-cold{
     opacity: 0;
+}
+
+
+.kitchen-vine-container{
+    position: relative;
+    height: 15%;
+    width: 100vw;
+    overflow: hidden;
+}
+
+#kitchen-vine-frame{
+    position: absolute;
+
+    width: 200%;
+    bottom: -2rem;
+
+    mix-blend-mode: multiply;
+}
+
+.s3-content-container{
+    position: relative;
+    top: -15%;
+}
+
+.s3-button{
+    top: 110%;
+    left: 80%;
 }
 
 /**************************
@@ -384,9 +504,38 @@ section {
     z-index: 2;
 }
 
-.rat-assembly-line-parent{
-    position: relative;
-    height: 100vh;
+.s4-explanation {
+    /* text-shadow source: https://www.reddit.com/r/csshelp/comments/b3z3gp/how_to_i_make_text_with_black_outline/*/
+    text-shadow: 0.05em 0 var(--bg-color);,
+                0 0.05em var(--bg-color);,
+                -0.05em 0 var(--bg-color);,
+                0 -0.05em var(--bg-color);,
+                -0.05em -0.05em var(--bg-color);,
+                -0.05em 0.05em var(--bg-color);,
+                0.05em -0.05em var(--bg-color);,
+                0.05em 0.05em var(--bg-color);
+}
+
+/*.rat-assembly-line-parent{*/
+/*    position: relative;*/
+/*    height: 100vh;*/
+/*}*/
+
+.steam-gif-assembly{
+    position: absolute;
+    width: 25%;
+    height: 25%;
+    left: 0;
+    opacity: 0.5;
+    top: 12%;
+}
+
+.bg-sparkle-assembly{
+    position: absolute;
+    right: 0;
+    opacity: 0.35;
+
+    filter: invert(20%) sepia(60%) saturate(650%) hue-rotate(200deg) brightness(155%) contrast(103%);
 }
 
 #rat-assembly-line{
@@ -405,9 +554,56 @@ section {
     max-height: 100%;
 }
 
+.assembly-foreground-gifs{
+    position: relative;
+
+    height: 75%;
+    width: 100%;
+}
+
+.assembly-sparkle{
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+
+    /*filter: invert(15%) sepia(66%) saturate(630%) hue-rotate(318deg) brightness(105%) contrast(103%);*/
+    filter: brightness(30%) invert(1) hue-rotate(200deg) contrast(103%);
+}
+
+#assembly-sparkle-1{
+    left: 0;
+    bottom: 5rem;
+}
+
+#assembly-sparkle-2{
+    left: 30%;
+    bottom: 10rem;
+    transform: scale(-1, -1) rotate(95deg);
+
+    height: 7rem;
+    width: 7rem;
+}
+
+#assembly-sweat-1 {
+    position: absolute;
+
+    width: 13rem;
+    height: 13rem;
+
+    right: 1rem;
+    bottom: 7rem;
+    filter: brightness(0) invert(1);
+
+    transform: rotate(130deg) scale(-1, 1);
+}
+
 /***************************************
     SECTION 5: Disease related by medications (Vis #7)
  ***************************************/
+iframe {
+    padding: 1rem;
+}
+
 .vis-salt {
     position: absolute;
     height: 80%;
@@ -483,6 +679,48 @@ section {
     height: 100%;
 }
 
+#yellow-flowers{
+    position: absolute;
+    bottom: 8rem;
+    left: -3rem;
+
+    height: 50%;
+
+    opacity: .8;
+    transform: rotate(-2deg);
+}
+
+#red-flowers-bush{
+    position: absolute;
+    bottom: 6.5rem;
+    left: 18rem;
+
+    height: 50%;
+    filter: brightness(2) saturate(75%) hue-rotate(-30deg) blur(0.5px) saturate(175%);
+    opacity: 65%;
+}
+
+#hydrangeas-1{
+    position: absolute;
+    bottom: 3rem;
+    left: 5.5rem;
+
+    height: 40%;
+
+    filter: brightness(1) contrast(100%) saturate(65%);
+}
+
+#blue-wildflowers{
+    position: absolute;
+    right: -2rem;
+    bottom: 7.5rem;
+
+    height: 30%;
+    opacity: .5;
+
+    filter: brightness(1) contrast(100%) hue-rotate(130deg) sepia(20%) saturate(120%);
+}
+
 .rain-floor{
     position: relative;
     right: 0;
@@ -530,6 +768,8 @@ section {
     position: relative;
     height: 35%;
     width: 65%;
+
+    text-align: center;
 }
 
 .s10-explanation{
@@ -548,7 +788,7 @@ section {
 
 #window {
     position: absolute;
-    top: -20%;
+    top: -25%;
     right: -30%;
 
     height: 150%;
@@ -559,7 +799,86 @@ section {
     mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }
 
+#monstera-plant{
+    position: absolute;
+    right: 25%;
+
+    height: 50%;
+}
+
 #rat-therapy-img{
     position: relative;
     height: 75vh;
+}
+
+
+.resources-container{
+    position: absolute;
+    top: 13rem;
+
+    width: 50%;
+
+    display: flex;
+    justify-content: center;
+
+    color: var(--bg-color);
+}
+
+.specific-resources-v{
+    overflow-wrap: break-word;
+    padding: 1rem;
+    justify-content: center;
+    max-width: 70%;
+}
+
+.resource-button {
+    position: relative;
+    width: 10rem;
+    height: 10rem;
+    margin: 1rem;
+
+    border-radius: 100px;
+    text-align: center;
+
+    background-color: #6497e3;
+    border: 0.2rem solid rgba(77, 109, 192, 0.76);
+    opacity: 0.8;
+
+    padding: 2rem;
+}
+
+.resource-button:hover{
+    background-color: #ffe27e;
+    border: 0.2rem solid rgba(255, 123, 95, 0.37);
+    box-shadow: 0 4px 15px 0 rgba(255, 164, 61, 0.61);
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+}
+
+.resource-button:not(:hover){
+    background-color: #6497e3;
+    border: 0.2rem solid rgba(77, 109, 192, 0.76);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.resource-button:active{
+    background-color: #115bc7;
+    transition: background-color 0.05s ease-in-out;
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: #6497e3;
+}
+
+#speech-bubble{
+    position: absolute;
+    right: 13rem;
+    top: 25%;
+    height: 25%;
 }

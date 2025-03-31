@@ -39,6 +39,9 @@
             animation-play-state: paused;
         }
 
+        /* cursor */
+        cursor: pointer;
+
     }
 
     & li {

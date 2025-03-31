@@ -26,12 +26,15 @@
         <!-- TODO: Add proper subtitle (line 33)-->
         <section id="s1">
             <div class="row">
+                <img id="tomato-vine-title" src="img/tomatoes-title.png">
+                <img id="tomato-vine-title-2" src="img/tomatoes-title.png">
                 <img id="title-scroll" src="img/title-scroll.png" class="animate__animated animate__slideInDown">
             </div>
 
             <div>
                 <img id="garden" src="img/garden.svg" class="animate__animated animate__bounceInUp animate__delay-3s animate__slow">
                 <img id="title-subtitle-sign" src="img/signboard-clipart-xl.png" class="animate__animated animate__flipInX animate__delay-2s animate__slow">
+                <img id="title-subtitle-sign-text" src="img/signboard-clipart-xl-writing.png" class="animate__animated animate__flipInX animate__delay-2s animate__slow">
                 <img id="title-rat-img" src="img/title-rat.png" class="animate__animated animate__slideInUp animate__flipInX animate__delay-1s" onclick="showSparkle()">
                 <img id="title-rat-sparkle-gif" src="https://i.gifer.com/origin/f9/f9abd21a7f2be6472c1852518c8e605b.gif" onclick="showSparkle()">
             </div>
@@ -64,28 +67,34 @@
 
                     <ul>
                         <li>
-                            <img src="img/rat-orbit/rat-orbit-1.png" alt="">
+                            <img src="img/rat-orbit/rat-orbit-1-clean.png" alt="">
                             <p> rat </p>
+                            <img class="flower-reaction" src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExc3pxdWprZnVjZWE5YWxjcTZha3oycmQydXI4NjNqbG02czRlcHV6YSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/QAmILpbJNO1aF5Ow5P/giphy.gif" onclick="showReaction(event)" alt="">
                         </li>
 
                         <li>
-                            <img src="img/rat-orbit/rat-orbit-2.png" alt="">
+                            <img src="img/rat-orbit/rat-orbit-2-clean.png" alt="">
                             <p> rat </p>
+                            <img class="flower-reaction sad-reaction" src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjFzN2c5bzI5bTd4cHR4dWJ0aHExbjZuZmkyeW5zczhiOHBoMmtweiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/OhynO9VfCt4HXb9PYQ/giphy.gif" onclick="showReaction(event)" alt="">
+                            <img id="rat-red" src="img/rat-orbit/rat-orbit-2-clean-red.png" alt="" onmouseover="showRedRat()" onmouseout="hideRedRat()" onclick="showSadExp()">
                         </li>
 
                         <li>
-                            <img src="img/rat-orbit/rat-orbit-3.png" alt="">
+                            <img src="img/rat-orbit/rat-orbit-3-clean.png" alt="">
                             <p> rat </p>
+                            <img class="flower-reaction" src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExc3pxdWprZnVjZWE5YWxjcTZha3oycmQydXI4NjNqbG02czRlcHV6YSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/QAmILpbJNO1aF5Ow5P/giphy.gif" onclick="showReaction(event)" alt="">
                         </li>
 
                         <li>
-                            <img src="img/rat-orbit/rat-orbit-4.png" alt="">
+                            <img src="img/rat-orbit/rat-orbit-4-clean.png" alt="">
                             <p> rat </p>
+                            <img class="flower-reaction" src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExc3pxdWprZnVjZWE5YWxjcTZha3oycmQydXI4NjNqbG02czRlcHV6YSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/QAmILpbJNO1aF5Ow5P/giphy.gif" onclick="showReaction(event)" alt="">
                         </li>
 
                         <li>
-                            <img src="img/rat-orbit/rat-orbit-5.png" alt="">
+                            <img src="img/rat-orbit/rat-orbit-5-clean.png" alt="">
                             <p> rat </p>
+                            <img class="flower-reaction" src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExc3pxdWprZnVjZWE5YWxjcTZha3oycmQydXI4NjNqbG02czRlcHV6YSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/QAmILpbJNO1aF5Ow5P/giphy.gif" onclick="showReaction(event)" alt="">
                         </li>
                     </ul>
                 </div>
@@ -96,7 +105,10 @@
         <!-- Section 3: Common view - chemical imbalances -->
         <section id="s3">
 <!--            Section 3-->
-            <div class="row">
+            <div class="row kitchen-vine-container">
+                <img id="kitchen-vine-frame" src="https://cdn.pixabay.com/photo/2021/08/11/10/42/frame-6538134_1280.png">
+            </div>
+            <div class="row s3-content-container">
                 <div class="col-md-7">
                     <div class="section-3">
                         <div class="s3-explanation">
@@ -116,13 +128,21 @@
                             <div id="s3-explanation-5" class="s3-explanation-break animate__animated animate__fadeIn animate__slower animate__delay-4s">
                                 Brains want the "just-right" amount of chemicals to function properly!
                             </div>
+
+                            <div class="s3-button continue-button-container s3-explanation-break animate__animated animate__fadeIn animate__slower animate__delay-5s" onclick="nextSection(event)">
+                                <div class="continue-button">
+                                    <i class="continue-button-icon arrow right"> </i>
+                                </div>
+                            </div>
+
                         </div>
 
+                        <img id="stove-gif" src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdTI2anNudjRmcmp0ZGRlMHhtejU1MDF0emhkdmcwMG0zYmRoNG53dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/VrneSkgcZ2qDFCEHPX/giphy.gif">
                         <div id="soup-table">
 
                         </div>
                         <!-- animate__slower animate__delay-5s -->
-                        <div class="soup-temperature-container animate__animated animate__bounceInLeft">
+                        <div class="soup-temperature-container animate__animated animate__bounceInLeft animate__slower animate__delay-4s">
                             <div class="steam-container">
                                 <img id="steam1" class="steam-gif" src="https://media.baamboozle.com/uploads/images/613393/1673809501_61805_gif-url.gif">
                                 <img id="steam2" class="steam-gif" src="https://media.baamboozle.com/uploads/images/613393/1673809501_61805_gif-url.gif">
@@ -139,6 +159,7 @@
                 </div>
 
                 <div class="col-md-5 salt-rat-parent">
+                    <img id="salt-rat-utensils" src="img/hanging-utensils.png">
                     <img id="salt-rat" src="img/rat-salt.png">
                     <img id="salt-rat-hot" src="img/rat-salt-hot.png">
                     <img id="salt-rat-cold" src="img/rat-salt-cold.png">
@@ -151,6 +172,11 @@
         <section id="s4">
             <div class="section-4">
                 <div class="s4-explanation-container">
+                    <!-- Animation container -->
+                    <div class="assembly-bg-container">
+                        <img class="steam-gif-assembly" src="https://media.baamboozle.com/uploads/images/613393/1673809501_61805_gif-url.gif">
+                        <img class="bg-sparkle-assembly" src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYW11Zmp4ajBxdnQ0c3Y4azV0d3R3dHplbmJnd2xpY2R2c3lsZ2tldSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/gVKOFxzrhpGqEghVtY/giphy.gif">
+                    </div>
                     <div class="s4-explanation">
                         <br>
                         <div id="s4-explanation-1" class="s4-explanation-break">
@@ -175,6 +201,13 @@
 
                 <div id="rat-assembly-line">
                     <img src="img/rat-assembly-line.png">
+                </div>
+
+                <!-- Foreground elements -->
+                <div class="assembly-foreground-gifs">
+                    <img class="assembly-sparkle" id="assembly-sparkle-1" src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNWNjZ3Mwczgwdmxzdjl0a2trdW4wcWFqanBiYXdrNHBpdG16YndjNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/FoyhplwLcPn6rlIzd8/giphy.gif">
+                    <img class="assembly-sparkle" id="assembly-sparkle-2" src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNWNjZ3Mwczgwdmxzdjl0a2trdW4wcWFqanBiYXdrNHBpdG16YndjNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/FoyhplwLcPn6rlIzd8/giphy.gif">
+                    <img id="assembly-sweat-1" src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMm1iaGh3OGx3MWQ1M2huY3gxZ2w4c3o1bGlhZGRxbnAwZmo5b2VnaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/KXXPECgvqjJacvP1Yr/giphy.gif">
                 </div>
 
             </div>
@@ -352,6 +385,10 @@
 
         <!-- Section 9: Be nice -->
         <section id="s9">
+            <img id="yellow-flowers" src="https://cdn.pixabay.com/photo/2017/04/01/13/48/flower-border-2193649_1280.png">
+            <img id="red-flowers-bush" src="https://cdn.pixabay.com/photo/2019/11/10/03/18/flowers-4614851_1280.png">
+            <img id="hydrangeas-1" src="https://cdn.pixabay.com/photo/2017/02/16/22/31/blue-2072751_1280.png">
+            <img id="blue-wildflowers" src="https://cdn.pixabay.com/photo/2022/09/24/07/32/flowers-7475758_1280.png">
             <div class="row">
                 <div class="col-md-7">
                     <div class="s9-explanation-parent">
@@ -398,22 +435,50 @@
         <section id="s10">
             <div class="s10-explanation-parent">
                 <div class="s10-explanation">
-                    If you (or someone you know) needs help,
-                    here's some resources: <br>
+                    <h4> If you (or someone you know) needs help, here's some resources: <br></h4>
+
                     For medical emergencies, call 9-1-1. <br>
                     For mental health crisis, call 9-8-8.<br>
                     <br>
-                    <div class="specific-resources">
-                        UofT specific mental health resources: https://mentalhealth.utoronto.ca/ <br>
-                        Toronto mental health resources: https://www.toronto.ca/community-people/health-wellness-care/health-programs-advice/mental-health-resources/ <br>
-                        Ontario mental health resources: https://www.ontario.ca/page/find-mental-health-support <br>
-                    </div>
+
+<!--                    <div class="specific-resources">-->
+<!--                        UofT specific mental health resources: https://mentalhealth.utoronto.ca/ <br>-->
+<!--                        Toronto mental health resources: https://www.toronto.ca/community-people/health-wellness-care/health-programs-advice/mental-health-resources/ <br>-->
+<!--                        Ontario mental health resources: https://www.ontario.ca/page/find-mental-health-support <br>-->
+<!--                    </div>-->
+
                 </div>
             </div>
             <img id="window" src="https://png.pngtree.com/png-vector/20220608/ourmid/pngtree-window-icon-design-vector-templates-white-on-background-png-image_4887910.png">
+            <img id="monstera-plant" src="https://static.vecteezy.com/system/resources/previews/010/833/233/non_2x/simplicity-monstera-plant-freehand-drawing-flat-design-free-png.png">
             <div class="rat-therapy-img-parent">
                 <img id="rat-therapy-img" src="img/rat-therapy.png">
             </div>
+
+            <div class="resources-container">
+                <div class="row specific-resources-v">
+                    <div class="col-md-4 resource-button continue-button">
+                        <a class="resource-link" href="https://mentalhealth.utoronto.ca/"> UofT mental health resources </a>
+                    </div>
+                    <div class="col-md-4 resource-button continue-button">
+                        <a class="resource-link" href="https://www.toronto.ca/community-people/health-wellness-care/health-programs-advice/mental-health-resources/">Toronto mental health resources</a>
+                    </div>
+                    <div class="col-md-4 resource-button continue-button">
+                        <a class="resource-link" href="https://www.ontario.ca/page/find-mental-health-support"> Ontario mental health resources </a>
+                    </div>
+                </div>
+
+<!--                <div class="row specific-resources-v">-->
+<!--                    <div class="col-md-4"> </div>-->
+<!--                    <div class="col-md-4 resource-button">-->
+<!--                        <a class="resource-link" href="https://www.ontario.ca/page/find-mental-health-support"> Ontario mental health resources: </a>-->
+<!--                    </div>-->
+<!--                    <div class="col-md-4"> </div>-->
+<!--                </div>-->
+            </div>
+
+            <img id="speech-bubble" src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExNW11OWQybjEzbzFwcWJrenpvYndkNGZ4Y3ZqNTVjcXR6ZmgwbWFiayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/iJ2FSgK7EzbGY5ipdV/giphy.gif">
+
         </section>
     </div>
 

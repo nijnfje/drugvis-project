@@ -125,7 +125,8 @@ function changeExpression(event){
     d3.select("#salt-rat")
         .transition()
         .duration(duration)
-        .style("opacity", right_opacity);
+        .style("opacity", right_opacity)
+        .attr("src", "img/rat-salt-happy.png");
 
     d3.select("#salt-rat-hot")
         .transition()
@@ -136,4 +137,63 @@ function changeExpression(event){
         .transition()
         .duration(duration)
         .style("opacity", cold_opacity);
+}
+
+/**
+ * Change rat to red rat on hover
+ */
+function showRedRat(){
+    d3.select("#rat-red")
+        .transition()
+        .duration(200)
+        .style("opacity", "1")
+}
+
+
+/**
+ * Change red rat to normal rat on hover
+ */
+function hideRedRat(){
+    d3.select("#rat-red")
+        .transition()
+        .duration(200)
+        .style("opacity", "0")
+}
+
+/**
+ * Show the reaction of the rat
+ */
+function showReaction(event){
+    // console.log(event.target);
+    let curr = d3.select(event.target);
+    d3.select(event.target)
+        .transition()
+        .duration(500)
+        .style("opacity", "1")
+        .on("end", function(){
+            setTimeout( () => {
+                curr
+                    .transition()
+                    .duration(1500)
+                    .style("opacity", 0);
+            }, 1000);
+        });
+}
+
+function showSadExp(){
+    let curr = d3.select(".sad-reaction")
+    d3.select(".sad-reaction")
+        .transition()
+        .duration(500)
+        .style("opacity", "1")
+        .style("z-index", "3")
+        .on("end", function(){
+            setTimeout( () => {
+                curr
+                    .transition()
+                    .duration(1500)
+                    .style("opacity", 0)
+                    .style("z-index", "auto");
+            }, 1000);
+        });
 }
