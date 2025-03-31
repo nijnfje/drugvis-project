@@ -882,3 +882,14 @@ a:hover{
     top: 25%;
     height: 25%;
 }
+
+.references-container{
+    position: absolute;
+    padding: 1rem;
+    bottom: 0;
+}
+
+.references-container a {
+    color: #6497e3;
+    text-decoration: underline;
+}
