@@ -1,10 +1,9 @@
 // Data structures
-let conditionToDrugsAll = new Map(); // condition => Set of drugNames
-let drugToType = new Map();         // drugName => TypeOfAction
-let drugCountAll = new Map();       // drugName => how many conditions it appears in
-let uniqueActions = new Set();      // collect unique Type_Of_Action
+let conditionToDrugsAll = new Map();
+let drugToType = new Map();
+let drugCountAll = new Map();
+let uniqueActions = new Set();
 
-// DOM elements
 let thresholdSlider, thresholdValueSpan;
 let typeActionContainer;
 let sigmaContainer;
@@ -15,12 +14,18 @@ let renderer;
 let allConditions = [];
 let currentGraph = null;
 
+// Global highlight state:
+const state = {
+    hoveredNode: null,
+    hoveredEdge: null,
+    hoveredNeighbors: new Set(),
+};
+
 document.addEventListener("DOMContentLoaded", function () {
     initializeUI();
     loadData();
 
-    // Event listeners
-    window.addEventListener('resize', debounce(() => {
+    window.addEventListener("resize", debounce(() => {
         if (renderer) resizeGraph();
     }, 250));
 });
@@ -33,28 +38,28 @@ function initializeUI() {
     layoutToggle = document.getElementById("layoutToggle");
     edgeTooltip = document.getElementById("edge-tooltip");
 
-    // Threshold slider
     thresholdSlider.addEventListener("input", () => {
         thresholdValueSpan.textContent = thresholdSlider.value;
         updateVisualization();
     });
 
-    // Layout toggle
     layoutToggle.addEventListener("change", updateVisualization);
 
-    // Reset button
     document.getElementById("resetFilter").addEventListener("click", resetFilters);
 }
 
 function loadData() {
-    d3.csv("Final_Cleaned_Drug_Data.csv").then(data => {
-        processData(data);
-        setupTypeFilters();
-        updateVisualization();
-    }).catch(error => {
-        console.error("Error loading drug data:", error);
-        sigmaContainer.innerHTML = '<div style="padding: 2rem; text-align: center;">Error loading data. Please check the console for details.</div>';
-    });
+    d3.csv("Final_Cleaned_Drug_Data.csv")
+        .then(data => {
+            processData(data);
+            setupTypeFilters();
+            updateVisualization();
+        })
+        .catch(error => {
+            console.error("Error loading drug data:", error);
+            sigmaContainer.innerHTML =
+                '<div style="padding: 2rem; text-align: center;">Error loading data. Please check the console for details.</div>';
+        });
 }
 
 function processData(data) {
@@ -82,10 +87,7 @@ function processData(data) {
 }
 
 function setupTypeFilters() {
-    // Sort actions alphabetically
     const sortedActions = Array.from(uniqueActions).sort();
-
-    // Generate checkboxes for Type_Of_Action
     sortedActions.forEach(action => {
         let label = document.createElement("label");
         let input = document.createElement("input");
@@ -104,7 +106,6 @@ function updateVisualization() {
     const threshold = +thresholdSlider.value;
     const selectedTypes = getSelectedActions();
     const useCircular = layoutToggle.checked;
-
     renderNetwork(threshold, selectedTypes, useCircular);
 }
 
@@ -117,14 +118,15 @@ function getSelectedActions() {
 }
 
 function renderNetwork(threshold, selectedActions, useCircular) {
-    // Clear existing graph
     sigmaContainer.innerHTML = "";
-
     const graph = new graphology.Graph();
     currentGraph = graph;
 
-    // Create a filtered condition->drugs map
-    let useAll = (selectedActions.length === 0);
+    state.hoveredNode = null;
+    state.hoveredEdge = null;
+    state.hoveredNeighbors.clear();
+
+    const useAll = (selectedActions.length === 0);
     let filteredMap = new Map();
 
     allConditions.forEach(cond => {
@@ -138,16 +140,13 @@ function renderNetwork(threshold, selectedActions, useCircular) {
         });
     });
 
-    // Calculate node sizes based on drug count
     const nodeSizes = calculateNodeSizes(filteredMap);
 
-    // Add nodes
     let i = 0;
     allConditions.forEach(cond => {
         let xPos, yPos;
         if (useCircular) {
-            // Circular layout
-            let angle = (2 * Math.PI * i) / allConditions.length;
+            const angle = (2 * Math.PI * i) / allConditions.length;
             xPos = Math.cos(angle) * 10;
             yPos = Math.sin(angle) * 10;
         } else {
@@ -156,17 +155,15 @@ function renderNetwork(threshold, selectedActions, useCircular) {
         }
         i++;
 
-        // Add node
         graph.addNode(cond, {
             label: cond,
             x: xPos,
             y: yPos,
             size: nodeSizes.get(cond) || 5,
-            color: "#5A75DB",
         });
     });
 
-    // Add edges based on shared drugs
+    // Add edges
     let condArray = Array.from(allConditions);
     for (let a = 0; a < condArray.length; a++) {
         for (let b = a + 1; b < condArray.length; b++) {
@@ -175,7 +172,6 @@ function renderNetwork(threshold, selectedActions, useCircular) {
             let setA = filteredMap.get(cA);
             let setB = filteredMap.get(cB);
 
-            // Find shared drugs
             let sharedDrugs = [];
             if (setA.size < setB.size) {
                 setA.forEach(drug => {
@@ -189,132 +185,187 @@ function renderNetwork(threshold, selectedActions, useCircular) {
 
             let sharedCount = sharedDrugs.length;
             if (sharedCount >= threshold) {
-                // Group shared drugs by action type for better tooltip display
                 const drugsByType = groupDrugsByType(sharedDrugs);
-
                 graph.addEdge(cA, cB, {
-                    size: Math.min(Math.max(1, sharedCount / 2), 8), // Balanced edge thickness
+                    size: Math.min(Math.max(1, sharedCount / 2), 8),
                     color: getEdgeColor(sharedCount),
-                    label: sharedCount + " shared",
-                    sharedDrugs: sharedDrugs,
-                    drugsByType: drugsByType,
+                    // "origLabel" so we can show it only on hover
+                    origLabel: `${sharedCount} shared`,
+                    sharedDrugs,
+                    drugsByType,
                 });
             }
         }
     }
-
+    let node_color = "#144a8d";
+    // Sigma with edge labels turned on, but we hide them in reducer unless hovered
     renderer = new Sigma(graph, sigmaContainer, {
-        renderEdgeLabels: true,
+        renderEdgeLabels: true, // allow edge labels to be displayed
         enableEdgeEvents: true,
         defaultEdgeColor: "#c5c5c5",
-        defaultNodeColor: "#6f42c1",
+        defaultNodeColor: node_color,
         labelSize: 14,
-        labelColor: {
-            color: "#333"
-        },
-        nodeHoverColor: "#6f42c1",
-        edgeHoverColor: "#6f42c1",
+        labelColor: { color: "#333" },
+        nodeHoverColor: node_color,
+        edgeHoverColor: node_color,
         nodeBorderSize: 2,
         zoomToSizeRatioFunction: (x) => x,
+
+        // Disable zooming by setting min and max camera ratios to the same value
+        minCameraRatio: 1,
+        maxCameraRatio: 1,
+
+        // Hide or show nodes & edges depending on state
+        nodeReducer: (node, data) => {
+            const res = { ...data, hidden: false };
+
+            // If an edge is hovered, only show endpoints
+            if (state.hoveredEdge) {
+                const [src, tgt] = graph.extremities(state.hoveredEdge);
+                if (node !== src && node !== tgt) {
+                    res.hidden = true;
+                }
+                return res;
+            }
+
+            // If a node is hovered, only show that node & its neighbors
+            if (state.hoveredNode) {
+                if (node !== state.hoveredNode && !state.hoveredNeighbors.has(node)) {
+                    res.hidden = true;
+                }
+                return res;
+            }
+
+            return res;
+        },
+
+        edgeReducer: (edge, data) => {
+            const res = { ...data, hidden: false, label: "" };
+            const [source, target] = graph.extremities(edge);
+
+            // If an edge is hovered, show only that edge + label; hide all others
+            if (state.hoveredEdge) {
+                if (edge === state.hoveredEdge) {
+                    res.label = data.origLabel || "";
+                } else {
+                    res.hidden = true;
+                }
+                return res;
+            }
+
+            // If a node is hovered, show only edges connected to that node or neighbors
+            if (state.hoveredNode) {
+                // Must connect hovered node or neighbor
+                if (
+                    state.hoveredNode === source ||
+                    state.hoveredNode === target ||
+                    (state.hoveredNeighbors.has(source) && state.hoveredNeighbors.has(target))
+                ) {
+                    // Could show label for edges connected to hovered node
+                    // If you only want the hovered node's edges to have a label, condition further
+                    res.label = data.origLabel || "";
+                } else {
+                    res.hidden = true;
+                }
+                return res;
+            }
+
+            // No hover => everything is visible but label is hidden
+            return res;
+        },
     });
 
     setupGraphInteractions(graph);
 }
 
 function setupGraphInteractions(graph) {
-    let hoveredEdge = null;
-
-    // Edge hover: show shared drugs tooltip
-    renderer.on("enterEdge", (e) => {
-        const edgeId = e.edge;
-        hoveredEdge = edgeId;
-
-        const drugs = graph.getEdgeAttribute(edgeId, "sharedDrugs") || [];
-        const drugsByType = graph.getEdgeAttribute(edgeId, "drugsByType") || {};
-
-        let tooltipContent = `<strong>${drugs.length} Shared Drugs</strong>`;
-
-        Object.entries(drugsByType).forEach(([type, drugs]) => {
-            tooltipContent += `<br><b>${type}</b>: ${drugs.join(", ")}`;
-        });
-
-        // Position and show tooltip
-        const pos = e.event;
-        edgeTooltip.style.left = pos.x + 10 + "px";
-        edgeTooltip.style.top = pos.y + 10 + "px";
-        edgeTooltip.innerHTML = tooltipContent;
-        edgeTooltip.style.display = "block";
+    renderer.on("enterNode", ({ node }) => {
+        state.hoveredNode = node;
+        state.hoveredEdge = null;
+        state.hoveredNeighbors = new Set(graph.neighbors(node));
+        renderer.refresh();
     });
 
-    renderer.on("leaveEdge", (e) => {
-        if (hoveredEdge === e.edge) {
-            hoveredEdge = null;
-            edgeTooltip.style.display = "none";
-            edgeTooltip.innerHTML = "";
+    renderer.on("leaveNode", ({ node }) => {
+        if (state.hoveredNode === node) {
+            state.hoveredNode = null;
+            state.hoveredEdge = null;
+            state.hoveredNeighbors.clear();
+            renderer.refresh();
         }
     });
 
-    // Node hover: highlight connected nodes
-    renderer.on("enterNode", (e) => {
-        const nodeId = e.node;
-        graph.setNodeAttribute(nodeId, "highlighted", true);
+    renderer.on("enterEdge", ({ edge, event }) => {
+        state.hoveredEdge = edge;
+        state.hoveredNode = null;
+        state.hoveredNeighbors.clear();
 
-        graph.forEachNeighbor(nodeId, (neighbor) => {
-            graph.setNodeAttribute(neighbor, "highlighted", true);
+        const drugs = graph.getEdgeAttribute(edge, "sharedDrugs") || [];
+        const drugsByType = graph.getEdgeAttribute(edge, "drugsByType") || {};
+
+        let tooltipContent = `<strong>${drugs.length} Shared Drugs</strong>`;
+        Object.entries(drugsByType).forEach(([type, list]) => {
+            tooltipContent += `<br><b>${type}</b>: ${list.join(", ")}`;
         });
+
+        edgeTooltip.style.left = event.x + 10 + "px";
+        edgeTooltip.style.top = event.y + 10 + "px";
+        edgeTooltip.innerHTML = tooltipContent;
+        edgeTooltip.style.display = "block";
 
         renderer.refresh();
     });
 
-    renderer.on("leaveNode", (e) => {
-        const nodeId = e.node;
-        graph.setNodeAttribute(nodeId, "highlighted", false);
-
-        graph.forEachNeighbor(nodeId, (neighbor) => {
-            graph.setNodeAttribute(neighbor, "highlighted", false);
-        });
-
-        renderer.refresh();
+    renderer.on("leaveEdge", ({ edge }) => {
+        if (state.hoveredEdge === edge) {
+            state.hoveredEdge = null;
+            edgeTooltip.style.display = "none";
+            edgeTooltip.innerHTML = "";
+            renderer.refresh();
+        }
     });
 }
 
+// Node size logic
 function calculateNodeSizes(filteredMap) {
     const sizes = new Map();
-    const counts = Array.from(filteredMap.entries()).map(([cond, drugs]) => drugs.size);
+    const counts = Array.from(filteredMap.values()).map(drugs => drugs.size);
     const minCount = Math.min(...counts);
     const maxCount = Math.max(...counts);
     const range = maxCount - minCount;
 
     filteredMap.forEach((drugs, cond) => {
         const count = drugs.size;
-        // Scale size between 4 and 12 based on drug count
         const size = range === 0 ? 8 : 4 + ((count - minCount) / range) * 8;
         sizes.set(cond, size);
     });
-
     return sizes;
 }
 
 function groupDrugsByType(drugs) {
     const grouped = {};
-
     drugs.forEach(drug => {
         const type = drugToType.get(drug) || "Unknown";
-        if (!grouped[type]) {
-            grouped[type] = [];
-        }
+        if (!grouped[type]) grouped[type] = [];
         grouped[type].push(drug);
     });
-
     return grouped;
 }
 
 function getEdgeColor(sharedCount) {
-    if (sharedCount > 8) return "#1a5336"; // Very strong connection
-    if (sharedCount > 6) return "#217a4d"; // Strong connection
-    if (sharedCount > 4) return "#2aa264"; // Medium strong connection
-    if (sharedCount > 2) return "#3ecf7c"; // Medium connection
-    return "#65da97"; // Basic connection
+    let gradient = ["#2e7994", "#51a79d", "#73b8ba", "#96c3cd", "#B8CCE0"];
+    /*
+    if (sharedCount > 8) return "#1a5336";
+    if (sharedCount > 6) return "#217a4d";
+    if (sharedCount > 4) return "#2aa264";
+    if (sharedCount > 2) return "#3ecf7c";
+    return "#65da97";
+     */
+    if (sharedCount > 8) return gradient[0];
+    if (sharedCount > 6) return gradient[1];
+    if (sharedCount > 4) return gradient[2];
+    if (sharedCount > 2) return gradient[3];
+    return gradient[4];
 }
 
 function capitalizeFirst(string) {
@@ -331,11 +382,12 @@ function resetFilters() {
 
 function resizeGraph() {
     if (renderer) {
+        const { width, height } = sigmaContainer.getBoundingClientRect();
+        renderer.resize(width, height);
         renderer.refresh();
     }
 }
 
-// handling resize events
 function debounce(func, wait) {
     let timeout;
     return function () {
