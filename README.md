@@ -1,4 +1,4 @@
-# CSC316-project
+# Project
 
 This is a visualization project about drugs used to treat conditions related to the nervous system (particularly about the brain).  
 
