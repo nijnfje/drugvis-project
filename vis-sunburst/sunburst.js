@@ -3,7 +3,7 @@ class ConditionDrugMap {
         this.csvFilePath = csvFilePath;
         this.width = width;
         this.height = height;
-        this.radius = this.width / 2;
+        this.radius = this.width / 2.1;
         this.conditionToDrugs = {};
         this.sliderValue = 15;
         this.maxDrugs = 0;

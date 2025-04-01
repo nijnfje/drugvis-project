@@ -2,7 +2,21 @@
 
 * {
     font-family: "Belanosima", sans-serif;
-    color: #1880d5;
+    /*color: #1880d5;*/
+    color: #6B5142FF;
+}
+
+html {
+    position: relative;
+    height: 100vh;
+}
+
+body {
+    overflow: hidden;   /* Prevents both vertical and horizontal scrolling */
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 text{
