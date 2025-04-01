@@ -19,8 +19,8 @@ The libraries needed are included in their respective .html file.
 - img/ : contains the images used for the website.
 
 ## URLs 
-- Deployed website link: 
-- Video URL: 
+- Deployed website link: https://nijnfje.github.io/drugvis-project/ 
+- Video: in .zip file submitted. 
 
 ## References / Resources:
 - Any references or resources can be found [here](https://docs.google.com/document/d/1knovj5w4krEKcWFJ8AFakCZR4hkPrh2D1cXCqusAOoI/edit?tab=t.0).
