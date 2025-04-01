@@ -172,6 +172,11 @@ section {
     transition: opacity 0.5s ease-in-out, visibility 0s linear 0s; /* Immediate visibility after fade-in */
 }
 
+.s1-continue-button{
+    position: absolute;
+    top: 35%;
+}
+
 
 /***************************************
     SECTION 2: Mental illness in Canada
