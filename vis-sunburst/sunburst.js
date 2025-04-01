@@ -15,6 +15,8 @@ class ConditionDrugMap {
             .innerRadius(d => d.y0)
             .outerRadius(d => d.y1);
         this.highlightedCondition = null;
+        this.colorScale = null;
+        this.diseaseColors = new Map();
     }
 
     init() {
@@ -39,7 +41,7 @@ class ConditionDrugMap {
             if (!this.conditionToDrugs[row.list_of_conditions]) {
                 this.conditionToDrugs[row.list_of_conditions] = new Set();
             }
-            this.conditionToDrugs[row.list_of_conditions].add(row.drug_name);
+            this.conditionToDrugs[row.list_of_conditions].add(row.drug_name + "@" + row.list_of_conditions);
         });
 
         for (let condition in this.conditionToDrugs) {
@@ -53,9 +55,14 @@ class ConditionDrugMap {
 
     createSlider() {
         const sliderContainer = d3.select("body").append("div")
+            .style("display", "flex")
+            .style("align-items", "center")
+            .style("margin", "20px");
 
         sliderContainer.append("label")
             .text("Display conditions with drugs more than:")
+            .style("margin-right", "10px")
+            .style("font-size", "16px");
 
         const slider = sliderContainer.append("input")
             .attr("type", "range")
@@ -81,7 +88,7 @@ class ConditionDrugMap {
             .attr("width", this.width)
             .attr("height", this.height)
             .append("g")
-            .attr("transform", `translate(${this.width / 2},${this.height / 2})`);
+            .attr("transform", `translate(${this.width / 2},${this.height / 2}) rotate(-90)`);
     }
 
     updateVisualization(filterMin) {
@@ -113,34 +120,69 @@ class ConditionDrugMap {
 
         this.svg.selectAll("*").remove();
 
-        // Color scales
-        const pastelColors = d3.quantize(d3.interpolateRainbow, filteredConditions.length + 1)
-            .map(color => d3.interpolateRgb(color, "#ffffff")(0.45));
-        const colorScale = d3.scaleOrdinal(pastelColors); // prev: d3.scaleOrdinal(d3.schemeSet3);
+        // Color scales (PREV)
+        /*
+        if (!this.colorScale) {
+            const pastelColors = d3.quantize(d3.interpolateRainbow, Object.keys(this.conditionToDrugs).length + 1)
+                .map(color => d3.interpolateRgb(color, "#ffffff")(0.45));
+            this.colorScale = d3.scaleOrdinal(pastelColors);  // prev: d3.scaleOrdinal(d3.schemeSet3);
+            Object.keys(this.conditionToDrugs).forEach((condition, i) => {
+                this.diseaseColors.set(condition, this.colorScale(i));
+            });
+        }
+         */
 
-        const diseaseColors = new Map();
+        // Color scales
+        if (!this.colorScale) {
+            // Sort conditions by the number of drugs
+            const sortedConditions = Object.entries(this.conditionToDrugs)
+                .sort((a, b) => b[1].length - a[1].length)  // Sort by number of drugs (descending)
+                .map(([condition]) => condition);
+
+            const pastelColors = d3.quantize(d3.interpolateRainbow, sortedConditions.length + 1)
+                .map(color => d3.interpolateRgb(color, "#ffffff")(0.45));
+
+            this.colorScale = d3.scaleOrdinal(pastelColors);
+
+            sortedConditions.forEach((condition, i) => {
+                this.diseaseColors.set(condition, this.colorScale(i));
+            });
+        }
+
         console.log(filteredConditions);
 
-        hierarchy.children.forEach((condition, i) => {
-            diseaseColors.set(condition.data.name, colorScale(i));
-        });
-
         const paths = this.svg.selectAll("path").data(hierarchy.descendants().slice(1));
+
+        const tooltip = d3.select("body").append("div")
+            .attr("class", "tooltip")
+            .style("position", "absolute")
+            .style("visibility", "hidden")
+            .style("background-color", "rgba(0, 0, 0, 0.7)")
+            .style("color", "white")
+            .style("padding", "5px")
+            .style("border-radius", "4px")
+            .style("font-size", "12px");
 
         paths.enter()
             .append("path")
             .attr("d", this.arc)
             .style("stroke", "#fff8e0")
             .style("fill", d => d.depth === 1 ?
-                diseaseColors.get(d.data.name) : diseaseColors.get(d.parent.data.name))
+                this.diseaseColors.get(d.data.name) : this.diseaseColors.get(d.parent.data.name))
             .style("opacity", 0)
             .on("mouseover", function(event, d) {
                 d3.select(this).transition().duration(200).style("opacity", 0.70);
+                tooltip.style("visibility", "visible").text(d.data.name.split('@')[0]);
+            })
+            .on("mousemove", function(event) {
+                tooltip.style("top", (event.pageY + 5) + "px")
+                    .style("left", (event.pageX + 5) + "px");
             })
             .on("mouseout", function(event, d) {
                 d3.select(this).transition().duration(200).style("opacity", 1);
+                tooltip.style("visibility", "hidden");
             })
-            .on("click", (event, d) => this.hightlight(d))
+            .on("click", (event, d) => this.highlight(d))
             .merge(paths)
             .transition().duration(700)
             .attr("d", this.arc)
@@ -148,25 +190,102 @@ class ConditionDrugMap {
 
         const labels = this.svg.selectAll("text").data(hierarchy.descendants().slice(1));
 
+        /*
         labels.enter()
             .append("text")
             .attr("dy", "0.35em")
             .attr("transform", d => `translate(${this.arc.centroid(d)}) 
         rotate(${(d.x0 + d.x1) / 2 * 180 / Math.PI - 90})`)
             .style("text-anchor", "middle")
-            .style("font-size", d => `${Math.min(10, Math.max(5, 18 - d.data.name.length / 2))}px`)
-            .style("fill", "black")
-            .style("opacity", 0)
-            .text(d => d.data.name)
+            .style("font-size", d => `${Math.min(10, 
+                Math.max(5, 18 - d.data.name.split('@')[0].length / 2))}px`)
+            .style("fill", "#4b3730")
+            .style("visibility", "hidden")
+            .text(d => d.data.name.split('@')[0])
             .merge(labels)
             .transition().duration(500)
             .attr("transform", d => `translate(${this.arc.centroid(d)}) 
         rotate(${(d.x0 + d.x1) / 2 * 180 / Math.PI - 90})`)
-            .style("opacity", 1);
+            .style("visibility", d => d.data.name.includes('@') &&
+            this.conditionToDrugs[d.data.name.split('@')[1]].length > 25 &&
+                filteredConditions.length > 1 &&
+                this.highlightedCondition === null
+                ? "hidden" : "visible");
+         */
+
+        let center = 0.85;
+        labels.enter()
+            .append("text")
+            .attr("dy", "0.35em")
+            .attr("transform", d => {
+                const [x, y] = this.arc.centroid(d);
+                const angle = (d.x0 + d.x1) / 2 * 180 / Math.PI;
+
+                // Flip inward instead of outward
+                const flip = angle > 90 && angle < 270 ? 0 : 180;
+
+                return `translate(${x * center}, ${y * center}) rotate(${angle - 90 + flip})`;
+            })
+            .style("text-anchor", d => {
+                const angle = (d.x0 + d.x1) / 2 * 180 / Math.PI;
+
+                // Reverse the anchor for inward flip
+                return angle > 90 && angle < 270 ? "start" : "end";
+            })
+            .style("font-size", d => `${Math.min(10,
+                Math.max(5, 18 - d.data.name.split('@')[0].length / 2))}px`)
+            .style("font-size", d =>
+                d.data.name.includes('@') &&
+                this.conditionToDrugs[d.data.name.split('@')[1]].length > 10 && // prev: 25
+                filteredConditions.length > 1 &&
+                this.highlightedCondition === null
+                    ? "7px" : `${Math.min(10,
+                        Math.max(5, 18 - d.data.name.split('@')[0].length / 2))}px`)
+            .style("fill", "#543b32")
+            .style("visibility", "hidden")
+            .text(d => d.data.name.split('@')[0])
+            .merge(labels)
+            .transition().duration(500)
+            .attr("transform", d => {
+                const [x, y] = this.arc.centroid(d);
+                const angle = (d.x0 + d.x1) / 2 * 180 / Math.PI;
+
+                const flip = angle > 90 && angle < 270 ? 0 : 180;
+
+                return `translate(${x * center}, ${y * center}) rotate(${angle - 90 + flip})`;
+            })
+            .style("text-anchor", d => {
+                const angle = (d.x0 + d.x1) / 2 * 180 / Math.PI;
+
+                // Reverse anchor logic for inward labels
+                return angle > 90 && angle < 270 ? "start" : "end";
+            })
+            .style("visibility", d =>
+                d.data.name.includes('@') &&
+                this.conditionToDrugs[d.data.name.split('@')[1]].length > 10 && // prev: 25
+                filteredConditions.length > 1 &&
+                this.highlightedCondition === null
+                    ? "hidden" : "visible")
+            .style("visibility", "visible")
+            .style("visibility", d =>
+                d.data.name.includes('@') &&
+                this.conditionToDrugs[d.data.name.split('@')[1]].length > 10 && // prev: 25
+                filteredConditions.length > 1 &&
+                this.highlightedCondition === null && this.sliderValue < 15
+                    ? "hidden" : "visible")
+            .style("font-size", d =>
+                d.data.name.includes('@') &&
+                this.conditionToDrugs[d.data.name.split('@')[1]].length > 10 && // prev: 25
+                filteredConditions.length > 1 &&
+                this.highlightedCondition === null
+                    ? "7px" : `${Math.min(10,
+                        Math.max(5, 18 - d.data.name.split('@')[0].length / 2))}px`);
+
     }
 
 
-    hightlight(d) {
+    highlight(d) {
+        d3.selectAll(".tooltip").style("visibility", "hidden");
         if (d.depth === 1) {
             if (this.highlightedCondition === d.data.name) {
                 this.highlightedCondition = null;

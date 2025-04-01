@@ -130,15 +130,40 @@ class SharedDrugsForDiseases {
                     .style("fill", "orange")
                     .attr("r", 14);
                 this.tooltip.style("visibility", "visible")
-                    .html(`Shared drugs between <strong>${d.source.id}</strong> and <strong>
-                            ${d.target.id}</strong>: <ul>${d.sharedDrugs.map(drug => `<li>${drug}</li>`).join('')}</ul>`)
+                    .html(`Shared drugs between <span style="font-weight: 500; color: coral;">${d.source.id}</span> 
+                            and <span style="font-weight: 500; color: coral;">${d.target.id}</span>: <ul>${d.sharedDrugs.map(drug => `<li>${drug}</li>`).join('')}</ul>`)
                     .style("left", (event.pageX + 10) + "px")
                     .style("top", (event.pageY - 10) + "px");
+
+                d3.select(`#label-${d.source.id.replace(/\s+/g, '_')
+                    .replace(/'/g, '_')}`)
+                    .transition()
+                    .duration(200)
+                    .attr("opacity", 1)
+                    .attr("fill", "coral");
+
+                d3.select(`#label-${d.target.id.replace(/\s+/g, '_').replace(/'/g, '_')}`)
+                    .transition()
+                    .duration(200)
+                    .attr("opacity", 1)
+                    .attr("fill", "coral");
             })
-            .on("mouseout", () => {
+            .on("mouseout", (event, d) => {
                 this.vertex.style("stroke", "grey").style("opacity", 0.5);
                 this.node.style("fill", "lightblue").attr("r", 7);
                 this.tooltip.style("visibility", "hidden");
+                d3.select(`#label-${d.source.id.replace(/\s+/g, '_')
+                    .replace(/'/g, '_')}`)
+                    .transition()
+                    .duration(200)
+                    .attr("opacity", 0.5)
+                    .attr("fill", "black");
+
+                d3.select(`#label-${d.target.id.replace(/\s+/g, '_').replace(/'/g, '_')}`)
+                    .transition()
+                    .duration(200)
+                    .attr("opacity", 0.5)
+                    .attr("fill", "black");
             });
     }
     
@@ -161,12 +186,12 @@ class SharedDrugsForDiseases {
                     .style("fill", "#4e7fd9");
 
                 // Label interaction
-                const labelId = `label-${d.id.replace(/\s+/g, '_')}`;
+                const labelId = `label-${d.id.replace(/\s+/g, '_').replace(/'/g, '_')}`;
                 d3.select(`#${labelId}`)
                     .transition()
                     .duration(200)
                     .style("font-size", "18px")
-                    .attr("opacity", 1);
+                    .attr("opacity", 1)
             })
             .on("mouseout", function(event, d) {
                 d3.select(this)
@@ -175,25 +200,25 @@ class SharedDrugsForDiseases {
                     .attr("r", 7)               // Return to original state
                     .style("fill", "lightblue");
 
-                const labelId = `label-${d.id.replace(/\s+/g, '_')}`;
+                const labelId = `label-${d.id.replace(/\s+/g, '_').replace(/'/g, '_')}`;
                 d3.select(`#${labelId}`)
                     .transition()
                     .duration(200)
                     .style("font-size", "15px")
-                    .attr("opacity", 0.5);
+                    .attr("opacity", 0.5)
             });
     }
-    
+
     createLabels() {
         this.label = this.svg.selectAll("text")
             .data(this.nodes)
             .enter()
             .append("text")
-            .attr("id", d => `label-${d.id.replace(/\s+/g, '_')}`)
+            .attr("id", d => `label-${d.id.replace(/\s+/g, '_').replace(/'/g, '_')}`)
             .style("fill", "black")
             .style("font-size", "15px")
             .attr("opacity", "0.5")
-            .text(d => d.id)
+            .text(d => d.id.replace(/_/g, "'"))
             .attr("text-anchor", "middle");
     }
     
