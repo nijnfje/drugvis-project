@@ -1,16 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
+    font-family: "Belanosima", sans-serif;
+    color: #1f89af;
+}
+
+body {
+    overflow: hidden;   /* Prevents both vertical and horizontal scrolling */
 }
 
 body {
     /*background: #f5f7fa;*/
     color: #333;
-    padding: 1.25rem;
+    padding: 0.5rem;
     line-height: 1.5;
 }
 
@@ -40,7 +47,7 @@ body {
     padding: 1rem 1.25rem;
     border: 1px solid #e1e4e8;
     border-radius: 8px;
-    margin-bottom: 1.25rem;
+    margin-bottom: 0.5rem;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
     transition: all 0.3s ease;
 }
@@ -55,7 +62,7 @@ body {
 .action-checkboxes {
     display: grid;
     grid-template-columns: repeat(3, minmax(120px, 1fr));
-    gap: 0.75rem;
+    gap: 0.5rem;
     max-width: 600px;
     flex-grow: 1;
 }
@@ -100,8 +107,8 @@ body {
 }
 
 .filter-panel button:hover {
-    background: #5a36a0;
-    transform: translateY(-1px);
+    background: #4c66cb;
+    /*transform: translateY(-1px);*/
 }
 
 .filter-panel button:active {
@@ -174,12 +181,12 @@ svg {
 }
 
 .color-legend {
-    margin: 1rem auto;
+    margin: 0.5rem auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.75rem;
-    padding: 0.75rem;
+    gap: 0.7rem;
+    padding: 0.5rem;
     background: #fff;
     border-radius: 6px;
     border: 1px solid #e1e4e8;
@@ -196,7 +203,7 @@ svg {
 }
 
 .legend-label {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     color: #555;
     font-weight: 500;
 }

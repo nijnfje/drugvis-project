@@ -155,7 +155,7 @@ class HeatmapVis {
 
         // Format the tooltip content
         let tooltipContent = `
-            <strong>${d.rowCondition}</strong> & <strong>${d.colCondition}</strong><br>
+            <span>${d.rowCondition}</span> & <span>${d.colCondition}</span><br>
             Shared drugs: ${d.count}
         `;
 
