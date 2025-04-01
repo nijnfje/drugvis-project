@@ -370,7 +370,7 @@ li p {
 
 #stove-gif {
     position: absolute;
-    bottom: -16rem; /* alt: 40%, or 13rem */
+    bottom: -20rem; /* alt: 40%, or 13rem, 16rem */
     left: -6rem;
 
     width: 95%;
@@ -513,7 +513,7 @@ li p {
     z-index: 2;
 }
 
-.s4-explanation {
+#s3-explanation-5, .s4-explanation {
     /* text-shadow source: https://www.reddit.com/r/csshelp/comments/b3z3gp/how_to_i_make_text_with_black_outline/*/
     text-shadow: 0.05em 0 var(--bg-color);,
                 0 0.05em var(--bg-color);,
